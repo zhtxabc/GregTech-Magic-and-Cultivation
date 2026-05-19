@@ -1,0 +1,11 @@
+StartupEvents.registry('fluid', event => {
+    event.create('liquid_magic_source')
+        .displayName('液态魔源')
+        .stillTexture('kubejs:textures/fluid/liquid_magic_source_still')
+        .flowingTexture('kubejs:textures/fluid/liquid_magic_source_flow')
+        .bucketColor(0x6a0dad)
+        .density(1000)
+        .viscosity(1000)
+        .temperature(300)
+        .luminosity(8)
+})
