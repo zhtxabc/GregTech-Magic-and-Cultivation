@@ -1,0 +1,21 @@
+
+#生物状态重置机制配置
+#Entity Reset Mechanics Configuration
+[general]
+	# 是否开启生物重置系统。
+	#Whether to enable the Entity Reset system.
+	enable = true
+	# 检测玩家死亡的半径 (方块)。
+	#Detection radius (blocks).
+	radius = 48
+	# 生物重置规则。格式: "实体ID;死亡阈值;是否计入免死"
+	#Entity Reset Rules. Format: "EntityID;Threshold;CountCanceled"
+	#"死亡阈值" 指附近玩家死多少次后生物血量重置。
+	#"Threshold" refers to the number of player deaths nearby before the Entity health resets.
+	#"是否计入免死" 若为 true，则玩家触发免死（如不死图腾）或死亡事件被取消也算作一次死亡计数。
+	#"CountCanceled" if true, triggering death prevention (like Totem of Undying) also counts as a death.
+	#Example / 配置示例: "minecraft:wither;1;true"
+	#表示玩家死 1 次（含免死）凋灵即回满血。
+	#Means Wither heals fully after 1 player death (including totem triggers).
+	rules = ["minecraft:wither;1;true", "minecraft:ender_dragon;3;false"]
+

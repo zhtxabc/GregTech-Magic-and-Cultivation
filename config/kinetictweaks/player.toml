@@ -1,0 +1,39 @@
+
+#首次进入奖励设置
+#First Join Reward Settings
+[first_join]
+	# 启用首次加入奖励功能
+	# Enable the First Join reward feature
+	enable = true
+	# 发放奖励前清空玩家背包
+	#Clear the player's inventory before giving rewards
+	clear_inventory = true
+	# 发放奖励的延迟时间 (刻)
+	#Delay before giving rewards (in ticks)
+	delay_ticks = 20
+	# 奖励物品列表 (支持 '[槽位] 数量x 物品ID{NBT}' 格式)
+	#Reward item list (Supports '[Slot] Countx ItemID{NBT}' format)
+	items = ["[0] 1x explorerscompass:explorerscompass{DisplayCoordinates:1b,FoundX:656,FoundZ:832,IsGroup:0b,PrevPos:[{X:656,Y:0,Z:832}],Samples:4194,SearchRadius:500,State:2,StructureKey:\"lost_aether_content:platinum_dungeon\"}", "[1] 1x kubejs:gtmc", "[2] 1x tofucraft:tofu_metal_sword{Damage:0}"]
+	# 玩家首次加入时执行的指令列表
+	#List of commands to execute when a player first joins
+	commands = ["say Welcome @s!"]
+
+	#初始装备 (支持 NBT，每个部位可独立设定)
+	#Starting Equipment (Supports NBT, each slot can be configured independently)
+	[first_join.armor]
+		# 头盔
+		# Helmet
+		helmet = "1x tofucraft:tofu_solid_helmet{Damage:0}"
+		# 胸甲
+		# Chestplate
+		chestplate = "1x tofucraft:tofu_solid_chestplate{Damage:0}"
+		# 护腿
+		# Leggings
+		leggings = "1x tofucraft:tofu_solid_leggings{Damage:0}"
+		# 靴子
+		# Boots
+		boots = "1x tofucraft:tofu_solid_boots{Damage:0}"
+		# 副手物品
+		# Offhand Item
+		offhand = ""
+

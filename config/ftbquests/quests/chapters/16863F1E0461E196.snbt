@@ -1,0 +1,57 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "16863F1E0461E196"
+	group: "64426895FE9D2AAA"
+	icon: "gtceu:ev_electric_motor"
+	id: "16863F1E0461E196"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			id: "7B611E5BEE513CEE"
+			tasks: [{
+				id: "6299C40F3F26FCFA"
+				item: "gtceu:iv_machine_hull"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["5430AB8684DC897A"]
+			id: "3CC1957B8297FAB0"
+			tasks: [
+				{
+					id: "265A403DE4A228F6"
+					item: "gtceu:ev_electric_motor"
+					type: "item"
+				}
+				{
+					id: "49CDEFFEFBCA2C64"
+					item: "gtceu:ev_electric_pump"
+					type: "item"
+				}
+				{
+					id: "2A0426978BB3ECD6"
+					item: "gtceu:ev_conveyor_module"
+					type: "item"
+				}
+				{
+					id: "7B61843C78959190"
+					item: "gtceu:ev_electric_piston"
+					type: "item"
+				}
+				{
+					id: "03707403D0615BEE"
+					item: "gtceu:ev_robot_arm"
+					type: "item"
+				}
+			]
+			title: "化神阶段"
+			x: -0.5d
+			y: -0.5d
+		}
+	]
+	title: "化神"
+}

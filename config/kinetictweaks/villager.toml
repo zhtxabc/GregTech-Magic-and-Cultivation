@@ -1,0 +1,16 @@
+
+#村民优化与行为控制设置。
+#Villager Optimization and Behavior Control Settings.
+[villager]
+	#降低村民的 AI 检测与寻路频率（单位：Tick，20 Tick = 1 秒）。默认为 100（5秒）。
+	#Reduces the frequency of Villager AI checks and pathfinding (Unit: Ticks, 20 Ticks = 1 Second). Default is 100 (5 seconds).
+	#设为 1 则恢复原版频率。
+	#Set to 1 to restore vanilla frequency.
+	tickInterval = 100
+	#是否允许村民跟随手持特定物品的玩家。
+	#Whether to allow Villagers to follow players holding specific items.
+	follow_enable = true
+	#村民跟随的物品 ID 列表 (例如绿宝石)。
+	#The list of items that will make Villagers follow the player.
+	follow_items = ["minecraft:emerald", "minecraft:emerald_block"]
+

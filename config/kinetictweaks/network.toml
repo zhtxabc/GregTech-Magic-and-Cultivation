@@ -1,0 +1,46 @@
+#网络超时时间（秒）。原版默认 30。
+#Network timeout in seconds. Vanilla default is 30.
+#[范围：30 ~ 99999] 填错将自动还原为 120。
+#[Range: 30 ~ 99999] Invalid values will be reset to 120.
+timeout = 120
+#自定义 Payload 数据包最大限制。原版默认 1048576。
+#Custom max limit for Payload packets. Vanilla default is 1048576.
+#[范围：1048576 ~ 2147483647] 填错将自动还原为 67108864。
+#[Range: 1048576 ~ 2147483647] Invalid values will be reset to 67108864.
+packetSize = 67108864
+#网络解码器容量上限。原版默认 8388608。
+#Network decoder capacity limit. Vanilla default is 8388608.
+#[范围：8388608 ~ 2147483647] 填错将自动还原为 67108864。
+#[Range: 8388608 ~ 2147483647] Invalid values will be reset to 67108864.
+decoderSize = 67108864
+#区块数据包容量上限。原版默认 2097152。
+#Chunk packet data capacity limit. Vanilla default is 2097152.
+#[范围：2097152 ~ 2147483647] 填错将自动还原为 16777216。
+#[Range: 2097152 ~ 2147483647] Invalid values will be reset to 16777216.
+chunkPacketData = 16777216
+#NBT 数据最大读取限制（字节）。原版默认 2097152。
+#Max NBT data read limit in bytes. Vanilla default is 2097152.
+#[范围：2097152 ~ 8589934592 (8GB)] 填错将自动还原为 33554432。
+#[Range: 2097152 ~ 8589934592 (8GB)] Invalid values will be reset to 33554432.
+nbtMaxSize = 33554432
+#字符串最大长度限制。原版默认 32767。
+#Max string length limit. Vanilla default is 32767.
+#[范围：32767 ~ 2147483647] 填错将自动还原为 262144。
+#[Range: 32767 ~ 2147483647] Invalid values will be reset to 262144.
+stringSize = 262144
+#VarInt 字节数限制。原版默认 5。
+#VarInt byte limit. Vanilla default is 5.
+#[范围：5 ~ 10] 填错将自动还原为 5。
+#[Range: 5 ~ 10] Invalid values will be reset to 5.
+varInt = 5
+#VarLong 字节数限制。原版默认 10。
+#VarLong byte limit. Vanilla default is 10.
+#[范围：10 ~ 20] 填错将自动还原为 10。
+#[Range: 10 ~ 20] Invalid values will be reset to 10.
+varLong = 10
+#VarInt21FrameDecoder 字节限制。原版默认 3。
+#VarInt21FrameDecoder byte limit. Vanilla default is 3.
+#[范围：3 ~ 16] 填错将自动还原为 8。
+#[Range: 3 ~ 16] Invalid values will be reset to 8.
+varInt21 = 8
+

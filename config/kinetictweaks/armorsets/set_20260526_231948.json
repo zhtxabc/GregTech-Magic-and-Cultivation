@@ -1,0 +1,69 @@
+{
+  "displayName": "钻石豆腐套装",
+  "equipment": {
+    "head": {
+      "id": "tofucraft:tofu_diamond_helmet",
+      "nbtTag": "{Damage:0}"
+    },
+    "feet": {
+      "id": "tofucraft:tofu_diamond_boots",
+      "nbtTag": "{Damage:0}"
+    },
+    "chest": {
+      "id": "tofucraft:tofu_diamond_chestplate",
+      "nbtTag": "{Damage:0}"
+    },
+    "legs": {
+      "id": "tofucraft:tofu_diamond_leggings",
+      "nbtTag": "{Damage:0}"
+    }
+  },
+  "attributes": [
+    {
+      "attribute": "minecraft:generic.max_health",
+      "uuid": "0697f8dd-e62d-4687-ae33-04483f7054d1",
+      "amount": 50.0,
+      "operation": "SET",
+      "conditions": [],
+      "conditionMatchMode": "ANY",
+      "conditionMinCount": 1
+    }
+  ],
+  "potionEffects": [
+    {
+      "effectId": "minecraft:night_vision",
+      "amplifier": 0,
+      "duration": 15,
+      "showParticles": false,
+      "conditions": [
+        {
+          "type": "DIMENSION",
+          "invert": false,
+          "params": {
+            "id": "tofucraft:tofu_world"
+          }
+        }
+      ],
+      "conditionMatchMode": "ANY",
+      "conditionMinCount": 1
+    }
+  ],
+  "allowFlight": true,
+  "playerOnly": true,
+  "tips": [
+    "设定 最大生命值 为 §e50",
+    "§d[药水效果] §f夜视 §f(等级: §e1§f, 持续: §e15§f秒) §f(需满足其\n  §f一: §b§3指定维度: §btofucraft:tofu_world§f)"
+  ],
+  "tipKey": "shift",
+  "flightConditions": [
+    {
+      "type": "DIMENSION",
+      "invert": false,
+      "params": {
+        "id": "tofucraft:tofu_world"
+      }
+    }
+  ],
+  "flightConditionMatchMode": "ANY",
+  "flightConditionMinCount": 1
+}

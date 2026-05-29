@@ -1,0 +1,57 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "1EFF49C7E0A37941"
+	group: "64426895FE9D2AAA"
+	icon: "gtceu:hv_electric_motor"
+	id: "1EFF49C7E0A37941"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			id: "5430AB8684DC897A"
+			tasks: [{
+				id: "3B04F5946C9586B9"
+				item: "gtceu:ev_machine_hull"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["78F25AFA3BBDB050"]
+			id: "63E9634939D8468B"
+			tasks: [
+				{
+					id: "13D63DF62B17CCDE"
+					item: "gtceu:hv_electric_motor"
+					type: "item"
+				}
+				{
+					id: "120A42E78E2AEBAA"
+					item: "gtceu:hv_electric_pump"
+					type: "item"
+				}
+				{
+					id: "5B64F2C8F857D9A6"
+					item: "gtceu:hv_conveyor_module"
+					type: "item"
+				}
+				{
+					id: "03F43B92628CEDC5"
+					item: "gtceu:hv_electric_piston"
+					type: "item"
+				}
+				{
+					id: "1A141AF0001D0AD5"
+					item: "gtceu:hv_robot_arm"
+					type: "item"
+				}
+			]
+			title: "元婴阶段"
+			x: -0.5d
+			y: 0.0d
+		}
+	]
+	title: "元婴"
+}

@@ -1,0 +1,22 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "145D542583A66A4D"
+	group: "1AB5BF2ECFC015EF"
+	icon: "naturesaura:gold_leaf"
+	id: "145D542583A66A4D"
+	order_index: 3
+	quest_links: [ ]
+	quests: [{
+		id: "2EECBE6549BC2136"
+		subtitle: "你需要这个来获取金叶"
+		tasks: [{
+			id: "16183C04DD17E977"
+			item: "naturesaura:gold_fiber"
+			type: "item"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "自然灵气"
+}

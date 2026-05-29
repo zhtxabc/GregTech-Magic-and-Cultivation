@@ -1,0 +1,17 @@
+
+# 可投掷刷怪蛋设置
+#Throwable Spawn Eggs 
+[spawn_eggs]
+	# 是否允许将刷怪蛋像雪球一样投掷出去以生成实体。
+	#Allow throwing Spawn Eggs like snowballs to spawn entities.
+	enable = true
+	# 刷怪蛋投掷的飞行速度。
+	#Throwing speed of the Spawn Egg projectile.
+	speed = 1.5
+	# 投掷的散布/不精确度 (数值越小越准)。
+	#Throwing inaccuracy (Lower value means more accurate).
+	inaccuracy = 0.2
+	# 交互白名单：如果对准的是此列表中的方块 ID，则允许进行原版右键交互（例如刷怪笼），而不是投掷。
+	#Interaction Whitelist: If targeting a block in this list, vanilla interaction is allowed (e.g. Spawner).
+	whitelist = []
+

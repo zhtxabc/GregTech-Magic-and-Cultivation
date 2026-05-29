@@ -1,0 +1,1083 @@
+{
+	autofocus_id: "027145A341FE8AD0"
+	default_hide_dependency_lines: false
+	default_quest_shape: "gear"
+	filename: "1676D0DB3EFA4626"
+	group: "17E9B177358C61D8"
+	icon: "minecraft:grass_block"
+	id: "1676D0DB3EFA4626"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2DDD2C73E0266275"]
+			description: ["各位员工是否玩过曾经的豆腐世界呢"]
+			id: "257FF0D9A91D0D4A"
+			shape: "rsquare"
+			tasks: [{
+				dimension: "tofucraft:tofu_world"
+				icon: "tofucraft:tofukinu"
+				id: "62BF17B88F1EC032"
+				title: "豆腐世界"
+				type: "dimension"
+			}]
+			x: -7.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["257FF0D9A91D0D4A"]
+			dependency_requirement: "one_started"
+			description: ["作为前期工具使用"]
+			id: "7FCA8F7E61811E3F"
+			tasks: [{
+				id: "7E8855C831AB3CE8"
+				item: {
+					Count: 1
+					id: "aiotbotania:livingrock_aiot"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -5.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7FCA8F7E61811E3F"]
+			description: ["由活石全能工具升级而来(要不是为了有铁镐的挖掘等级，挖钻石豆腐矿石我绝对不会升级)"]
+			id: "1957A2B6F45D3F7A"
+			tasks: [{
+				id: "3D22E709B8C2CAE0"
+				item: {
+					Count: 1
+					id: "aiotbotania:manasteel_aiot"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1957A2B6F45D3F7A"]
+			description: ["巨好用1.15w的耐久和11点的伤害(还可以远程，shift+右键)"]
+			hide_dependent_lines: true
+			id: "32850E707848714F"
+			tasks: [{
+				id: "24AA536D5402101E"
+				item: {
+					Count: 1
+					id: "aiotbotania:terra_aiot"
+					tag: {
+						Damage: 0
+						mana: 9999
+					}
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2437E78B53D1505C"]
+			description: ["开局送的新手护甲，防御力与铁套相当"]
+			icon: "tofucraft:tofumetal"
+			id: "6C5F164A9A83073A"
+			tasks: [
+				{
+					id: "2D046925CAAEAC7A"
+					item: {
+						Count: 1
+						id: "tofucraft:tofu_metal_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "675071D51772A6B9"
+					item: {
+						Count: 1
+						id: "tofucraft:tofu_metal_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0263B438C1044865"
+					item: {
+						Count: 1
+						id: "tofucraft:tofu_metal_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "743342FA10E835F0"
+					item: {
+						Count: 1
+						id: "tofucraft:tofu_metal_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "金属豆腐护甲"
+			x: -4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6C5F164A9A83073A"]
+			description: ["由金属豆腐套升级而来,需要与豆腐村民交易(推荐使用石豆腐或葱)或开豆腐村庄铁匠铺箱子获得枝豆宝石"]
+			icon: "tofucraft:tofudiamond"
+			id: "3C40EEE64A11ADE2"
+			tasks: [
+				{
+					id: "41A7D814D3F5316C"
+					item: {
+						Count: 1
+						id: "tofucraft:tofu_diamond_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1ED5876F955D5A37"
+					item: {
+						Count: 1
+						id: "tofucraft:tofu_diamond_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "441E10A3CC344A40"
+					item: {
+						Count: 1
+						id: "tofucraft:tofu_diamond_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4E07540FC3145C90"
+					item: {
+						Count: 1
+						id: "tofucraft:tofu_diamond_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "钻石豆腐护甲"
+			x: -2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["257FF0D9A91D0D4A"]
+			description: ["这是你前期唯一能作为工作台使用的方块"]
+			id: "6A52D2F4CA0617F4"
+			shape: "rsquare"
+			tasks: [{
+				id: "1BC8CA0EB23DBBA9"
+				item: "kubejs:tofu_crafting_table"
+				type: "item"
+			}]
+			title: "什么居然是豆腐工作台"
+			x: -5.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"257FF0D9A91D0D4A"
+				"75EE8887EB95BD9C"
+				"69B9E6866356DAC9"
+			]
+			dependency_requirement: "one_completed"
+			description: [""]
+			id: "21D28E987A08DD88"
+			tasks: [{
+				id: "2B3645599A165CBA"
+				item: {
+					Count: 1
+					id: "tofucraft:tofustick"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "豆腐棒?"
+			x: -5.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["257FF0D9A91D0D4A"]
+			description: [
+				"指南针搜索tofu castle"
+				"可以获取融化的糖果(激活甜蜜灾祸的传送门,之后称为糖果世界)"
+			]
+			id: "3D6A4FDC86D0005F"
+			shape: "rsquare"
+			tasks: [{
+				entity: "tofucraft:tofu_gandlem"
+				id: "0558BD287C250E18"
+				type: "kill"
+				value: 1L
+			}]
+			title: "这就打boss了?"
+			x: -2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3D6A4FDC86D0005F"]
+			description: [
+				"可用于合成甜蜜灾祸传送器"
+				"击败豆腐战神百分百掉落"
+			]
+			id: "3CEE07F02418262F"
+			shape: "rsquare"
+			tasks: [{
+				id: "69904A23335BA5AD"
+				item: {
+					Count: 1
+					id: "sweet_calamity:sweet_lands"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3CEE07F02418262F"]
+			description: ["中文名甜蜜灾祸"]
+			id: "644B241C11D0D4B7"
+			shape: "rsquare"
+			tasks: [{
+				dimension: "sweet_calamity:sweet_lands"
+				icon: "sweet_calamity:candy"
+				id: "09E927120AC27F9A"
+				title: "糖果世界"
+				type: "dimension"
+			}]
+			title: "甜蜜灾祸世界"
+			x: 0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["644B241C11D0D4B7"]
+			description: [
+				"该mod的奶油哥(非常潦草的名字)boss暂时没有召唤方式，所以我用召唤祭坛写了一个,"
+				"绿宝石可以通过打糖果骑士获得,"
+				"日蚀蓟可以在酥脆花园群系找到"
+			]
+			id: "69AF3D7C8F08658B"
+			tasks: [{
+				id: "66797F8C6019B23B"
+				item: "summoningrituals:altar"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["644B241C11D0D4B7"]
+			description: ["可通过开启该维度天空上的飞船里的箱子获得,也可以通过击败糖果骑士百分之十概率掉落五个中的一个(用于召唤boss，制作研磨机)"]
+			id: "625EB2D6466E468B"
+			tasks: [
+				{
+					id: "4C3B8FA0A43653E3"
+					item: "sweet_calamity:chocolate_magic_plate"
+					type: "item"
+				}
+				{
+					id: "38AFAF729C5A61D1"
+					item: "sweet_calamity:cream_magic_plate"
+					type: "item"
+				}
+				{
+					id: "7B981A044A0A4C7E"
+					item: "sweet_calamity:crunchy_magic_plate"
+					type: "item"
+				}
+				{
+					id: "7DBC4576CA85D0E8"
+					item: "sweet_calamity:sticky_magic_plate"
+					type: "item"
+				}
+				{
+					id: "351FB8405B3B9BD3"
+					item: "sweet_calamity:sweet_magic_plate"
+					type: "item"
+				}
+			]
+			title: "符文全家桶"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"625EB2D6466E468B"
+				"69AF3D7C8F08658B"
+				"2E795A97D5A74205"
+				"15D4DF4898EE1DD6"
+			]
+			description: ["恭喜你马上通关这个维度了"]
+			id: "7B947EAB88042895"
+			shape: "rsquare"
+			tasks: [
+				{
+					entity: "sweet_calamity:creamy"
+					id: "2E377856A0A1AB36"
+					type: "kill"
+					value: 1L
+				}
+				{
+					entity: "sweet_calamity:sweet_witch"
+					id: "67C1C79F5C89C780"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "又到了打boss环节"
+			x: 2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["644B241C11D0D4B7"]
+			description: ["可寻找糖果森林的堡垒式结构获得"]
+			id: "694F408E145FA268"
+			tasks: [{
+				id: "0C65CA9FFA9808A7"
+				item: "sweet_calamity:liquid_gum_bucket"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["21D28E987A08DD88"]
+			description: ["可通过使用豆腐棒转化葱获得"]
+			id: "5A1D1C321B76B6EE"
+			tasks: [{
+				id: "0AD273F6F3C894DE"
+				item: "tofucraft:chili"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5A1D1C321B76B6EE"]
+			description: ["制作辣烤口香糖"]
+			id: "4F7FBE12D18BA8A1"
+			tasks: [{
+				id: "48F07372A100E887"
+				item: "ltc2:pepper_red_powder"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"68BE8C82370CE857"
+				"4F7FBE12D18BA8A1"
+				"694F408E145FA268"
+			]
+			description: ["制作研磨机"]
+			id: "046CB22C344D48E3"
+			tasks: [{
+				id: "01E9A98D01195F2B"
+				item: "kubejs:roasted_gum_bucket"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 4.0d
+		}
+		{
+			description: ["可以挖村庄里的"]
+			id: "3A684C7922E714B6"
+			tasks: [{
+				count: 4L
+				id: "42AC9021D48EECA2"
+				item: "minecraft:blast_furnace"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["257FF0D9A91D0D4A"]
+			description: ["可通过击杀豆腐村民获得,小心豆腐世界的白色僵尸(豆腐傀儡)"]
+			hide_dependency_lines: true
+			id: "61A146757EF298CE"
+			tasks: [{
+				id: "6F2D3A94CBB01BBD"
+				item: "ltc2:soylatiao"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["644B241C11D0D4B7"]
+			description: ["由石化饼干合成,石化饼干可以在糖果世界地下找到,可以当燃料用"]
+			id: "6620DBE19AB3FD3D"
+			tasks: [{
+				id: "251C108A0BDBCB47"
+				item: "sweet_calamity:petrified_cookie_block"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"61A146757EF298CE"
+				"3A684C7922E714B6"
+			]
+			description: ["可用于制作辣烤口香糖"]
+			id: "68BE8C82370CE857"
+			tasks: [{
+				id: "304006E7419E9402"
+				item: "ltc2:latiao_oven"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"046CB22C344D48E3"
+				"68BE8C82370CE857"
+				"625EB2D6466E468B"
+			]
+			description: ["由5大符文与辣条烤炉在辣烤口香糖中进行激烈(并非)的化学反应获得"]
+			id: "6CD5E76E39538762"
+			tasks: [{
+				id: "56D1609FEE33E830"
+				item: "ltc2:mill"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["257FF0D9A91D0D4A"]
+			description: ["通过豆腐村庄箱子可获得"]
+			id: "6D769C18C8553FCC"
+			tasks: [{
+				id: "19E61B58E6751F9F"
+				item: "tofucraft:bucket_soymilk"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["257FF0D9A91D0D4A"]
+			description: ["连锁树叶即可获得"]
+			id: "41DA4B9F10B63A22"
+			tasks: [
+				{
+					id: "3EBE2191692CE4C1"
+					item: "rootsclassic:blackcurrant"
+					type: "item"
+				}
+				{
+					id: "216BD5B5FDE48846"
+					item: "rootsclassic:redcurrant"
+					type: "item"
+				}
+				{
+					id: "1DCD99C0D70A3AA7"
+					item: "rootsclassic:whitecurrant"
+					type: "item"
+				}
+			]
+			title: "醋栗全家福"
+			x: -4.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"6D769C18C8553FCC"
+				"41DA4B9F10B63A22"
+			]
+			description: ["可将半成品豆腐棒转化为豆腐棒(合成用)"]
+			hide_dependent_lines: true
+			id: "69B9E6866356DAC9"
+			tasks: [{
+				id: "6F5720252B4DEA90"
+				item: "kubejs:currant_milk_bucket"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["3D6A4FDC86D0005F"]
+			description: ["由豆腐战神掉落，防止有人点背箱子里开不到豆腐棒导致卡关"]
+			id: "75EE8887EB95BD9C"
+			tasks: [{
+				id: "2DF43E55E2FEF5C0"
+				item: "kubejs:half_tofu_staff"
+				type: "item"
+			}]
+			title: "非酋的福音(击败boss百分百掉落)"
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7B947EAB88042895"]
+			description: ["击败两个boss可获得,用于制作水桶"]
+			icon: "sweet_calamity:creamy_head"
+			id: "40C14D8DE4E0A6C2"
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "2FC1C7820F7817DB"
+					item: "sweet_calamity:creamy_head"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "148B7BF9B47743BA"
+					item: "sweet_calamity:magic_powder"
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6CD5E76E39538762"]
+			description: ["唯一用途制作水桶"]
+			id: "23F2C8351DBD74A3"
+			tasks: [{
+				id: "6F19FC7D9B5D856F"
+				item: "kubejs:rough_bucket"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"23F2C8351DBD74A3"
+				"40C14D8DE4E0A6C2"
+			]
+			description: ["这个就不用说了吧,开启天境(天堂)传送门"]
+			id: "123876EA1B15AAF1"
+			shape: "rsquare"
+			tasks: [{
+				id: "36202369AE96FB33"
+				item: "minecraft:water_bucket"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["644B241C11D0D4B7"]
+			description: ["击败蛋糕企鹅有百分百十一概率掉落"]
+			id: "2E795A97D5A74205"
+			tasks: [{
+				id: "2C1578EFF27219DD"
+				item: "sweet_calamity:totem_cake"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -2.0d
+		}
+		{
+			description: ["欢迎又一位新的格雷员工来到GTMC的整合包中,本整合包采用非常另类的开局方式"]
+			id: "2DDD2C73E0266275"
+			shape: "rsquare"
+			tasks: [{
+				id: "1386037CE56A67B5"
+				title: "你好"
+				type: "checkmark"
+			}]
+			title: "欢迎来到GTMC"
+			x: -8.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["232DD2722DF919AD"]
+			icon: "aether:aether_portal_frame"
+			id: "2B9CB0288B432862"
+			tasks: [{
+				dimension: "aether:the_aether"
+				id: "0A7E357C1B288EE0"
+				type: "dimension"
+			}]
+			title: "飞升兄弟们"
+			x: 6.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3CEE07F02418262F"]
+			id: "402CAD4620B8112E"
+			tasks: [{
+				id: "2E2AD21B261984EF"
+				item: "kubejs:sweet_lands"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["123876EA1B15AAF1"]
+			id: "232DD2722DF919AD"
+			tasks: [{
+				id: "5C369D3C48139653"
+				item: "kubejs:the_aether"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["257FF0D9A91D0D4A"]
+			id: "3682A2934D42E9C0"
+			tasks: [{
+				id: "390AC07FDD4E7DC1"
+				item: "kubejs:tofu_world"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["257FF0D9A91D0D4A"]
+			icon: "tofucraft:tofuishi"
+			id: "2437E78B53D1505C"
+			tasks: [
+				{
+					id: "402776B3CD586540"
+					item: {
+						Count: 1
+						id: "tofucraft:tofu_solid_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4B27C24589B45B5F"
+					item: {
+						Count: 1
+						id: "tofucraft:tofu_solid_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7F04107553FE43C0"
+					item: {
+						Count: 1
+						id: "tofucraft:tofu_solid_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1B7BC06C735F5281"
+					item: {
+						Count: 1
+						id: "tofucraft:tofu_solid_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "硬豆腐护甲"
+			x: -5.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["257FF0D9A91D0D4A"]
+			description: ["作为锻造台使用"]
+			id: "20F1D3A9BA6D623E"
+			tasks: [{
+				id: "2C599C86D6EB04E8"
+				item: "kubejs:tofu_smithing_table"
+				type: "item"
+			}]
+			title: "还有第二关"
+			x: -4.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["62EF9A3395C6C9C3"]
+			dependency_requirement: "one_completed"
+			id: "789E4A0AEBE0734D"
+			rewards: [{
+				id: "65C6FAF9EB1ED761"
+				item: "kubejs:overworld"
+				type: "item"
+			}]
+			tasks: [{
+				id: "251304A1B651EF76"
+				type: "checkmark"
+			}]
+			title: "不喜欢冒险玩家看这个任务"
+			x: -2.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["2B9CB0288B432862"]
+			description: ["指南针搜黄金地牢"]
+			id: "33EFC4A80CD797A9"
+			tasks: [{
+				entity: "aether:sun_spirit"
+				id: "3C972E5C7626532B"
+				type: "kill"
+				value: 1L
+			}]
+			x: 8.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2B9CB0288B432862"]
+			description: ["指南针搜青铜地牢"]
+			id: "03FA09D0A93A24C1"
+			tasks: [{
+				entity: "aether:slider"
+				id: "1ED2282D5A55CBF0"
+				type: "kill"
+				value: 1L
+			}]
+			x: 8.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2B9CB0288B432862"]
+			description: ["指南针搜白银地牢"]
+			id: "38A53D9DE79701CE"
+			tasks: [{
+				entity: "aether:valkyrie"
+				id: "7009879C5A2D821E"
+				type: "kill"
+				value: 1L
+			}]
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2B9CB0288B432862"]
+			description: ["指南针搜brass dungeon"]
+			id: "09D1D8DDC24DD056"
+			tasks: [{
+				entity: "deep_aether:eots_controller"
+				id: "418B41EAD366EFD8"
+				type: "kill"
+				value: 1L
+			}]
+			x: 8.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["03FA09D0A93A24C1"]
+			description: ["为boss掉落物以及对应钥匙开启的藏宝箱"]
+			id: "0C6CF442D57826A9"
+			tasks: [
+				{
+					id: "7E636E2E71BEF87F"
+					item: {
+						Count: 1
+						id: "deep_aether:slider_eye"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "03AC964844335B66"
+					item: "aether:sentry_stone"
+					type: "item"
+				}
+			]
+			title: "滑行魔石"
+			x: 10.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["33EFC4A80CD797A9"]
+			description: ["为boss掉落物以及对应钥匙开启的藏宝箱"]
+			id: "551F85C323363773"
+			tasks: [
+				{
+					id: "4D0F0F77A11B5FAE"
+					item: "deep_aether:sun_core"
+					type: "item"
+				}
+				{
+					id: "273ED7B51195E9C9"
+					item: "aether:sun_altar"
+					type: "item"
+				}
+			]
+			title: "烈阳巨灵"
+			x: 10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["09D1D8DDC24DD056"]
+			description: ["为boss掉落物以及对应钥匙开启的藏宝箱"]
+			id: "027145A341FE8AD0"
+			tasks: [
+				{
+					id: "6851E3BB67C25068"
+					item: {
+						Count: 1
+						id: "deep_aether:floaty_scarf"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "06C0C33913E2EFA9"
+					item: "deep_aether:stormforged_smithing_template"
+					type: "item"
+				}
+			]
+			title: "狂瞳龙卷"
+			x: 10.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["38A53D9DE79701CE"]
+			description: ["为boss掉落物以及对应钥匙开启的藏宝箱"]
+			id: "6E3CB8DA09208AD4"
+			tasks: [
+				{
+					id: "791436B99CB38337"
+					item: "aether:victory_medal"
+					type: "item"
+				}
+				{
+					id: "61C53B81A1E711EA"
+					item: "deep_aether:stratus_smithing_template"
+					type: "item"
+				}
+			]
+			title: "女武神"
+			x: 10.5d
+			y: -1.5d
+		}
+		{
+			id: "62EF9A3395C6C9C3"
+			tasks: [{
+				id: "7554AA80DD56E456"
+				title: "不想冒险的员工看这个"
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["551F85C323363773"]
+			id: "58A611C43864454B"
+			tasks: [{
+				id: "64FDD4CA25DA7958"
+				item: "avaritia:infinity_boots"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0C6CF442D57826A9"]
+			id: "428D02B9563A4DEE"
+			tasks: [{
+				id: "5B442D1581C0418B"
+				item: "avaritia:infinity_pants"
+				type: "item"
+			}]
+			x: 13.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6E3CB8DA09208AD4"]
+			id: "4F672628EF2DAA93"
+			tasks: [{
+				id: "2B67860C578128B3"
+				item: "avaritia:infinity_chestplate"
+				type: "item"
+			}]
+			x: 13.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["027145A341FE8AD0"]
+			id: "7EB9D9C47C49CB86"
+			tasks: [{
+				id: "14DF60E7D107989D"
+				item: "avaritia:infinity_helmet"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["69C0E8CE09D6CCCB"]
+			id: "0FE8575F875F347A"
+			tasks: [{
+				id: "6774FAF8DECA84B1"
+				item: {
+					Count: 1
+					id: "avaritia:infinity_sword"
+					tag: {
+						mode: { }
+					}
+				}
+				type: "item"
+			}]
+			x: 14.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["2B9CB0288B432862"]
+			id: "2E89E769BDE9F63D"
+			tasks: [{
+				entity: "lost_aether_content:aerwhale_king"
+				id: "47962E64BDEFE276"
+				type: "kill"
+				value: 1L
+			}]
+			x: 8.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"7EB9D9C47C49CB86"
+				"4F672628EF2DAA93"
+				"428D02B9563A4DEE"
+				"58A611C43864454B"
+				"0FE8575F875F347A"
+			]
+			id: "536A1AA2B3592BC8"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1B49639C6145BC08"
+					table_id: 8778077809041767328L
+					type: "choice"
+				}
+				{
+					id: "60474A02A8409FA9"
+					item: "minecraft:dirt"
+					type: "item"
+				}
+				{
+					id: "2D6D27A55854CCA5"
+					item: {
+						Count: 1
+						id: "useless_mod:endless_beaf_item"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "3C217E6925C422F3"
+				title: "无尽套加寰宇支配之剑了"
+				type: "checkmark"
+			}]
+			x: 16.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["644B241C11D0D4B7"]
+			id: "15D4DF4898EE1DD6"
+			tasks: [{
+				id: "07EC4BF0200FEC6A"
+				item: {
+					Count: 1
+					id: "sweet_calamity:candy_cane_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["2E89E769BDE9F63D"]
+			description: ["为boss掉落物以及对应钥匙开启的藏宝箱"]
+			id: "69C0E8CE09D6CCCB"
+			tasks: [
+				{
+					id: "012F4142E6C81029"
+					item: "deep_aether:aerwhale_saddle"
+					type: "item"
+				}
+				{
+					id: "687A452333C0BA0F"
+					item: "lost_aether_content:noble_armor_trim_smithing_template"
+					type: "item"
+				}
+			]
+			title: "帝王云鲸"
+			x: 11.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["09D1D8DDC24DD056"]
+			id: "0C509A5B774E3C0F"
+			rewards: [{
+				id: "0573C431EB4239BD"
+				item: "avaritia:infinity_helmet"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5168EF0F8AE8943B"
+				item: {
+					Count: 1
+					id: "tofucraft:tofu_diamond_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -10.5d
+			y: -0.5d
+		}
+	]
+	title: "游戏之初"
+}

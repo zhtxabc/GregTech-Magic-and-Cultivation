@@ -1,0 +1,7 @@
+{
+	chapter_groups: [
+		{ id: "17E9B177358C61D8", title: "初始章节" }
+		{ id: "64426895FE9D2AAA", title: "格雷科技" }
+		{ id: "1AB5BF2ECFC015EF", title: "其他模组" }
+	]
+}

@@ -1,0 +1,20 @@
+
+#世界出生点优化
+#World Spawn Optimization
+[spawn]
+	# 是否启用自定义出生点搜索逻辑
+	#Whether to enable custom spawn point search logic.
+	enable = true
+	# 搜索模式: 'BIOME' (群系) 或 'STRUCTURE' (结构)
+	#Search mode: 'BIOME' or 'STRUCTURE'.
+	mode = "STRUCTURE"
+	# 最大搜索半径 (单位: 方块)
+	#Maximum search radius (in blocks).
+	radius = 10000
+	# 模式为 BIOME 时允许的群系 ID 列表
+	#List of allowed biome IDs when mode is BIOME.
+	biomes = ["minecraft:plains", "minecraft:forest", "minecraft:mushroom_fields"]
+	# 模式为 STRUCTURE 时允许的结构 ID 列表
+	#List of allowed structure IDs when mode is STRUCTURE.
+	structures = ["minecraft:village_plains", "minecraft:village_desert", "minecraft:village_savanna", "minecraft:village_snowy", "minecraft:village_taiga"]
+

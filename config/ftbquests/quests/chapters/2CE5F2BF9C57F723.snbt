@@ -1,0 +1,46 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "2CE5F2BF9C57F723"
+	group: ""
+	icon: "kubejs:gtmc"
+	id: "2CE5F2BF9C57F723"
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		description: [
+			"ULV--->凡胎/凝气"
+			"LV--->筑基"
+			"MV--->结丹"
+			"HV--->元婴"
+			"EV--->化神"
+			"IV--->婴变"
+			"LUV--->问鼎"
+			"ZPM--->窥涅"
+			"UV--->净涅"
+			"UHV--->碎涅"
+			"UEV--->空涅"
+			"UIV--->空灵"
+			"UXV--->空玄"
+			"OPV--->空劫"
+			"MAX--->踏天"
+		]
+		hide_details_until_startable: false
+		hide_text_until_complete: false
+		hide_until_deps_complete: false
+		hide_until_deps_visible: false
+		id: "2FC186AF9490F8C7"
+		progression_mode: "flexible"
+		require_sequential_tasks: true
+		subtitle: "以下是对应表"
+		tasks: [{
+			id: "159905A0A264670B"
+			title: "Greg The Wood"
+			type: "checkmark"
+		}]
+		title: "Greg Tech Wood"
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "开始"
+}

@@ -1,0 +1,265 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "4668EF3818F24EFA"
+	group: "17E9B177358C61D8"
+	icon: {
+		Count: 1
+		id: "constructionwand:infinity_wand"
+		tag: {
+			wand_options: { }
+		}
+	}
+	id: "4668EF3818F24EFA"
+	images: [
+		{
+			height: 1.0d
+			image: "gtceu:textures/gui/icon/gregtech_logo.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			height: 1.0d
+			image: "ae2:block/controller"
+			rotation: 0.0d
+			width: 1.0d
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			height: 1.0d
+			image: "gtceu:textures/gui/overlay/tool_slot_overlay.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -2.0d
+			y: 3.5d
+		}
+	]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2FC186AF9490F8C7"]
+			description: ["本章节的物品是一些你可能会用到的一些好用物品"]
+			id: "280AC2390081D162"
+			tasks: [{
+				id: "0DFB5C1F75BA8B18"
+				title: "实用物品"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["280AC2390081D162"]
+			hide_dependency_lines: true
+			id: "7CBE632E93693D41"
+			shape: "gear"
+			subtitle: "相信我,格雷离不开这个"
+			tasks: [{
+				id: "4399C5036521F65A"
+				item: "gtceu:terminal"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["280AC2390081D162"]
+			hide_dependency_lines: true
+			id: "7EF98C74A56F9866"
+			shape: "gear"
+			subtitle: "可以用来复制小机器配置"
+			tasks: [{
+				id: "2BD873EB7E460292"
+				item: "gtceu:machine_memory_card"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"280AC2390081D162"
+				"7CBE632E93693D41"
+			]
+			hide_dependency_lines: true
+			id: "04E5B84DADBDA8C4"
+			subtitle: "高级版的终端,可以做到更多事"
+			tasks: [{
+				id: "12A8CF4E5E704FA8"
+				item: "gtmthings:advanced_terminal"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["280AC2390081D162"]
+			hide_dependency_lines: true
+			id: "2B73525C1CE2B0FE"
+			shape: "gear"
+			subtitle: "一个无限容量且不限制类型的磁盘"
+			tasks: [{
+				id: "677CBD2F8181884A"
+				item: "extendedae_plus:infinity_biginteger_cell"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["280AC2390081D162"]
+			hide_dependency_lines: true
+			id: "3F7DAAE48423F147"
+			shape: "gear"
+			subtitle: "来自EAEP的无限距离且无视纬度的无线 "
+			tasks: [{
+				id: "544AEEE655461FF4"
+				item: "extendedae_plus:wireless_transceiver"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["280AC2390081D162"]
+			hide_dependency_lines: true
+			id: "6D2163A96AC78AFE"
+			shape: "gear"
+			subtitle: "一个顶多个可以节省空间"
+			tasks: [{
+				id: "083F2E263F7E1C44"
+				item: {
+					Count: 1
+					id: "ae2wtlib:wireless_universal_terminal"
+					tag: {
+						internalCurrentPower: 1600000.0d
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["280AC2390081D162"]
+			dependency_requirement: "one_completed"
+			hide_dependency_lines: true
+			id: "6BA0A4BC83D8764A"
+			shape: "gear"
+			tasks: [
+				{
+					id: "7AA81A602A636DE3"
+					item: {
+						Count: 1
+						id: "constructionwand:stone_wand"
+						tag: {
+							Damage: 0
+							wand_options: { }
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3E2230ADB59F2AB2"
+					item: {
+						Count: 1
+						id: "constructionwand:iron_wand"
+						tag: {
+							Damage: 0
+							wand_options: { }
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2C5DA72B9D567759"
+					item: {
+						Count: 1
+						id: "constructionwand:diamond_wand"
+						tag: {
+							Damage: 0
+							wand_options: { }
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "00D7E655D6907689"
+					item: {
+						Count: 1
+						id: "constructionwand:infinity_wand"
+						tag: {
+							wand_options: { }
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "建筑手杖"
+			x: -2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["280AC2390081D162"]
+			dependency_requirement: "one_completed"
+			hide_dependency_lines: true
+			id: "5ED27E15DD31F8DF"
+			shape: "gear"
+			subtitle: "很好用的建筑工具"
+			tasks: [
+				{
+					id: "4CDE3AFD24AEB512"
+					item: "buildinggadgets2:gadget_building"
+					type: "item"
+				}
+				{
+					id: "2D69CED2FBCBA1FD"
+					item: {
+						Count: 1
+						id: "buildinggadgets2:gadget_exchanging"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "3FE6C064463E3476"
+					item: {
+						Count: 1
+						id: "buildinggadgets2:gadget_cut_paste"
+						tag: {
+							pastereplace: 1b
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7D3375B5F8E53702"
+					item: "buildinggadgets2:gadget_destruction"
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["280AC2390081D162"]
+			dependency_requirement: "one_completed"
+			hide_dependency_lines: true
+			id: "43AC22B3724DE868"
+			shape: "gear"
+			subtitle: "前期存储"
+			tasks: [{
+				id: "5397031FCCF3F7D5"
+				item: "sophisticatedbackpacks:backpack"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 4.5d
+		}
+	]
+	title: "实用物品"
+}

@@ -1,0 +1,145 @@
+
+#扫地姬自动清理设置
+#用来定时清理地面掉落物、经验球和指定实体。
+#Cleaner Settings
+#Used to automatically clean ground drops, experience orbs, and selected entities.
+[cleaner]
+	# 是否启用扫地姬自动清理功能。
+	#Whether to enable the automatic cleaner feature.
+	enable = true
+	# 是否彻底禁用扫地姬。
+	#如果这里是 true，扫地姬所有清理逻辑都会停止，包括自动清理和手动清理。
+	#Whether to completely disable the cleaner.
+	#If true, all cleaner logic will stop, including automatic and manual cleaning.
+	hard_disabled = false
+	# 自动清理间隔时间，单位是秒。
+	#例如 600 就是每 10 分钟清理一次。
+	#Automatic cleaning interval, in seconds.
+	#For example, 600 means cleaning once every 10 minutes.
+	interval = 600
+	# 是否清理地面上的经验球。
+	#Whether to clean experience orbs on the ground.
+	cleanExperienceOrbs = false
+	# 是否允许普通玩家使用快捷键手动触发清理。
+	#OP 2 级玩家不受这个开关限制。
+	#Whether normal players can trigger manual cleaning with the hotkey.
+	#OP level 2 players are not limited by this option.
+	allowManualClean = true
+	# 扫地姬物品白名单。
+	#在这个列表里的物品不会被扫地姬清理。
+	#Cleaner item whitelist.
+	#Items in this list will not be cleaned by the cleaner.
+	#
+	#支持 3 种写法:
+	#Supported formats:
+	#
+	#1. 精确物品 ID:
+	#1. Exact item ID:
+	#"minecraft:diamond"
+	#
+	#2. 整个模组 ID，使用 @ 开头:
+	#2. Whole mod ID, starts with @:
+	#"@tacz"
+	#
+	#3. 物品标签，使用 # 开头:
+	#3. Item tag, starts with #:
+	#"#forge:ingots"
+	itemWhitelist = ["minecraft:ancient_debris", "@tacz", "#forge:ingots"]
+	# 是否启用非物品实体清理。
+	#开启后，会按照下面的实体 ID 列表清理指定实体。
+	#Whether to enable non-item entity cleaning.
+	#When enabled, entities in the list below will be cleaned.
+	enableEntityCleaning = false
+	# 需要被扫地姬清理的实体 ID 列表。
+	#例如箭、光灵箭、药水云、三叉戟等。
+	#Entity ID list to be cleaned by the cleaner.
+	#For example, arrows, spectral arrows, area effect clouds, tridents, etc.
+	#
+	#示例:
+	#Example:
+	#["minecraft:arrow", "minecraft:spectral_arrow", "minecraft:area_effect_cloud"]
+	entityList = ["minecraft:arrow", "minecraft:spectral_arrow"]
+
+#扫地姬保护区域设置
+#保护区域内的掉落物不会被扫地姬清理。
+#Cleaner Protected Area Settings
+#Dropped items inside protected areas will not be cleaned by the cleaner.
+[protected_areas]
+	# 是否启用扫地姬保护区域功能。
+	#Whether to enable cleaner protected areas.
+	enable = true
+	# 用来框选保护区域的工具物品 ID。
+	#默认是 minecraft:golden_hoe，也就是金锄头。
+	#你可以改成其他物品 ID，例如 minecraft:stick。
+	#Tool item ID used to select protected areas.
+	#Default is minecraft:golden_hoe, which is the golden hoe.
+	#You can change it to another item ID, such as minecraft:stick.
+	tool_item = "minecraft:golden_hoe"
+	# 每个玩家最多可以保存多少个三维方块格子。
+	#保护区域会按照整个盒子的体积来扣额度，也就是 X 长度 × Y 高度 × Z 宽度。
+	#默认 6400。
+	#说明: 如果只框选 1 格高，6400 大约等于 5x5 区块的平面范围。
+	#如果框选高度更高，就会消耗更多额度。
+	#Maximum 3D block grid quota per player.
+	#Protected areas use the full box volume as cost: X length × Y height × Z width.
+	#Default is 6400.
+	#Note: If the selected area is only 1 block tall, 6400 is roughly equal to a 5x5 chunk flat area.
+	#Taller selections will cost more quota.
+	max_grid_count_per_player = 6400
+	# 框选保护区域时，视线可以选中多远的方块，单位是格。
+	#默认 32，意思是玩家看向 32 格以内的方块都可以选中。
+	#Ray trace distance used when selecting protected areas, in blocks.
+	#Default is 32, meaning blocks within 32 blocks in the player's view can be selected.
+	ray_trace_distance = 32.0
+
+#垃圾桶设置
+#垃圾桶会暂存被扫地姬清理掉的物品，防止重要物品被误删。
+#Trash Bin Settings
+#The trash bin temporarily stores items cleaned by the cleaner to prevent important items from being lost.
+[trash_bin]
+	# 是否启用垃圾桶功能。
+	#关闭后，被扫地姬清理的物品不会进入垃圾桶。
+	#Whether to enable the trash bin.
+	#If disabled, items cleaned by the cleaner will not enter the trash bin.
+	enable = true
+	# 垃圾桶容量，单位是行。
+	#每行有 9 个槽位。
+	#Trash bin capacity, in rows.
+	#Each row has 9 slots.
+	rows = 28
+	# 垃圾桶保存几次历史清理记录。
+	#建议设置为 3 到 5。
+	#Number of cleanup history records stored in the trash bin.
+	#Recommended value is 3 to 5.
+	history_count = 3
+	# 垃圾桶黑名单。
+	#在这个列表里的物品被清理后会直接销毁，不会进入垃圾桶。
+	#Trash bin blacklist.
+	#Items in this list will be destroyed directly after cleaning and will not enter the trash bin.
+	#
+	#提示:
+	#如果圆石、泥土、树叶这类垃圾太多，可以加入这里，避免垃圾桶爆满。
+	#Tip:
+	#If items like cobblestone, dirt, or leaves are too common, add them here to prevent the trash bin from filling up.
+	#
+	#支持的写法和扫地姬物品白名单一样。
+	#The supported formats are the same as the cleaner item whitelist.
+	#
+	#示例:
+	#Example:
+	#["minecraft:cobblestone", "minecraft:dirt", "#minecraft:leaves"]
+	blacklist = []
+	# 是否在玩家背包界面显示垃圾桶按钮。
+	#Whether to show the trash bin button in the player inventory screen.
+	show_button = true
+	# 垃圾桶按钮的 X 轴位置偏移。
+	#数值越大，按钮越靠右。
+	#X offset of the trash bin button.
+	#Higher values move the button to the right.
+	button_x = 148
+	# 垃圾桶按钮的 Y 轴位置偏移。
+	#数值越大，按钮越靠下。
+	#Y offset of the trash bin button.
+	#Higher values move the button downward.
+	button_y = 61
+

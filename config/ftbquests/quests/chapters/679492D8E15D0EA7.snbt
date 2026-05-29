@@ -1,0 +1,57 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "679492D8E15D0EA7"
+	group: "64426895FE9D2AAA"
+	icon: "gtceu:uxv_electric_motor"
+	id: "679492D8E15D0EA7"
+	order_index: 12
+	quest_links: [ ]
+	quests: [
+		{
+			id: "68B56A7E629CD71B"
+			tasks: [{
+				id: "5C7C3090956BFDC0"
+				item: "gtceu:opv_machine_hull"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["55BC4C375D5337B7"]
+			id: "6400AE41CB4A98E0"
+			tasks: [
+				{
+					id: "232FB15C77AFD81A"
+					item: "gtceu:uxv_electric_motor"
+					type: "item"
+				}
+				{
+					id: "0E14C1294A518505"
+					item: "gtceu:uxv_electric_pump"
+					type: "item"
+				}
+				{
+					id: "13AE63DF3B5ABC31"
+					item: "gtceu:uxv_conveyor_module"
+					type: "item"
+				}
+				{
+					id: "18D54FBA3C925713"
+					item: "gtceu:uxv_electric_piston"
+					type: "item"
+				}
+				{
+					id: "12F155A2C33C3343"
+					item: "gtceu:uxv_robot_arm"
+					type: "item"
+				}
+			]
+			title: "空玄阶段"
+			x: 1.0d
+			y: 1.0d
+		}
+	]
+	title: "空玄"
+}

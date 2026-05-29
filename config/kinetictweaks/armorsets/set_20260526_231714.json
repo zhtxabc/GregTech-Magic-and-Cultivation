@@ -1,0 +1,48 @@
+{
+  "displayName": "硬豆腐套装",
+  "equipment": {
+    "head": {
+      "id": "tofucraft:tofu_solid_helmet",
+      "nbtTag": "{Damage:0}"
+    },
+    "feet": {
+      "id": "tofucraft:tofu_solid_boots",
+      "nbtTag": "{Damage:0}"
+    },
+    "chest": {
+      "id": "tofucraft:tofu_solid_chestplate",
+      "nbtTag": "{Damage:0}"
+    },
+    "legs": {
+      "id": "tofucraft:tofu_solid_leggings",
+      "nbtTag": "{Damage:0}"
+    }
+  },
+  "attributes": [
+    {
+      "attribute": "minecraft:generic.max_health",
+      "uuid": "c242c80b-5faa-497b-bedb-9ad033b10fe7",
+      "amount": 30.0,
+      "operation": "SET",
+      "conditions": [
+        {
+          "type": "DIMENSION",
+          "invert": false,
+          "params": {
+            "id": "tofucraft:tofu_world"
+          }
+        }
+      ],
+      "conditionMatchMode": "ANY",
+      "conditionMinCount": 1
+    }
+  ],
+  "allowFlight": false,
+  "playerOnly": true,
+  "tips": [
+    "设定 最大生命值 为 §e30 §f(需满足其一: §b§3指定维度: §btofu\n  §bcraft:tofu_world§f)"
+  ],
+  "tipKey": "shift",
+  "flightConditionMatchMode": "ANY",
+  "flightConditionMinCount": 1
+}

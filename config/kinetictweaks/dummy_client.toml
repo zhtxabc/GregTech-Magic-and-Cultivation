@@ -1,0 +1,98 @@
+
+[PeacockParticles]
+	#是否显示生物受伤时的浮动伤害数字。
+	#Whether to show floating damage numbers when mobs take damage.
+	showDamageParticles = true
+	#伤害数字粒子的整体缩放比例。
+	#Overall scale multiplier for damage number particles.
+	#Range: 0.1 ~ 5.0
+	scale = 1.0
+	#伤害数字粒子的随机散布范围（防止数字重叠）。
+	#Random spread range for damage particles (prevents overlapping).
+	#Range: 0.0 ~ 1.0
+	spread = 0.15
+	#普通伤害数字的颜色 (十六进制 ARGB)。
+	#Color for normal damage numbers (Hex ARGB format).
+	#Range: 0 ~ 16777215
+	colorNormal = 16738740
+	#暴击伤害数字的颜色 (十六进制 ARGB)。
+	#Color for critical hit damage numbers (Hex ARGB format).
+	#Range: 0 ~ 16777215
+	colorCrit = 16733525
+	#是否显示仆从造成的伤害数字 (仅主人可见)。
+	#Whether to show damage numbers dealt by minions (Only visible to owner).
+	showMinionDamage = true
+	#仆从伤害数字的颜色 (十六进制 ARGB)。
+	#Color for minion damage numbers (Hex ARGB format).
+	#Range: 0 ~ 16777215
+	colorMinion = 5635925
+
+[OverheadHUD]
+	#是否在实体头顶显示伤害来源（如玩家ID）。
+	#Whether to display the damage source above the entity.
+	showSource = true
+	#是否在实体头顶显示伤害类型（如暴击/火焰）。
+	#Whether to display the damage type above the entity.
+	showType = true
+	#是否在实体头顶显示平均每秒伤害(DPS)。
+	#Whether to display the average DPS above the entity.
+	showAvgDps = true
+	#头顶文字信息的整体缩放比例。
+	#Overall scale multiplier for the overhead text information.
+	#Range: 0.1 ~ 5.0
+	scale = 1.0
+	#头顶文字相对于实体头部的垂直高度偏移量。
+	#Vertical height offset for the overhead text.
+	#Range: 0.0 ~ 10.0
+	offset = 0.5
+	#伤害来源文字的颜色。
+	#Color for the damage source text.
+	#Range: 0 ~ 16777215
+	colorSource = 12320767
+	#伤害类型文字的颜色。
+	#Color for the damage type text.
+	#Range: 0 ~ 16777215
+	colorType = 16777045
+	#统计数值文字的颜色。
+	#Color for the statistical value text.
+	#Range: 0 ~ 16777215
+	colorStats = 5635925
+	#DPS文字的颜色。
+	#Color for the DPS text.
+	#Range: 0 ~ 16777215
+	colorDps = 43690
+
+[DeathSummaryHUD]
+	#是否启用怪物/假人死亡后的战斗结算界面。
+	#Whether to enable the combat summary HUD after entity death.
+	enable = true
+	#是否在结算界面中显示击杀目标的名称。
+	#Whether to display the killed target's name in the summary.
+	showKill = true
+	#是否在结算界面中显示详细伤害统计（总伤害/连击数）。
+	#Whether to display detailed damage stats (total damage/hits).
+	showStats = true
+	#是否在结算界面中显示战斗持续时间。
+	#Whether to display the combat duration in the summary.
+	showTime = true
+	#结算界面在屏幕上的停留时间（单位：游戏刻/ticks）。
+	#Duration the summary stays on screen (in game ticks).
+	#Range: 20 ~ 600
+	durationTicks = 100
+	#结算界面文字的整体缩放比例。
+	#Overall scale multiplier for the summary HUD.
+	#Range: 0.1 ~ 5.0
+	scale = 1.0
+	#结算界面标题的颜色。
+	#Color for the summary title text.
+	#Range: 0 ~ 16777215
+	colorTitle = 16755200
+	#结算界面统计数值的颜色。
+	#Color for the summary statistics text.
+	#Range: 0 ~ 16777215
+	colorStats = 5635925
+	#结算界面时间文字的颜色。
+	#Color for the summary time text.
+	#Range: 0 ~ 16777215
+	colorTime = 5636095
+

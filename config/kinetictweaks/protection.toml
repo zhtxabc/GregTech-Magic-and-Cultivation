@@ -1,0 +1,46 @@
+
+#掉落物保护设置
+#Item Protection Settings
+#自定义掉落物的物理属性和无敌属性
+#Customize physics and invulnerability of dropped items.
+[indestructible]
+	# 是否启用掉落物保护功能
+	#Whether to enable item protection functionality
+	enable = false
+	# 是否开启虚空救援功能
+	#Whether to enable void salvage functionality
+	#开启后，受保护的物品掉进虚空会尝试传送到最近的地面
+	#When enabled, protected items falling into void will teleport to nearest ground.
+	void_salvage = true
+	# 受保护的物品列表
+	#List of protected items
+	#格式："标识符;防火;防爆;发光;无重力"
+	#Format: "Identifier;FireImmune;ExplosionImmune;Glowing;NoGravity"
+	#标识符支持：ID (minecraft:apple), 标签 (#minecraft:logs), 模组 (@create)
+	#Identifier supports: ID, Tags, or ModIDs.
+	items = ["minecraft:nether_star;true;true;true;true", "minecraft:dragon_egg;true;true;true;true", "minecraft:totem_of_undying;true;true;false;false", "#minecraft:beacons;true;true;true;true"]
+	# 是否启用所有掉落物通用伤害类型免疫
+	#Whether to enable global damage type immunity for all dropped items
+	#开启后，下面列表里的伤害类型会对任何掉落物无效
+	#When enabled, damage types listed below will not hurt any dropped item.
+	global_damage_immunity_enable = true
+	# 所有掉落物通用免疫伤害类型列表
+	#Global damage type immunity list for all dropped items
+	#支持单个伤害ID，例如：minecraft:lava、minecraft:player_attack
+	#Supports single damage IDs, such as minecraft:lava, minecraft:player_attack
+	#支持伤害标签，前面加 #，例如：#minecraft:is_fire、#minecraft:is_explosion
+	#Supports damage tags, add # before the tag, such as #minecraft:is_fire, #minecraft:is_explosion.
+	global_damage_immunity_sources = ["#minecraft:is_fire", "minecraft:lava", "minecraft:in_fire", "minecraft:on_fire"]
+	# 是否启用所有掉落物通用直接伤害实体免疫
+	#Whether to enable global direct damage entity immunity for all dropped items
+	#开启后，下面列表里的实体直接造成伤害时，任何掉落物都会免疫
+	#When enabled, dropped items will ignore damage directly caused by listed entities.
+	global_direct_entity_immunity_enable = true
+	# 所有掉落物通用免疫直接伤害实体列表
+	#Global direct damage entity immunity list for all dropped items
+	#支持单个实体ID，例如：tacz:bullet
+	#Supports single entity IDs, such as tacz:bullet
+	#支持实体标签，前面加 #，例如：#forge:bullets
+	#Supports entity tags, add # before the tag, such as #forge:bullets.
+	global_direct_entity_immunity_sources = ["tacz:bullet"]
+
