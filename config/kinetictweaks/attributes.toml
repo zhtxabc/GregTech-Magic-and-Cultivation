@@ -1,0 +1,629 @@
+
+#在此配置文件中，你可以修改游戏中所有限制范围属性的最小值(min)和最大值(max)。
+#[!] 警告：如需让某项修改生效，请务必将该项的 'enabled' 改为 true ！！！
+#[!] 支持写入负数或缩小最大值。为避免出错，建议写带小数点的格式（例如 1.0 而不是 1）。
+#Function Description:
+#Modify the min/max limits of all attributes here.
+#[!] Make sure to set 'enabled = true' for your target attribute!
+[_GLOBAL_SETTINGS]
+	#是否启用自动注册表扫描。
+	#开启后：自动发现新属性、删除已失效的旧属性(如卸载模组)、刷新中文翻译注释。
+	#关闭后：完全停止对该文件的自动增删改，仅读取里面的数值并生效，保护你的自定义配置布局。
+	#Whether to enable automatic registry scanning.
+	#If enabled, it discovers new attributes, deletes obsolete ones, and updates comments.
+	#If disabled, the file becomes effectively 'read-only' for the mod, preserving your manual layout.
+	enable_auto_registry_scan = true
+
+# 方块范围
+# 原始范围 / Original Range: [2, 1024]
+# 默认数值 / Default Value: 4.5
+["forge:block_reach"]
+	enabled = true
+	min = 2.0
+	max = 1024.0
+
+# 实体重力
+# 原始范围 / Original Range: [-8, 8]
+# 默认数值 / Default Value: 0.08
+["forge:entity_gravity"]
+	enabled = false
+	min = -8.0
+	max = 8.0
+
+# 实体范围
+# 原始范围 / Original Range: [0, 1024]
+# 默认数值 / Default Value: 3
+["forge:entity_reach"]
+	enabled = false
+	min = 0.0
+	max = 1024.0
+
+# 玩家名称渲染距离
+# 原始范围 / Original Range: [0, 64]
+# 默认数值 / Default Value: 64
+["forge:nametag_distance"]
+	enabled = false
+	min = 0.0
+	max = 64.0
+
+# 台阶高度
+# 原始范围 / Original Range: [-512, 512]
+# 默认数值 / Default Value: 0
+["forge:step_height_addition"]
+	enabled = false
+	min = -512.0
+	max = 512.0
+
+# 游泳速度
+# 原始范围 / Original Range: [0, 1024]
+# 默认数值 / Default Value: 1
+["forge:swim_speed"]
+	enabled = false
+	min = 0.0
+	max = 1024.0
+
+# 原始范围 / Original Range: [-MAX, MAX]
+# 默认数值 / Default Value: 0
+["ftbultimine:cooldown_modifier"]
+	enabled = false
+	min = -1.7976931348623157E308
+	max = 1.7976931348623157E308
+
+# 原始范围 / Original Range: [-MAX, MAX]
+# 默认数值 / Default Value: 0
+["ftbultimine:exhaustion_modifier"]
+	enabled = false
+	min = -1.7976931348623157E308
+	max = 1.7976931348623157E308
+
+# 原始范围 / Original Range: [-MAX, MAX]
+# 默认数值 / Default Value: 0
+["ftbultimine:experience_modifier"]
+	enabled = false
+	min = -1.7976931348623157E308
+	max = 1.7976931348623157E308
+
+# 原始范围 / Original Range: [-MAX, MAX]
+# 默认数值 / Default Value: 0
+["ftbultimine:max_blocks_modifier"]
+	enabled = false
+	min = -1.7976931348623157E308
+	max = 1.7976931348623157E308
+
+# 护甲值
+# 原始范围 / Original Range: [0, 100000000]
+# 默认数值 / Default Value: 0
+["minecraft:generic.armor"]
+	enabled = true
+	min = 0.0
+	max = 1.0E8
+
+# 盔甲韧性
+# 原始范围 / Original Range: [0, 100000000]
+# 默认数值 / Default Value: 0
+["minecraft:generic.armor_toughness"]
+	enabled = true
+	min = 0.0
+	max = 1.0E8
+
+# 攻击伤害
+# 原始范围 / Original Range: [0, 1000000000]
+# 默认数值 / Default Value: 2
+["minecraft:generic.attack_damage"]
+	enabled = true
+	min = 0.0
+	max = 1.0E9
+
+# 击退
+# 原始范围 / Original Range: [0, 5]
+# 默认数值 / Default Value: 0
+["minecraft:generic.attack_knockback"]
+	enabled = false
+	min = 0.0
+	max = 5.0
+
+# 攻击速度
+# 原始范围 / Original Range: [0, 1024]
+# 默认数值 / Default Value: 4
+["minecraft:generic.attack_speed"]
+	enabled = true
+	min = 0.0
+	max = 1024.0
+
+# 飞行速度
+# 原始范围 / Original Range: [0, 1024]
+# 默认数值 / Default Value: 0.4000000059604645
+["minecraft:generic.flying_speed"]
+	enabled = true
+	min = 0.0
+	max = 1024.0
+
+# 生物跟随距离
+# 原始范围 / Original Range: [0, 2048]
+# 默认数值 / Default Value: 32
+["minecraft:generic.follow_range"]
+	enabled = true
+	min = 0.0
+	max = 2048.0
+
+# 击退抗性
+# 原始范围 / Original Range: [0, 1]
+# 默认数值 / Default Value: 0
+["minecraft:generic.knockback_resistance"]
+	enabled = true
+	min = 0.0
+	max = 1.0
+
+# 幸运值
+# 原始范围 / Original Range: [-1024, 1024]
+# 默认数值 / Default Value: 0
+["minecraft:generic.luck"]
+	enabled = true
+	min = -1024.0
+	max = 1024.0
+
+# 最大生命值
+# 原始范围 / Original Range: [0, 1000000000]
+# 默认数值 / Default Value: 20
+["minecraft:generic.max_health"]
+	enabled = true
+	min = 0.0
+	max = 1.0E9
+
+# 速度
+# 原始范围 / Original Range: [0, 1024]
+# 默认数值 / Default Value: 0.699999988079071
+["minecraft:generic.movement_speed"]
+	enabled = true
+	min = 0.0
+	max = 1024.0
+
+# 马匹跳跃能力
+# 原始范围 / Original Range: [0, 2]
+# 默认数值 / Default Value: 0.7
+["minecraft:horse.jump_strength"]
+	enabled = true
+	min = 0.0
+	max = 2.0
+
+# 僵尸增援
+# 原始范围 / Original Range: [0, 1]
+# 默认数值 / Default Value: 0
+["minecraft:zombie.spawn_reinforcements"]
+	enabled = true
+	min = 0.0
+	max = 1.0
+
+# 原始范围 / Original Range: [0, 1]
+# 默认数值 / Default Value: 0
+["ars_nouveau:ars_nouveau.perk.feather"]
+	enabled = false
+	min = 0.0
+	max = 1.0
+
+# 魔源再生
+# 原始范围 / Original Range: [0, 2000]
+# 默认数值 / Default Value: 0
+["ars_nouveau:ars_nouveau.perk.mana_regen"]
+	enabled = false
+	min = 0.0
+	max = 2000.0
+
+# 最大魔源
+# 原始范围 / Original Range: [0, 10000]
+# 默认数值 / Default Value: 0
+["ars_nouveau:ars_nouveau.perk.max_mana"]
+	enabled = false
+	min = 0.0
+	max = 10000.0
+
+# 额外饱和
+# 原始范围 / Original Range: [0, 10000]
+# 默认数值 / Default Value: 1
+["ars_nouveau:ars_nouveau.perk.saturation"]
+	enabled = false
+	min = 0.0
+	max = 10000.0
+
+# 法术强度
+# 原始范围 / Original Range: [0, 10000]
+# 默认数值 / Default Value: 0
+["ars_nouveau:ars_nouveau.perk.spell_damage"]
+	enabled = false
+	min = 0.0
+	max = 10000.0
+
+# 守护
+# 原始范围 / Original Range: [0, 1024]
+# 默认数值 / Default Value: 0
+["ars_nouveau:ars_nouveau.perk.warding"]
+	enabled = false
+	min = 0.0
+	max = 1024.0
+
+# 药水时长
+# 原始范围 / Original Range: [0, 1024]
+# 默认数值 / Default Value: 1
+["ars_nouveau:ars_nouveau.perk.wixie"]
+	enabled = false
+	min = 0.0
+	max = 1024.0
+
+# 小精灵生成几率
+# 原始范围 / Original Range: [0, 1]
+# 默认数值 / Default Value: 0
+["botania:pixie_spawn_chance"]
+	enabled = false
+	min = 0.0
+	max = 1.0
+
+# 鞘翅飞行
+# 原始范围 / Original Range: [0, 1]
+# 默认数值 / Default Value: 0.1
+["caelus:fall_flying"]
+	enabled = false
+	min = 0.0
+	max = 1.0
+
+# 深渊折扣
+# 原始范围 / Original Range: [-1, 1]
+# 默认数值 / Default Value: 0
+["goety:abyss_discount"]
+	enabled = false
+	min = -1.0
+	max = 1.0
+
+# 深渊法术强效
+# 原始范围 / Original Range: [0, 2048]
+# 默认数值 / Default Value: 0
+["goety:abyss_potency"]
+	enabled = false
+	min = 0.0
+	max = 2048.0
+
+# 巫法施法速度
+# 原始范围 / Original Range: [-1, 1]
+# 默认数值 / Default Value: 0
+["goety:casting_speed"]
+	enabled = false
+	min = -1.0
+	max = 1.0
+
+# 冷却缩减
+# 原始范围 / Original Range: [-1, 1]
+# 默认数值 / Default Value: 0
+["goety:cooldown_discount"]
+	enabled = false
+	min = -1.0
+	max = 1.0
+
+# 冰霜折扣
+# 原始范围 / Original Range: [-1, 1]
+# 默认数值 / Default Value: 0
+["goety:frost_discount"]
+	enabled = false
+	min = -1.0
+	max = 1.0
+
+# 冰霜法术强效
+# 原始范围 / Original Range: [0, 2048]
+# 默认数值 / Default Value: 0
+["goety:frost_potency"]
+	enabled = false
+	min = 0.0
+	max = 2048.0
+
+# 地术折扣
+# 原始范围 / Original Range: [-1, 1]
+# 默认数值 / Default Value: 0
+["goety:geomancy_discount"]
+	enabled = false
+	min = -1.0
+	max = 1.0
+
+# 占卜法术强效
+# 原始范围 / Original Range: [0, 2048]
+# 默认数值 / Default Value: 0
+["goety:geomancy_potency"]
+	enabled = false
+	min = 0.0
+	max = 2048.0
+
+# 死灵折扣
+# 原始范围 / Original Range: [-1, 1]
+# 默认数值 / Default Value: 0
+["goety:necromancy_discount"]
+	enabled = false
+	min = -1.0
+	max = 1.0
+
+# 死灵法术强效
+# 原始范围 / Original Range: [0, 2048]
+# 默认数值 / Default Value: 0
+["goety:necromancy_potency"]
+	enabled = false
+	min = 0.0
+	max = 2048.0
+
+# 下界折扣
+# 原始范围 / Original Range: [-1, 1]
+# 默认数值 / Default Value: 0
+["goety:nether_discount"]
+	enabled = false
+	min = -1.0
+	max = 1.0
+
+# 下界法术强效
+# 原始范围 / Original Range: [0, 2048]
+# 默认数值 / Default Value: 0
+["goety:nether_potency"]
+	enabled = false
+	min = 0.0
+	max = 2048.0
+
+# 灵魂缩减
+# 原始范围 / Original Range: [-1, 1]
+# 默认数值 / Default Value: 0
+["goety:soul_discount"]
+	enabled = false
+	min = -1.0
+	max = 1.0
+
+# 巫法法术燃烧
+# 原始范围 / Original Range: [0, 2048]
+# 默认数值 / Default Value: 0
+["goety:spell_burning"]
+	enabled = false
+	min = 0.0
+	max = 2048.0
+
+# 巫法持续时间
+# 原始范围 / Original Range: [0, 2048]
+# 默认数值 / Default Value: 0
+["goety:spell_duration"]
+	enabled = false
+	min = 0.0
+	max = 2048.0
+
+# 巫法法术强效
+# 原始范围 / Original Range: [0, 2048]
+# 默认数值 / Default Value: 0
+["goety:spell_potency"]
+	enabled = false
+	min = 0.0
+	max = 2048.0
+
+# 巫法法术半径
+# 原始范围 / Original Range: [0, 2048]
+# 默认数值 / Default Value: 0
+["goety:spell_radius"]
+	enabled = false
+	min = 0.0
+	max = 2048.0
+
+# 巫法法术范围
+# 原始范围 / Original Range: [0, 2048]
+# 默认数值 / Default Value: 0
+["goety:spell_range"]
+	enabled = false
+	min = 0.0
+	max = 2048.0
+
+# 巫法法术弹射物速度
+# 原始范围 / Original Range: [0, 2048]
+# 默认数值 / Default Value: 0
+["goety:spell_velocity"]
+	enabled = false
+	min = 0.0
+	max = 2048.0
+
+# 风暴折扣
+# 原始范围 / Original Range: [-1, 1]
+# 默认数值 / Default Value: 0
+["goety:storm_discount"]
+	enabled = false
+	min = -1.0
+	max = 1.0
+
+# 风暴法术强效
+# 原始范围 / Original Range: [0, 2048]
+# 默认数值 / Default Value: 0
+["goety:storm_potency"]
+	enabled = false
+	min = 0.0
+	max = 2048.0
+
+# 虚空折扣
+# 原始范围 / Original Range: [-1, 1]
+# 默认数值 / Default Value: 0
+["goety:void_discount"]
+	enabled = false
+	min = -1.0
+	max = 1.0
+
+# 虚空法术强效
+# 原始范围 / Original Range: [0, 2048]
+# 默认数值 / Default Value: 0
+["goety:void_potency"]
+	enabled = false
+	min = 0.0
+	max = 2048.0
+
+# 荒野折扣
+# 原始范围 / Original Range: [-1, 1]
+# 默认数值 / Default Value: 0
+["goety:wild_discount"]
+	enabled = false
+	min = -1.0
+	max = 1.0
+
+# 荒野法术强效
+# 原始范围 / Original Range: [0, 2048]
+# 默认数值 / Default Value: 0
+["goety:wild_potency"]
+	enabled = false
+	min = 0.0
+	max = 2048.0
+
+# 风之折扣
+# 原始范围 / Original Range: [-1, 1]
+# 默认数值 / Default Value: 0
+["goety:wind_discount"]
+	enabled = false
+	min = -1.0
+	max = 1.0
+
+# 烈风法术强效
+# 原始范围 / Original Range: [0, 2048]
+# 默认数值 / Default Value: 0
+["goety:wind_potency"]
+	enabled = false
+	min = 0.0
+	max = 2048.0
+
+# 原始范围 / Original Range: [0, 2048]
+# 默认数值 / Default Value: 0
+["lodestone:magic_damage"]
+	enabled = false
+	min = 0.0
+	max = 2048.0
+
+# 原始范围 / Original Range: [0, 2048]
+# 默认数值 / Default Value: 1
+["lodestone:magic_proficiency"]
+	enabled = false
+	min = 0.0
+	max = 2048.0
+
+# 原始范围 / Original Range: [1, 2048]
+# 默认数值 / Default Value: 1
+["lodestone:magic_resistance"]
+	enabled = false
+	min = 1.0
+	max = 2048.0
+
+# 奥术共振
+# 原始范围 / Original Range: [0, 2048]
+# 默认数值 / Default Value: 1
+["malum:arcane_resonance"]
+	enabled = false
+	min = 0.0
+	max = 2048.0
+
+# 恶念转化
+# 原始范围 / Original Range: [0, 1]
+# 默认数值 / Default Value: 0
+["malum:malignant_conversion"]
+	enabled = false
+	min = 0.0
+	max = 1.0
+
+# 法杖暂存弹数
+# 原始范围 / Original Range: [0, 2048]
+# 默认数值 / Default Value: 0
+["malum:reserve_staff_charges"]
+	enabled = false
+	min = 0.0
+	max = 2048.0
+
+# 镰刀熟练度
+# 原始范围 / Original Range: [0, 2048]
+# 默认数值 / Default Value: 1
+["malum:scythe_proficiency"]
+	enabled = false
+	min = 0.0
+	max = 2048.0
+
+# 灵魂护盾容量
+# 原始范围 / Original Range: [0, 2048]
+# 默认数值 / Default Value: 0
+["malum:soul_ward_capacity"]
+	enabled = false
+	min = 0.0
+	max = 2048.0
+
+# 灵魂护盾稳固度
+# 原始范围 / Original Range: [0, 2048]
+# 默认数值 / Default Value: 1
+["malum:soul_ward_integrity"]
+	enabled = false
+	min = 0.0
+	max = 2048.0
+
+# 灵魂护盾恢复速率
+# 原始范围 / Original Range: [0, 2048]
+# 默认数值 / Default Value: 1
+["malum:soul_ward_recovery_rate"]
+	enabled = false
+	min = 0.0
+	max = 2048.0
+
+# 精魂掠夺
+# 原始范围 / Original Range: [0, 2048]
+# 默认数值 / Default Value: 0
+["malum:spirit_spoils"]
+	enabled = false
+	min = 0.0
+	max = 2048.0
+
+# 爆炸次数
+# 原始范围 / Original Range: [0, 9999]
+# 默认数值 / Default Value: 0
+["ice_and_fire_delight:number_of_explosions"]
+	enabled = false
+	min = 0.0
+	max = 9999.0
+
+# 原始范围 / Original Range: [0, 100]
+# 默认数值 / Default Value: 0
+["fluffy_fur:camera_distance_amplifier"]
+	enabled = false
+	min = 0.0
+	max = 100.0
+
+# 原始范围 / Original Range: [-100, 100]
+# 默认数值 / Default Value: 0
+["fluffy_fur:jump_height_amplifier"]
+	enabled = false
+	min = -100.0
+	max = 100.0
+
+# 原始范围 / Original Range: [0.10000000149011612, 5]
+# 默认数值 / Default Value: 1
+["fluffy_fur:size_scale"]
+	enabled = false
+	min = 0.10000000149011612
+	max = 5.0
+
+# 奥术伤害
+# 原始范围 / Original Range: [0, 1000]
+# 默认数值 / Default Value: 0
+["wizards_reborn:arcane_damage"]
+	enabled = false
+	min = 0.0
+	max = 1000.0
+
+# 魔法抗性
+# 原始范围 / Original Range: [0, 100]
+# 默认数值 / Default Value: 0
+["wizards_reborn:magic_armor"]
+	enabled = false
+	min = 0.0
+	max = 100.0
+
+# 魔法修正
+# 原始范围 / Original Range: [0, 100]
+# 默认数值 / Default Value: 0
+["wizards_reborn:magic_modifier"]
+	enabled = false
+	min = 0.0
+	max = 100.0
+
+# 秘蕴减免
+# 原始范围 / Original Range: [0, 75]
+# 默认数值 / Default Value: 0
+["wizards_reborn:wissen_discount"]
+	enabled = false
+	min = 0.0
+	max = 75.0
+

@@ -1,0 +1,221 @@
+
+[general]
+	#When the next EMC mapping occurs write the results to config/ProjectE/pregenerated_emc.json and only ever run the mapping again when that file does not exist, this setting is set to false, or an error occurred parsing that file.
+	pregenerate = false
+	#Want to take a look at the internals of EMC Calculation? Enable this to write all the conversions and setValue-Commands to config/ProjectE/mappingdump.json
+	dumpEverythingToFile = false
+	#Log known EMC Exploits. This can not and will not find all possible exploits. This will only find exploits that result in fixed/custom emc values that the algorithm did not overwrite. Exploits that derive from conversions that are unknown to ProjectE will not be found.
+	logEMCExploits = true
+
+[CraftingMapper]
+
+	[CraftingMapper.ElementalCraftBindingMapper]
+		#ProjectE-Integration Recipe Mapper for Elemental Craft Binding Mapper. Required Mods: [elementalcraft]
+		enabled = true
+
+	[CraftingMapper.BotaniaElvenTradeMapper]
+		#ProjectE-Integration Recipe Mapper for Botania Elven Trade Mapper. Required Mods: [botania]
+		enabled = true
+
+	[CraftingMapper.EvilCraftEnvironmentalAccumulatorMapper]
+		#ProjectE-Integration Recipe Mapper for Evil Craft Environmental Accumulator Mapper. Required Mods: [evilcraft]
+		enabled = true
+
+	[CraftingMapper.MysticalAgricultureInfusionMapper]
+		#ProjectE-Integration Recipe Mapper for Mystical Agriculture Infusion Mapper. Required Mods: [mysticalagriculture]
+		enabled = true
+
+	[CraftingMapper.ElementalCraftGrindingMapper]
+		#ProjectE-Integration Recipe Mapper for Elemental Craft Grinding Mapper. Required Mods: [elementalcraft]
+		enabled = true
+
+	[CraftingMapper.BotaniaTerraPlateMapper]
+		#ProjectE-Integration Recipe Mapper for Botania Terra Plate Mapper. Required Mods: [botania]
+		enabled = true
+
+	[CraftingMapper.IceAndFireDragonForgeMapper]
+		#Recipe mapper for Ice and Fire DragonForge recipes
+		enabled = true
+
+	[CraftingMapper.NaturesAuraAltarMapper]
+		#ProjectE-Integration Recipe Mapper for Natures Aura Altar Mapper. Required Mods: [naturesaura]
+		enabled = true
+
+	[CraftingMapper.OccultismRitualMapper]
+		#ProjectE-Integration Recipe Mapper for Occultism Ritual Mapper. Required Mods: [occultism]
+		enabled = true
+
+	[CraftingMapper.ElementalCraftSpellCraftMapper]
+		#ProjectE-Integration Recipe Mapper for Elemental Craft Spell Craft Mapper. Required Mods: [elementalcraft]
+		enabled = true
+
+	[CraftingMapper.BotaniaPureDaisyMapper]
+		#ProjectE-Integration Recipe Mapper for Botania Pure Daisy Mapper. Required Mods: [botania]
+		enabled = true
+
+	[CraftingMapper.ElementalCraftCrystallizationMapper]
+		#ProjectE-Integration Recipe Mapper for Elemental Craft Crystallization Mapper. Required Mods: [elementalcraft] NOTE: Skips all recipes with more than one output chance
+		enabled = true
+
+	[CraftingMapper.BloodMagicTartaricForgeMapper]
+		#ProjectE-Integration Recipe Mapper for Blood Magic Tartaric Forge Mapper. Required Mods: [bloodmagic]
+		enabled = true
+
+	[CraftingMapper.ArsNouveauGlyphMapper]
+		#ProjectE-Integration Recipe Mapper for Ars Nouveau Glyph Mapper. Required Mods: [ars_nouveau]
+		enabled = true
+
+	[CraftingMapper.BloodMagicAlchemyArrayMapper]
+		#ProjectE-Integration Recipe Mapper for Blood Magic Alchemy Array Mapper. Required Mods: [bloodmagic]
+		enabled = true
+
+	[CraftingMapper.Smithing]
+		#Maps smithing recipes.
+		enabled = true
+
+	[CraftingMapper.OccultismCrushingMapper]
+		#ProjectE-Integration Recipe Mapper for Occultism Crushing Mapper. Required Mods: [occultism]
+		enabled = true
+
+	[CraftingMapper.NaturesAuraTreeRitualMapper]
+		#ProjectE-Integration Recipe Mapper for Natures Aura Tree Ritual Mapper. Required Mods: [naturesaura]
+		enabled = true
+
+	[CraftingMapper.FallbackRecipeType]
+		#Fallback for default handling of recipes that extend ICraftingRecipe, AbstractCookingRecipe, SingleItemRecipe, or SmithingRecipe. This will catch modded extensions of the vanilla recipe classes, and if the VanillaRecipeTypes mapper is disabled, this mapper will still catch the vanilla recipes.
+		enabled = true
+
+	[CraftingMapper.BotaniaManaInfusionMapper]
+		#ProjectE-Integration Recipe Mapper for Botania Mana Infusion Mapper. Required Mods: [botania]
+		enabled = true
+
+	[CraftingMapper.VanillaRecipeTypes]
+		#Maps the different vanilla recipe types.
+		enabled = true
+
+	[CraftingMapper.BloodMagicAlchemyTableMapper]
+		#ProjectE-Integration Recipe Mapper for Blood Magic Alchemy Table Mapper. Required Mods: [bloodmagic]
+		enabled = true
+
+	[CraftingMapper.ElementalCraftSawingMapper]
+		#ProjectE-Integration Recipe Mapper for Elemental Craft Sawing Mapper. Required Mods: [elementalcraft]
+		enabled = true
+
+	[CraftingMapper."Avaritia Compressor"]
+		#Maps avaritia recipes.
+		enabled = true
+
+	[CraftingMapper."Avaritia Extreme"]
+		#Maps avaritia recipes.
+		enabled = true
+
+	[CraftingMapper.MysticalAgricultureReprocessorMapper]
+		#ProjectE-Integration Recipe Mapper for Mystical Agriculture Reprocessor Mapper. Required Mods: [mysticalagriculture]
+		enabled = true
+
+	[CraftingMapper.ArsNouveauCrushMapper]
+		#ProjectE-Integration Recipe Mapper for Ars Nouveau Crush Mapper. Required Mods: [ars_nouveau]
+		enabled = true
+
+	[CraftingMapper.DraconicEvolutionFusionMapper]
+		#ProjectE-Integration Recipe Mapper for Draconic Evolution Fusion Mapper. Required Mods: [draconicevolution]
+		enabled = true
+
+	[CraftingMapper.AppliedEnergisticsInscriberMapper]
+		#ProjectE-Integration Recipe Mapper for Applied Energistics Inscriber Mapper. Required Mods: [ae2]
+		enabled = true
+
+	[CraftingMapper.BotaniaRuneAlterMapper]
+		#ProjectE-Integration Recipe Mapper for Botania Rune Alter Mapper. Required Mods: [botania]
+		enabled = true
+
+	[CraftingMapper.BloodMagicBloodAltarMapper]
+		#ProjectE-Integration Recipe Mapper for Blood Magic Blood Altar Mapper. Required Mods: [bloodmagic]
+		enabled = true
+
+	[CraftingMapper.OccultismSpiritTradeMapper]
+		#ProjectE-Integration Recipe Mapper for Occultism Spirit Trade Mapper. Required Mods: [occultism]
+		enabled = true
+
+	[CraftingMapper.OccultismSpiritFireMapper]
+		#ProjectE-Integration Recipe Mapper for Occultism Spirit Fire Mapper. Required Mods: [occultism]
+		enabled = true
+
+	[CraftingMapper.BotaniaPetalMapper]
+		#ProjectE-Integration Recipe Mapper for Botania Petal Mapper. Required Mods: [botania]
+		enabled = true
+
+	[CraftingMapper.ElementalCraftPureInfusionMapper]
+		#ProjectE-Integration Recipe Mapper for Elemental Craft Pure Infusion Mapper. Required Mods: [elementalcraft]
+		enabled = true
+
+	[CraftingMapper.FarmersDelightCuttingBoardMapper]
+		#ProjectE-Integration Recipe Mapper for Farmers Delight Cutting Board Mapper. Required Mods: [farmersdelight]
+		enabled = true
+
+	[CraftingMapper.ArsNouveauImbuementMapper]
+		#ProjectE-Integration Recipe Mapper for Ars Nouveau Imbuement Mapper. Required Mods: [ars_nouveau]
+		enabled = true
+
+	[CraftingMapper.NaturesAuraOfferingMapper]
+		#ProjectE-Integration Recipe Mapper for Natures Aura Offering Mapper. Required Mods: [naturesaura]
+		enabled = true
+
+	[CraftingMapper.ElementalCraftInfusionMapper]
+		#ProjectE-Integration Recipe Mapper for Elemental Craft Infusion Mapper. Required Mods: [elementalcraft]
+		enabled = true
+
+	[CraftingMapper.EvilCraftBloodInfuserMapper]
+		#ProjectE-Integration Recipe Mapper for Evil Craft Blood Infuser Mapper. Required Mods: [evilcraft]
+		enabled = true
+
+	[CraftingMapper.ElementalCraftInscriptionMapper]
+		#ProjectE-Integration Recipe Mapper for Elemental Craft Inscription Mapper. Required Mods: [elementalcraft]
+		enabled = true
+
+	[CraftingMapper.FarmersDelightCookingPotMapper]
+		#ProjectE-Integration Recipe Mapper for Farmers Delight Cooking Pot Mapper. Required Mods: [farmersdelight]
+		enabled = true
+
+	[CraftingMapper.ArsNouveauEnchantingApparatusMapper]
+		#ProjectE-Integration Recipe Mapper for Ars Nouveau Enchanting Apparatus Mapper. Required Mods: [ars_nouveau]
+		enabled = true
+
+[permissions]
+
+	[permissions.avaritia]
+		#Allow mod 'avaritia' to set and or remove values for mod 'minecraft'. Options: [both, set, remove, none]
+		minecraft = "both"
+		#Allow mod 'avaritia' to set and or remove values for mod 'avaritia'. Options: [both, set, remove, none]
+		avaritia = "both"
+
+[APICustomEMCMapper]
+
+	[APICustomEMCMapper.priority]
+		#Priority for this mod
+		avaritia = 1
+
+[enabledMappers]
+	#Set EMC=0 for everything in the forge:raw_materials tag
+	RawOresBlacklistMapper = true
+	#Set EMC=0 for everything in the forge:ores tag
+	OresBlacklistMapper = true
+	#Add Conversions for Crafting Recipes gathered from net.minecraft.item.crafting.RecipeManager
+	CraftingMapper = true
+	#Add Conversions for all lingering potions to arrow recipes
+	TippedArrowMapper = true
+	#Adds back and forth conversions of objects and their Tag variant. (EMC values assigned to tags will not behave properly if this mapper is disabled)
+	TagMapper = true
+	#Add Conversions for all weathered copper variants
+	WeatheredCopperMapper = true
+	#Add Conversions for Brewing Recipes
+	BrewingMapper = true
+	#Recipe mapper for custom recipes that don't implement IRecipe
+	ProjectEIntegrationRecipeMapper = true
+	#Uses the `custom_emc.json` File to add EMC values.
+	CustomEMCMapper = true
+	#Loads json files within datapacks (data/<domain>/pe_custom_conversions/*.json) to add values and conversions
+	CustomConversionMapper = true
+	#Allows other mods to easily set EMC values using the ProjectEAPI
+	APICustomEMCMapper = true
+

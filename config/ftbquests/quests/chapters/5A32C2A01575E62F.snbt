@@ -1,0 +1,82 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "5A32C2A01575E62F"
+	group: ""
+	id: "5A32C2A01575E62F"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["通过挖掘获得，空手可挖"]
+			id: "171B92E8AF880A0D"
+			tasks: [{
+				id: "0F4CD698333A29FC"
+				item: "tofucraft:tofugem"
+				type: "item"
+			}]
+			title: "豆腐宝玉(介绍)"
+			x: -6.0d
+			y: -3.0d
+		}
+		{
+			description: ["探险家指南针搜索tofu ruins"]
+			id: "3114DE6802CC3654"
+			tasks: [{
+				id: "5F0F3E629AAD0856"
+				item: "tofucraft:tofugrilled"
+				type: "item"
+			}]
+			title: "烤豆腐(介绍)"
+			x: -4.5d
+			y: -3.0d
+		}
+		{
+			description: [
+				"他是最有用的物品之一可以简化金属豆腐和辣椒的获取方式，"
+				"百科说辣椒可以交易获得，但是我试了很久，都没有交易出来，"
+				"可以在村庄铁匠铺箱子找到，或者击败豆腐战神获得半成品，"
+				"扔进醋栗奶转化,"
+				"作为合成原料时不消耗"
+			]
+			id: "0B960930695F7CA8"
+			tasks: [{
+				id: "6C72F957421141A2"
+				item: {
+					Count: 1
+					id: "tofucraft:tofustick"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "豆腐棒(介绍)"
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			description: ["可使用豆腐棒合成(豆腐棒不消耗)"]
+			id: "79E7D036A5F0E1DD"
+			tasks: [{
+				id: "3135E0128118B0B7"
+				item: "tofucraft:tofumetal"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			description: ["通过挖掘钻石豆腐板岩获得"]
+			id: "24AB68CF640D7C19"
+			tasks: [{
+				id: "28580438F787B997"
+				item: "tofucraft:tofudiamondnugget"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+	]
+	title: "物品介绍"
+}

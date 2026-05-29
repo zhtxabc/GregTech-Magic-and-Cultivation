@@ -1,0 +1,67 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "125D92EDC7AF98C3"
+	group: "1AB5BF2ECFC015EF"
+	icon: "ars_nouveau:summon_focus"
+	id: "125D92EDC7AF98C3"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["3E67F07A5751F10A"]
+			id: "432047C474F06EF5"
+			tasks: [{
+				id: "7AF8E8A46B0C6247"
+				item: "ars_nouveau:source_gem"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2FC186AF9490F8C7"]
+			dependency_requirement: "one_completed"
+			id: "0F7D426A4459BCF6"
+			subtitle: "要发展新生魔艺你确实需要先找到这些"
+			tasks: [
+				{
+					id: "6F96E24135F4F6E6"
+					item: "ars_nouveau:purple_archwood_sapling"
+					type: "item"
+				}
+				{
+					id: "672B40F646C35EAB"
+					item: "ars_nouveau:blue_archwood_sapling"
+					type: "item"
+				}
+				{
+					id: "242B4A68AE97036B"
+					item: "ars_nouveau:red_archwood_sapling"
+					type: "item"
+				}
+				{
+					id: "2F9610F37853A5B1"
+					item: "ars_nouveau:green_archwood_sapling"
+					type: "item"
+				}
+			]
+			title: "至高木"
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0F7D426A4459BCF6"]
+			id: "3E67F07A5751F10A"
+			subtitle: "用来制作魔源宝石"
+			tasks: [{
+				id: "2B946E69D8C66102"
+				item: "ars_nouveau:imbuement_chamber"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+	]
+	title: "新生魔艺"
+}

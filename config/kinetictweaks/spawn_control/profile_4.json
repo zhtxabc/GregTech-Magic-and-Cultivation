@@ -1,0 +1,4617 @@
+{
+  "category_caps": {
+    "monster": 70,
+    "creature": 10,
+    "ambient": 15,
+    "axolotls": 5,
+    "underground_water_creature": 5,
+    "water_creature": 5,
+    "water_ambient": 20,
+    "misc": -1
+  },
+  "category_weights": {
+    "monster": 100,
+    "creature": 60,
+    "ambient": 30,
+    "axolotls": 80,
+    "underground_water_creature": 80,
+    "water_creature": 60,
+    "water_ambient": 50,
+    "misc": 20
+  },
+  "category_spawn_rates": {
+    "monster": 1.0,
+    "creature": 1.0,
+    "ambient": 1.0,
+    "axolotls": 1.0,
+    "underground_water_creature": 1.0,
+    "water_creature": 1.0,
+    "water_ambient": 1.0,
+    "misc": 1.0
+  },
+  "entities": {
+    "minecraft:allay": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "creature",
+      "biomes": {}
+    },
+    "minecraft:axolotl": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "axolotls",
+      "biomes": {
+        "minecraft:lush_caves": {
+          "weight": 10,
+          "min": 4,
+          "max": 6
+        }
+      }
+    },
+    "minecraft:bat": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "ambient",
+      "biomes": {
+        "minecraft:badlands": {
+          "weight": 10,
+          "min": 8,
+          "max": 8
+        },
+        "minecraft:bamboo_jungle": {
+          "weight": 10,
+          "min": 8,
+          "max": 8
+        },
+        "minecraft:beach": {
+          "weight": 10,
+          "min": 8,
+          "max": 8
+        },
+        "minecraft:birch_forest": {
+          "weight": 10,
+          "min": 8,
+          "max": 8
+        },
+        "minecraft:cherry_grove": {
+          "weight": 10,
+          "min": 8,
+          "max": 8
+        },
+        "minecraft:cold_ocean": {
+          "weight": 10,
+          "min": 8,
+          "max": 8
+        },
+        "minecraft:dark_forest": {
+          "weight": 10,
+          "min": 8,
+          "max": 8
+        },
+        "minecraft:deep_cold_ocean": {
+          "weight": 10,
+          "min": 8,
+          "max": 8
+        },
+        "minecraft:deep_frozen_ocean": {
+          "weight": 10,
+          "min": 8,
+          "max": 8
+        },
+        "minecraft:deep_lukewarm_ocean": {
+          "weight": 10,
+          "min": 8,
+          "max": 8
+        },
+        "minecraft:deep_ocean": {
+          "weight": 10,
+          "min": 8,
+          "max": 8
+        },
+        "minecraft:desert": {
+          "weight": 10,
+          "min": 8,
+          "max": 8
+        },
+        "minecraft:dripstone_caves": {
+          "weight": 10,
+          "min": 8,
+          "max": 8
+        },
+        "minecraft:eroded_badlands": {
+          "weight": 10,
+          "min": 8,
+          "max": 8
+        },
+        "minecraft:flower_forest": {
+          "weight": 10,
+          "min": 8,
+          "max": 8
+        },
+        "minecraft:forest": {
+          "weight": 10,
+          "min": 8,
+          "max": 8
+        },
+        "minecraft:frozen_ocean": {
+          "weight": 10,
+          "min": 8,
+          "max": 8
+        },
+        "minecraft:frozen_peaks": {
+          "weight": 10,
+          "min": 8,
+          "max": 8
+        },
+        "minecraft:frozen_river": {
+          "weight": 10,
+          "min": 8,
+          "max": 8
+        },
+        "minecraft:grove": {
+          "weight": 10,
+          "min": 8,
+          "max": 8
+        },
+        "minecraft:ice_spikes": {
+          "weight": 10,
+          "min": 8,
+          "max": 8
+        },
+        "minecraft:jagged_peaks": {
+          "weight": 10,
+          "min": 8,
+          "max": 8
+        },
+        "minecraft:jungle": {
+          "weight": 10,
+          "min": 8,
+          "max": 8
+        },
+        "minecraft:lukewarm_ocean": {
+          "weight": 10,
+          "min": 8,
+          "max": 8
+        },
+        "minecraft:lush_caves": {
+          "weight": 10,
+          "min": 8,
+          "max": 8
+        },
+        "minecraft:mangrove_swamp": {
+          "weight": 10,
+          "min": 8,
+          "max": 8
+        },
+        "minecraft:meadow": {
+          "weight": 10,
+          "min": 8,
+          "max": 8
+        },
+        "minecraft:mushroom_fields": {
+          "weight": 10,
+          "min": 8,
+          "max": 8
+        },
+        "minecraft:ocean": {
+          "weight": 10,
+          "min": 8,
+          "max": 8
+        },
+        "minecraft:old_growth_birch_forest": {
+          "weight": 10,
+          "min": 8,
+          "max": 8
+        },
+        "minecraft:old_growth_pine_taiga": {
+          "weight": 10,
+          "min": 8,
+          "max": 8
+        },
+        "minecraft:old_growth_spruce_taiga": {
+          "weight": 10,
+          "min": 8,
+          "max": 8
+        },
+        "minecraft:plains": {
+          "weight": 10,
+          "min": 8,
+          "max": 8
+        },
+        "minecraft:river": {
+          "weight": 10,
+          "min": 8,
+          "max": 8
+        },
+        "minecraft:savanna": {
+          "weight": 10,
+          "min": 8,
+          "max": 8
+        },
+        "minecraft:savanna_plateau": {
+          "weight": 10,
+          "min": 8,
+          "max": 8
+        },
+        "minecraft:snowy_beach": {
+          "weight": 10,
+          "min": 8,
+          "max": 8
+        },
+        "minecraft:snowy_plains": {
+          "weight": 10,
+          "min": 8,
+          "max": 8
+        },
+        "minecraft:snowy_slopes": {
+          "weight": 10,
+          "min": 8,
+          "max": 8
+        },
+        "minecraft:snowy_taiga": {
+          "weight": 10,
+          "min": 8,
+          "max": 8
+        },
+        "minecraft:sparse_jungle": {
+          "weight": 10,
+          "min": 8,
+          "max": 8
+        },
+        "minecraft:stony_peaks": {
+          "weight": 10,
+          "min": 8,
+          "max": 8
+        },
+        "minecraft:stony_shore": {
+          "weight": 10,
+          "min": 8,
+          "max": 8
+        },
+        "minecraft:sunflower_plains": {
+          "weight": 10,
+          "min": 8,
+          "max": 8
+        },
+        "minecraft:swamp": {
+          "weight": 10,
+          "min": 8,
+          "max": 8
+        },
+        "minecraft:taiga": {
+          "weight": 10,
+          "min": 8,
+          "max": 8
+        },
+        "minecraft:warm_ocean": {
+          "weight": 10,
+          "min": 8,
+          "max": 8
+        },
+        "minecraft:windswept_forest": {
+          "weight": 10,
+          "min": 8,
+          "max": 8
+        },
+        "minecraft:windswept_gravelly_hills": {
+          "weight": 10,
+          "min": 8,
+          "max": 8
+        },
+        "minecraft:windswept_hills": {
+          "weight": 10,
+          "min": 8,
+          "max": 8
+        },
+        "minecraft:windswept_savanna": {
+          "weight": 10,
+          "min": 8,
+          "max": 8
+        },
+        "minecraft:wooded_badlands": {
+          "weight": 10,
+          "min": 8,
+          "max": 8
+        }
+      }
+    },
+    "minecraft:bee": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "creature",
+      "biomes": {}
+    },
+    "minecraft:blaze": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "monster",
+      "biomes": {}
+    },
+    "minecraft:camel": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "creature",
+      "biomes": {}
+    },
+    "minecraft:cat": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "creature",
+      "biomes": {}
+    },
+    "minecraft:cave_spider": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "monster",
+      "biomes": {}
+    },
+    "minecraft:chicken": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "creature",
+      "biomes": {
+        "minecraft:bamboo_jungle": {
+          "weight": 10,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:birch_forest": {
+          "weight": 10,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:dark_forest": {
+          "weight": 10,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:flower_forest": {
+          "weight": 10,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:forest": {
+          "weight": 10,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:grove": {
+          "weight": 10,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:jungle": {
+          "weight": 10,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:old_growth_birch_forest": {
+          "weight": 10,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:old_growth_pine_taiga": {
+          "weight": 10,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:old_growth_spruce_taiga": {
+          "weight": 10,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:plains": {
+          "weight": 10,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:savanna": {
+          "weight": 10,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:savanna_plateau": {
+          "weight": 10,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:snowy_taiga": {
+          "weight": 10,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:sparse_jungle": {
+          "weight": 10,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:sunflower_plains": {
+          "weight": 10,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:swamp": {
+          "weight": 10,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:taiga": {
+          "weight": 10,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:windswept_forest": {
+          "weight": 10,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:windswept_gravelly_hills": {
+          "weight": 10,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:windswept_hills": {
+          "weight": 10,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:windswept_savanna": {
+          "weight": 10,
+          "min": 4,
+          "max": 4
+        }
+      }
+    },
+    "minecraft:cod": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "water_ambient",
+      "biomes": {
+        "minecraft:cold_ocean": {
+          "weight": 15,
+          "min": 3,
+          "max": 6
+        },
+        "minecraft:deep_cold_ocean": {
+          "weight": 15,
+          "min": 3,
+          "max": 6
+        },
+        "minecraft:deep_lukewarm_ocean": {
+          "weight": 8,
+          "min": 3,
+          "max": 6
+        },
+        "minecraft:deep_ocean": {
+          "weight": 10,
+          "min": 3,
+          "max": 6
+        },
+        "minecraft:lukewarm_ocean": {
+          "weight": 15,
+          "min": 3,
+          "max": 6
+        },
+        "minecraft:ocean": {
+          "weight": 10,
+          "min": 3,
+          "max": 6
+        }
+      }
+    },
+    "minecraft:cow": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "creature",
+      "biomes": {
+        "minecraft:bamboo_jungle": {
+          "weight": 8,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:birch_forest": {
+          "weight": 8,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:dark_forest": {
+          "weight": 8,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:flower_forest": {
+          "weight": 8,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:forest": {
+          "weight": 8,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:grove": {
+          "weight": 8,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:jungle": {
+          "weight": 8,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:old_growth_birch_forest": {
+          "weight": 8,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:old_growth_pine_taiga": {
+          "weight": 8,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:old_growth_spruce_taiga": {
+          "weight": 8,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:plains": {
+          "weight": 8,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:savanna": {
+          "weight": 8,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:savanna_plateau": {
+          "weight": 8,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:snowy_taiga": {
+          "weight": 8,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:sparse_jungle": {
+          "weight": 8,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:sunflower_plains": {
+          "weight": 8,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:swamp": {
+          "weight": 8,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:taiga": {
+          "weight": 8,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:windswept_forest": {
+          "weight": 8,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:windswept_gravelly_hills": {
+          "weight": 8,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:windswept_hills": {
+          "weight": 8,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:windswept_savanna": {
+          "weight": 8,
+          "min": 4,
+          "max": 4
+        }
+      }
+    },
+    "minecraft:creeper": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "monster",
+      "biomes": {
+        "minecraft:badlands": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:bamboo_jungle": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:beach": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:birch_forest": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:cherry_grove": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:cold_ocean": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:dark_forest": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:deep_cold_ocean": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:deep_frozen_ocean": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:deep_lukewarm_ocean": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:deep_ocean": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:desert": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:dripstone_caves": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:eroded_badlands": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:flower_forest": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:forest": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:frozen_ocean": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:frozen_peaks": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:frozen_river": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:grove": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:ice_spikes": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:jagged_peaks": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:jungle": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:lukewarm_ocean": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:lush_caves": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:mangrove_swamp": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:meadow": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:ocean": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:old_growth_birch_forest": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:old_growth_pine_taiga": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:old_growth_spruce_taiga": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:plains": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:river": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:savanna": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:savanna_plateau": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:snowy_beach": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:snowy_plains": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:snowy_slopes": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:snowy_taiga": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:sparse_jungle": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:stony_peaks": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:stony_shore": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:sunflower_plains": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:swamp": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:taiga": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:warm_ocean": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:windswept_forest": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:windswept_gravelly_hills": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:windswept_hills": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:windswept_savanna": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:wooded_badlands": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        }
+      }
+    },
+    "minecraft:dolphin": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "water_creature",
+      "biomes": {
+        "minecraft:deep_lukewarm_ocean": {
+          "weight": 2,
+          "min": 1,
+          "max": 2
+        },
+        "minecraft:deep_ocean": {
+          "weight": 1,
+          "min": 1,
+          "max": 2
+        },
+        "minecraft:lukewarm_ocean": {
+          "weight": 2,
+          "min": 1,
+          "max": 2
+        },
+        "minecraft:ocean": {
+          "weight": 1,
+          "min": 1,
+          "max": 2
+        },
+        "minecraft:warm_ocean": {
+          "weight": 2,
+          "min": 1,
+          "max": 2
+        }
+      }
+    },
+    "minecraft:donkey": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "creature",
+      "biomes": {
+        "minecraft:meadow": {
+          "weight": 1,
+          "min": 1,
+          "max": 2
+        },
+        "minecraft:plains": {
+          "weight": 1,
+          "min": 1,
+          "max": 3
+        },
+        "minecraft:savanna": {
+          "weight": 1,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:savanna_plateau": {
+          "weight": 1,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:sunflower_plains": {
+          "weight": 1,
+          "min": 1,
+          "max": 3
+        },
+        "minecraft:windswept_savanna": {
+          "weight": 1,
+          "min": 1,
+          "max": 1
+        }
+      }
+    },
+    "minecraft:drowned": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "monster",
+      "biomes": {
+        "minecraft:cold_ocean": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:deep_cold_ocean": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:deep_frozen_ocean": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:deep_lukewarm_ocean": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:deep_ocean": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:dripstone_caves": {
+          "weight": 95,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:frozen_ocean": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:frozen_river": {
+          "weight": 1,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:lukewarm_ocean": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:ocean": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:river": {
+          "weight": 100,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:warm_ocean": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        }
+      }
+    },
+    "minecraft:elder_guardian": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "monster",
+      "biomes": {}
+    },
+    "minecraft:ender_dragon": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "monster",
+      "biomes": {}
+    },
+    "minecraft:enderman": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "monster",
+      "biomes": {
+        "minecraft:badlands": {
+          "weight": 10,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:bamboo_jungle": {
+          "weight": 10,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:beach": {
+          "weight": 10,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:birch_forest": {
+          "weight": 10,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:cherry_grove": {
+          "weight": 10,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:cold_ocean": {
+          "weight": 10,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:dark_forest": {
+          "weight": 10,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:deep_cold_ocean": {
+          "weight": 10,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:deep_frozen_ocean": {
+          "weight": 10,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:deep_lukewarm_ocean": {
+          "weight": 10,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:deep_ocean": {
+          "weight": 10,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:desert": {
+          "weight": 10,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:dripstone_caves": {
+          "weight": 10,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:end_barrens": {
+          "weight": 10,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:end_highlands": {
+          "weight": 10,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:end_midlands": {
+          "weight": 10,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:eroded_badlands": {
+          "weight": 10,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:flower_forest": {
+          "weight": 10,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:forest": {
+          "weight": 10,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:frozen_ocean": {
+          "weight": 10,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:frozen_peaks": {
+          "weight": 10,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:frozen_river": {
+          "weight": 10,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:grove": {
+          "weight": 10,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:ice_spikes": {
+          "weight": 10,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:jagged_peaks": {
+          "weight": 10,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:jungle": {
+          "weight": 10,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:lukewarm_ocean": {
+          "weight": 10,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:lush_caves": {
+          "weight": 10,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:mangrove_swamp": {
+          "weight": 10,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:meadow": {
+          "weight": 10,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:nether_wastes": {
+          "weight": 1,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:ocean": {
+          "weight": 10,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:old_growth_birch_forest": {
+          "weight": 10,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:old_growth_pine_taiga": {
+          "weight": 10,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:old_growth_spruce_taiga": {
+          "weight": 10,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:plains": {
+          "weight": 10,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:river": {
+          "weight": 10,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:savanna": {
+          "weight": 10,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:savanna_plateau": {
+          "weight": 10,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:small_end_islands": {
+          "weight": 10,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:snowy_beach": {
+          "weight": 10,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:snowy_plains": {
+          "weight": 10,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:snowy_slopes": {
+          "weight": 10,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:snowy_taiga": {
+          "weight": 10,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:soul_sand_valley": {
+          "weight": 1,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:sparse_jungle": {
+          "weight": 10,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:stony_peaks": {
+          "weight": 10,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:stony_shore": {
+          "weight": 10,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:sunflower_plains": {
+          "weight": 10,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:swamp": {
+          "weight": 10,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:taiga": {
+          "weight": 10,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:the_end": {
+          "weight": 10,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:warm_ocean": {
+          "weight": 10,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:warped_forest": {
+          "weight": 1,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:windswept_forest": {
+          "weight": 10,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:windswept_gravelly_hills": {
+          "weight": 10,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:windswept_hills": {
+          "weight": 10,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:windswept_savanna": {
+          "weight": 10,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:wooded_badlands": {
+          "weight": 10,
+          "min": 1,
+          "max": 4
+        }
+      }
+    },
+    "minecraft:endermite": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "monster",
+      "biomes": {}
+    },
+    "minecraft:evoker": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "monster",
+      "biomes": {}
+    },
+    "minecraft:fox": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "creature",
+      "biomes": {
+        "minecraft:grove": {
+          "weight": 8,
+          "min": 2,
+          "max": 4
+        },
+        "minecraft:old_growth_pine_taiga": {
+          "weight": 8,
+          "min": 2,
+          "max": 4
+        },
+        "minecraft:old_growth_spruce_taiga": {
+          "weight": 8,
+          "min": 2,
+          "max": 4
+        },
+        "minecraft:snowy_taiga": {
+          "weight": 8,
+          "min": 2,
+          "max": 4
+        },
+        "minecraft:taiga": {
+          "weight": 8,
+          "min": 2,
+          "max": 4
+        }
+      }
+    },
+    "minecraft:frog": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "creature",
+      "biomes": {
+        "minecraft:mangrove_swamp": {
+          "weight": 10,
+          "min": 2,
+          "max": 5
+        },
+        "minecraft:swamp": {
+          "weight": 10,
+          "min": 2,
+          "max": 5
+        }
+      }
+    },
+    "minecraft:ghast": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "monster",
+      "biomes": {
+        "minecraft:basalt_deltas": {
+          "weight": 40,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:nether_wastes": {
+          "weight": 50,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:soul_sand_valley": {
+          "weight": 50,
+          "min": 4,
+          "max": 4
+        }
+      }
+    },
+    "minecraft:giant": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "monster",
+      "biomes": {}
+    },
+    "minecraft:glow_squid": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "underground_water_creature",
+      "biomes": {
+        "minecraft:badlands": {
+          "weight": 10,
+          "min": 4,
+          "max": 6
+        },
+        "minecraft:bamboo_jungle": {
+          "weight": 10,
+          "min": 4,
+          "max": 6
+        },
+        "minecraft:beach": {
+          "weight": 10,
+          "min": 4,
+          "max": 6
+        },
+        "minecraft:birch_forest": {
+          "weight": 10,
+          "min": 4,
+          "max": 6
+        },
+        "minecraft:cherry_grove": {
+          "weight": 10,
+          "min": 4,
+          "max": 6
+        },
+        "minecraft:cold_ocean": {
+          "weight": 10,
+          "min": 4,
+          "max": 6
+        },
+        "minecraft:dark_forest": {
+          "weight": 10,
+          "min": 4,
+          "max": 6
+        },
+        "minecraft:deep_cold_ocean": {
+          "weight": 10,
+          "min": 4,
+          "max": 6
+        },
+        "minecraft:deep_frozen_ocean": {
+          "weight": 10,
+          "min": 4,
+          "max": 6
+        },
+        "minecraft:deep_lukewarm_ocean": {
+          "weight": 10,
+          "min": 4,
+          "max": 6
+        },
+        "minecraft:deep_ocean": {
+          "weight": 10,
+          "min": 4,
+          "max": 6
+        },
+        "minecraft:desert": {
+          "weight": 10,
+          "min": 4,
+          "max": 6
+        },
+        "minecraft:dripstone_caves": {
+          "weight": 10,
+          "min": 4,
+          "max": 6
+        },
+        "minecraft:eroded_badlands": {
+          "weight": 10,
+          "min": 4,
+          "max": 6
+        },
+        "minecraft:flower_forest": {
+          "weight": 10,
+          "min": 4,
+          "max": 6
+        },
+        "minecraft:forest": {
+          "weight": 10,
+          "min": 4,
+          "max": 6
+        },
+        "minecraft:frozen_ocean": {
+          "weight": 10,
+          "min": 4,
+          "max": 6
+        },
+        "minecraft:frozen_peaks": {
+          "weight": 10,
+          "min": 4,
+          "max": 6
+        },
+        "minecraft:frozen_river": {
+          "weight": 10,
+          "min": 4,
+          "max": 6
+        },
+        "minecraft:grove": {
+          "weight": 10,
+          "min": 4,
+          "max": 6
+        },
+        "minecraft:ice_spikes": {
+          "weight": 10,
+          "min": 4,
+          "max": 6
+        },
+        "minecraft:jagged_peaks": {
+          "weight": 10,
+          "min": 4,
+          "max": 6
+        },
+        "minecraft:jungle": {
+          "weight": 10,
+          "min": 4,
+          "max": 6
+        },
+        "minecraft:lukewarm_ocean": {
+          "weight": 10,
+          "min": 4,
+          "max": 6
+        },
+        "minecraft:lush_caves": {
+          "weight": 10,
+          "min": 4,
+          "max": 6
+        },
+        "minecraft:mangrove_swamp": {
+          "weight": 10,
+          "min": 4,
+          "max": 6
+        },
+        "minecraft:meadow": {
+          "weight": 10,
+          "min": 4,
+          "max": 6
+        },
+        "minecraft:mushroom_fields": {
+          "weight": 10,
+          "min": 4,
+          "max": 6
+        },
+        "minecraft:ocean": {
+          "weight": 10,
+          "min": 4,
+          "max": 6
+        },
+        "minecraft:old_growth_birch_forest": {
+          "weight": 10,
+          "min": 4,
+          "max": 6
+        },
+        "minecraft:old_growth_pine_taiga": {
+          "weight": 10,
+          "min": 4,
+          "max": 6
+        },
+        "minecraft:old_growth_spruce_taiga": {
+          "weight": 10,
+          "min": 4,
+          "max": 6
+        },
+        "minecraft:plains": {
+          "weight": 10,
+          "min": 4,
+          "max": 6
+        },
+        "minecraft:river": {
+          "weight": 10,
+          "min": 4,
+          "max": 6
+        },
+        "minecraft:savanna": {
+          "weight": 10,
+          "min": 4,
+          "max": 6
+        },
+        "minecraft:savanna_plateau": {
+          "weight": 10,
+          "min": 4,
+          "max": 6
+        },
+        "minecraft:snowy_beach": {
+          "weight": 10,
+          "min": 4,
+          "max": 6
+        },
+        "minecraft:snowy_plains": {
+          "weight": 10,
+          "min": 4,
+          "max": 6
+        },
+        "minecraft:snowy_slopes": {
+          "weight": 10,
+          "min": 4,
+          "max": 6
+        },
+        "minecraft:snowy_taiga": {
+          "weight": 10,
+          "min": 4,
+          "max": 6
+        },
+        "minecraft:sparse_jungle": {
+          "weight": 10,
+          "min": 4,
+          "max": 6
+        },
+        "minecraft:stony_peaks": {
+          "weight": 10,
+          "min": 4,
+          "max": 6
+        },
+        "minecraft:stony_shore": {
+          "weight": 10,
+          "min": 4,
+          "max": 6
+        },
+        "minecraft:sunflower_plains": {
+          "weight": 10,
+          "min": 4,
+          "max": 6
+        },
+        "minecraft:swamp": {
+          "weight": 10,
+          "min": 4,
+          "max": 6
+        },
+        "minecraft:taiga": {
+          "weight": 10,
+          "min": 4,
+          "max": 6
+        },
+        "minecraft:warm_ocean": {
+          "weight": 10,
+          "min": 4,
+          "max": 6
+        },
+        "minecraft:windswept_forest": {
+          "weight": 10,
+          "min": 4,
+          "max": 6
+        },
+        "minecraft:windswept_gravelly_hills": {
+          "weight": 10,
+          "min": 4,
+          "max": 6
+        },
+        "minecraft:windswept_hills": {
+          "weight": 10,
+          "min": 4,
+          "max": 6
+        },
+        "minecraft:windswept_savanna": {
+          "weight": 10,
+          "min": 4,
+          "max": 6
+        },
+        "minecraft:wooded_badlands": {
+          "weight": 10,
+          "min": 4,
+          "max": 6
+        }
+      }
+    },
+    "minecraft:goat": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "creature",
+      "biomes": {
+        "minecraft:frozen_peaks": {
+          "weight": 5,
+          "min": 1,
+          "max": 3
+        },
+        "minecraft:jagged_peaks": {
+          "weight": 5,
+          "min": 1,
+          "max": 3
+        },
+        "minecraft:snowy_slopes": {
+          "weight": 5,
+          "min": 1,
+          "max": 3
+        }
+      }
+    },
+    "minecraft:guardian": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "monster",
+      "biomes": {}
+    },
+    "minecraft:hoglin": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "monster",
+      "biomes": {
+        "minecraft:crimson_forest": {
+          "weight": 9,
+          "min": 3,
+          "max": 4
+        }
+      }
+    },
+    "minecraft:horse": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "creature",
+      "biomes": {
+        "minecraft:plains": {
+          "weight": 5,
+          "min": 2,
+          "max": 6
+        },
+        "minecraft:savanna": {
+          "weight": 1,
+          "min": 2,
+          "max": 6
+        },
+        "minecraft:savanna_plateau": {
+          "weight": 1,
+          "min": 2,
+          "max": 6
+        },
+        "minecraft:sunflower_plains": {
+          "weight": 5,
+          "min": 2,
+          "max": 6
+        },
+        "minecraft:windswept_savanna": {
+          "weight": 1,
+          "min": 2,
+          "max": 6
+        }
+      }
+    },
+    "minecraft:husk": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "monster",
+      "biomes": {
+        "minecraft:desert": {
+          "weight": 80,
+          "min": 4,
+          "max": 4
+        }
+      }
+    },
+    "minecraft:illusioner": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "monster",
+      "biomes": {}
+    },
+    "minecraft:iron_golem": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "misc",
+      "biomes": {}
+    },
+    "minecraft:llama": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "creature",
+      "biomes": {
+        "minecraft:savanna_plateau": {
+          "weight": 8,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:windswept_forest": {
+          "weight": 5,
+          "min": 4,
+          "max": 6
+        },
+        "minecraft:windswept_gravelly_hills": {
+          "weight": 5,
+          "min": 4,
+          "max": 6
+        },
+        "minecraft:windswept_hills": {
+          "weight": 5,
+          "min": 4,
+          "max": 6
+        }
+      }
+    },
+    "minecraft:magma_cube": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "monster",
+      "biomes": {
+        "minecraft:basalt_deltas": {
+          "weight": 100,
+          "min": 2,
+          "max": 5
+        },
+        "minecraft:nether_wastes": {
+          "weight": 2,
+          "min": 4,
+          "max": 4
+        }
+      }
+    },
+    "minecraft:mooshroom": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "creature",
+      "biomes": {
+        "minecraft:mushroom_fields": {
+          "weight": 8,
+          "min": 4,
+          "max": 8
+        }
+      }
+    },
+    "minecraft:mule": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "creature",
+      "biomes": {}
+    },
+    "minecraft:ocelot": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "monster",
+      "biomes": {
+        "minecraft:bamboo_jungle": {
+          "weight": 2,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:jungle": {
+          "weight": 2,
+          "min": 1,
+          "max": 3
+        }
+      }
+    },
+    "minecraft:panda": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "creature",
+      "biomes": {
+        "minecraft:bamboo_jungle": {
+          "weight": 80,
+          "min": 1,
+          "max": 2
+        },
+        "minecraft:jungle": {
+          "weight": 1,
+          "min": 1,
+          "max": 2
+        }
+      }
+    },
+    "minecraft:parrot": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "creature",
+      "biomes": {
+        "minecraft:bamboo_jungle": {
+          "weight": 40,
+          "min": 1,
+          "max": 2
+        },
+        "minecraft:jungle": {
+          "weight": 40,
+          "min": 1,
+          "max": 2
+        }
+      }
+    },
+    "minecraft:phantom": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "monster",
+      "biomes": {}
+    },
+    "minecraft:pig": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "creature",
+      "biomes": {
+        "minecraft:bamboo_jungle": {
+          "weight": 10,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:birch_forest": {
+          "weight": 10,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:cherry_grove": {
+          "weight": 1,
+          "min": 1,
+          "max": 2
+        },
+        "minecraft:dark_forest": {
+          "weight": 10,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:flower_forest": {
+          "weight": 10,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:forest": {
+          "weight": 10,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:grove": {
+          "weight": 10,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:jungle": {
+          "weight": 10,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:old_growth_birch_forest": {
+          "weight": 10,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:old_growth_pine_taiga": {
+          "weight": 10,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:old_growth_spruce_taiga": {
+          "weight": 10,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:plains": {
+          "weight": 10,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:savanna": {
+          "weight": 10,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:savanna_plateau": {
+          "weight": 10,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:snowy_taiga": {
+          "weight": 10,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:sparse_jungle": {
+          "weight": 10,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:sunflower_plains": {
+          "weight": 10,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:swamp": {
+          "weight": 10,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:taiga": {
+          "weight": 10,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:windswept_forest": {
+          "weight": 10,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:windswept_gravelly_hills": {
+          "weight": 10,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:windswept_hills": {
+          "weight": 10,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:windswept_savanna": {
+          "weight": 10,
+          "min": 4,
+          "max": 4
+        }
+      }
+    },
+    "minecraft:piglin": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "monster",
+      "biomes": {
+        "minecraft:crimson_forest": {
+          "weight": 5,
+          "min": 3,
+          "max": 4
+        },
+        "minecraft:nether_wastes": {
+          "weight": 15,
+          "min": 4,
+          "max": 4
+        }
+      }
+    },
+    "minecraft:piglin_brute": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "monster",
+      "biomes": {}
+    },
+    "minecraft:pillager": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "monster",
+      "biomes": {}
+    },
+    "minecraft:polar_bear": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "creature",
+      "biomes": {
+        "minecraft:deep_frozen_ocean": {
+          "weight": 1,
+          "min": 1,
+          "max": 2
+        },
+        "minecraft:frozen_ocean": {
+          "weight": 1,
+          "min": 1,
+          "max": 2
+        },
+        "minecraft:ice_spikes": {
+          "weight": 1,
+          "min": 1,
+          "max": 2
+        },
+        "minecraft:snowy_plains": {
+          "weight": 1,
+          "min": 1,
+          "max": 2
+        }
+      }
+    },
+    "minecraft:pufferfish": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "water_ambient",
+      "biomes": {
+        "minecraft:deep_lukewarm_ocean": {
+          "weight": 5,
+          "min": 1,
+          "max": 3
+        },
+        "minecraft:lukewarm_ocean": {
+          "weight": 5,
+          "min": 1,
+          "max": 3
+        },
+        "minecraft:warm_ocean": {
+          "weight": 15,
+          "min": 1,
+          "max": 3
+        }
+      }
+    },
+    "minecraft:rabbit": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "creature",
+      "biomes": {
+        "minecraft:cherry_grove": {
+          "weight": 2,
+          "min": 2,
+          "max": 6
+        },
+        "minecraft:desert": {
+          "weight": 4,
+          "min": 2,
+          "max": 3
+        },
+        "minecraft:flower_forest": {
+          "weight": 4,
+          "min": 2,
+          "max": 3
+        },
+        "minecraft:grove": {
+          "weight": 4,
+          "min": 2,
+          "max": 3
+        },
+        "minecraft:ice_spikes": {
+          "weight": 10,
+          "min": 2,
+          "max": 3
+        },
+        "minecraft:meadow": {
+          "weight": 2,
+          "min": 2,
+          "max": 6
+        },
+        "minecraft:old_growth_pine_taiga": {
+          "weight": 4,
+          "min": 2,
+          "max": 3
+        },
+        "minecraft:old_growth_spruce_taiga": {
+          "weight": 4,
+          "min": 2,
+          "max": 3
+        },
+        "minecraft:snowy_plains": {
+          "weight": 10,
+          "min": 2,
+          "max": 3
+        },
+        "minecraft:snowy_slopes": {
+          "weight": 4,
+          "min": 2,
+          "max": 3
+        },
+        "minecraft:snowy_taiga": {
+          "weight": 4,
+          "min": 2,
+          "max": 3
+        },
+        "minecraft:taiga": {
+          "weight": 4,
+          "min": 2,
+          "max": 3
+        }
+      }
+    },
+    "minecraft:ravager": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "monster",
+      "biomes": {}
+    },
+    "minecraft:salmon": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "water_ambient",
+      "biomes": {
+        "minecraft:cold_ocean": {
+          "weight": 15,
+          "min": 1,
+          "max": 5
+        },
+        "minecraft:deep_cold_ocean": {
+          "weight": 15,
+          "min": 1,
+          "max": 5
+        },
+        "minecraft:deep_frozen_ocean": {
+          "weight": 15,
+          "min": 1,
+          "max": 5
+        },
+        "minecraft:frozen_ocean": {
+          "weight": 15,
+          "min": 1,
+          "max": 5
+        },
+        "minecraft:frozen_river": {
+          "weight": 5,
+          "min": 1,
+          "max": 5
+        },
+        "minecraft:river": {
+          "weight": 5,
+          "min": 1,
+          "max": 5
+        }
+      }
+    },
+    "minecraft:sheep": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "creature",
+      "biomes": {
+        "minecraft:bamboo_jungle": {
+          "weight": 12,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:birch_forest": {
+          "weight": 12,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:cherry_grove": {
+          "weight": 2,
+          "min": 2,
+          "max": 4
+        },
+        "minecraft:dark_forest": {
+          "weight": 12,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:flower_forest": {
+          "weight": 12,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:forest": {
+          "weight": 12,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:grove": {
+          "weight": 12,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:jungle": {
+          "weight": 12,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:meadow": {
+          "weight": 2,
+          "min": 2,
+          "max": 4
+        },
+        "minecraft:old_growth_birch_forest": {
+          "weight": 12,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:old_growth_pine_taiga": {
+          "weight": 12,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:old_growth_spruce_taiga": {
+          "weight": 12,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:plains": {
+          "weight": 12,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:savanna": {
+          "weight": 12,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:savanna_plateau": {
+          "weight": 12,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:snowy_taiga": {
+          "weight": 12,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:sparse_jungle": {
+          "weight": 12,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:sunflower_plains": {
+          "weight": 12,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:swamp": {
+          "weight": 12,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:taiga": {
+          "weight": 12,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:windswept_forest": {
+          "weight": 12,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:windswept_gravelly_hills": {
+          "weight": 12,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:windswept_hills": {
+          "weight": 12,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:windswept_savanna": {
+          "weight": 12,
+          "min": 4,
+          "max": 4
+        }
+      }
+    },
+    "minecraft:shulker": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "monster",
+      "biomes": {}
+    },
+    "minecraft:silverfish": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "monster",
+      "biomes": {}
+    },
+    "minecraft:skeleton": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "monster",
+      "biomes": {
+        "minecraft:badlands": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:bamboo_jungle": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:beach": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:birch_forest": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:cherry_grove": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:cold_ocean": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:dark_forest": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:deep_cold_ocean": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:deep_frozen_ocean": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:deep_lukewarm_ocean": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:deep_ocean": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:desert": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:dripstone_caves": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:eroded_badlands": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:flower_forest": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:forest": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:frozen_ocean": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:frozen_peaks": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:frozen_river": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:grove": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:ice_spikes": {
+          "weight": 20,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:jagged_peaks": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:jungle": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:lukewarm_ocean": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:lush_caves": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:mangrove_swamp": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:meadow": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:ocean": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:old_growth_birch_forest": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:old_growth_pine_taiga": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:old_growth_spruce_taiga": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:plains": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:river": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:savanna": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:savanna_plateau": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:snowy_beach": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:snowy_plains": {
+          "weight": 20,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:snowy_slopes": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:snowy_taiga": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:soul_sand_valley": {
+          "weight": 20,
+          "min": 5,
+          "max": 5
+        },
+        "minecraft:sparse_jungle": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:stony_peaks": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:stony_shore": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:sunflower_plains": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:swamp": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:taiga": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:warm_ocean": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:windswept_forest": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:windswept_gravelly_hills": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:windswept_hills": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:windswept_savanna": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:wooded_badlands": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        }
+      }
+    },
+    "minecraft:skeleton_horse": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "creature",
+      "biomes": {}
+    },
+    "minecraft:slime": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "monster",
+      "biomes": {
+        "minecraft:badlands": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:bamboo_jungle": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:beach": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:birch_forest": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:cherry_grove": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:cold_ocean": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:dark_forest": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:deep_cold_ocean": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:deep_frozen_ocean": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:deep_lukewarm_ocean": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:deep_ocean": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:desert": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:dripstone_caves": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:eroded_badlands": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:flower_forest": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:forest": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:frozen_ocean": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:frozen_peaks": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:frozen_river": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:grove": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:ice_spikes": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:jagged_peaks": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:jungle": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:lukewarm_ocean": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:lush_caves": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:mangrove_swamp": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:meadow": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:ocean": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:old_growth_birch_forest": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:old_growth_pine_taiga": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:old_growth_spruce_taiga": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:plains": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:river": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:savanna": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:savanna_plateau": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:snowy_beach": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:snowy_plains": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:snowy_slopes": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:snowy_taiga": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:sparse_jungle": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:stony_peaks": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:stony_shore": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:sunflower_plains": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:swamp": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:taiga": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:warm_ocean": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:windswept_forest": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:windswept_gravelly_hills": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:windswept_hills": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:windswept_savanna": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:wooded_badlands": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        }
+      }
+    },
+    "minecraft:sniffer": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "creature",
+      "biomes": {}
+    },
+    "minecraft:snow_golem": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "misc",
+      "biomes": {}
+    },
+    "minecraft:spider": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "monster",
+      "biomes": {
+        "minecraft:badlands": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:bamboo_jungle": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:beach": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:birch_forest": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:cherry_grove": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:cold_ocean": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:dark_forest": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:deep_cold_ocean": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:deep_frozen_ocean": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:deep_lukewarm_ocean": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:deep_ocean": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:desert": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:dripstone_caves": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:eroded_badlands": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:flower_forest": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:forest": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:frozen_ocean": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:frozen_peaks": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:frozen_river": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:grove": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:ice_spikes": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:jagged_peaks": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:jungle": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:lukewarm_ocean": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:lush_caves": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:mangrove_swamp": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:meadow": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:ocean": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:old_growth_birch_forest": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:old_growth_pine_taiga": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:old_growth_spruce_taiga": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:plains": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:river": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:savanna": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:savanna_plateau": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:snowy_beach": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:snowy_plains": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:snowy_slopes": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:snowy_taiga": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:sparse_jungle": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:stony_peaks": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:stony_shore": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:sunflower_plains": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:swamp": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:taiga": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:warm_ocean": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:windswept_forest": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:windswept_gravelly_hills": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:windswept_hills": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:windswept_savanna": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:wooded_badlands": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        }
+      }
+    },
+    "minecraft:squid": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "water_creature",
+      "biomes": {
+        "minecraft:cold_ocean": {
+          "weight": 3,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:deep_cold_ocean": {
+          "weight": 3,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:deep_frozen_ocean": {
+          "weight": 1,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:deep_lukewarm_ocean": {
+          "weight": 8,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:deep_ocean": {
+          "weight": 1,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:frozen_ocean": {
+          "weight": 1,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:frozen_river": {
+          "weight": 2,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:lukewarm_ocean": {
+          "weight": 10,
+          "min": 1,
+          "max": 2
+        },
+        "minecraft:ocean": {
+          "weight": 1,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:river": {
+          "weight": 2,
+          "min": 1,
+          "max": 4
+        },
+        "minecraft:warm_ocean": {
+          "weight": 10,
+          "min": 4,
+          "max": 4
+        }
+      }
+    },
+    "minecraft:stray": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "monster",
+      "biomes": {
+        "minecraft:ice_spikes": {
+          "weight": 80,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:snowy_plains": {
+          "weight": 80,
+          "min": 4,
+          "max": 4
+        }
+      }
+    },
+    "minecraft:strider": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "creature",
+      "biomes": {
+        "minecraft:basalt_deltas": {
+          "weight": 60,
+          "min": 1,
+          "max": 2
+        },
+        "minecraft:crimson_forest": {
+          "weight": 60,
+          "min": 1,
+          "max": 2
+        },
+        "minecraft:nether_wastes": {
+          "weight": 60,
+          "min": 1,
+          "max": 2
+        },
+        "minecraft:soul_sand_valley": {
+          "weight": 60,
+          "min": 1,
+          "max": 2
+        },
+        "minecraft:warped_forest": {
+          "weight": 60,
+          "min": 1,
+          "max": 2
+        }
+      }
+    },
+    "minecraft:tadpole": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "creature",
+      "biomes": {}
+    },
+    "minecraft:trader_llama": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "creature",
+      "biomes": {}
+    },
+    "minecraft:tropical_fish": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "water_ambient",
+      "biomes": {
+        "minecraft:deep_lukewarm_ocean": {
+          "weight": 25,
+          "min": 8,
+          "max": 8
+        },
+        "minecraft:lukewarm_ocean": {
+          "weight": 25,
+          "min": 8,
+          "max": 8
+        },
+        "minecraft:lush_caves": {
+          "weight": 25,
+          "min": 8,
+          "max": 8
+        },
+        "minecraft:mangrove_swamp": {
+          "weight": 25,
+          "min": 8,
+          "max": 8
+        },
+        "minecraft:warm_ocean": {
+          "weight": 25,
+          "min": 8,
+          "max": 8
+        }
+      }
+    },
+    "minecraft:turtle": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "creature",
+      "biomes": {
+        "minecraft:beach": {
+          "weight": 5,
+          "min": 2,
+          "max": 5
+        }
+      }
+    },
+    "minecraft:vex": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "monster",
+      "biomes": {}
+    },
+    "minecraft:villager": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "misc",
+      "biomes": {}
+    },
+    "minecraft:vindicator": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "monster",
+      "biomes": {}
+    },
+    "minecraft:wandering_trader": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "creature",
+      "biomes": {}
+    },
+    "minecraft:warden": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "monster",
+      "biomes": {}
+    },
+    "minecraft:witch": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "monster",
+      "biomes": {
+        "minecraft:badlands": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:bamboo_jungle": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:beach": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:birch_forest": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:cherry_grove": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:cold_ocean": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:dark_forest": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:deep_cold_ocean": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:deep_frozen_ocean": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:deep_lukewarm_ocean": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:deep_ocean": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:desert": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:dripstone_caves": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:eroded_badlands": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:flower_forest": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:forest": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:frozen_ocean": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:frozen_peaks": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:frozen_river": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:grove": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:ice_spikes": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:jagged_peaks": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:jungle": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:lukewarm_ocean": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:lush_caves": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:mangrove_swamp": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:meadow": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:ocean": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:old_growth_birch_forest": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:old_growth_pine_taiga": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:old_growth_spruce_taiga": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:plains": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:river": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:savanna": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:savanna_plateau": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:snowy_beach": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:snowy_plains": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:snowy_slopes": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:snowy_taiga": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:sparse_jungle": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:stony_peaks": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:stony_shore": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:sunflower_plains": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:swamp": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:taiga": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:warm_ocean": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:windswept_forest": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:windswept_gravelly_hills": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:windswept_hills": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:windswept_savanna": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:wooded_badlands": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        }
+      }
+    },
+    "minecraft:wither": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "monster",
+      "biomes": {}
+    },
+    "minecraft:wither_skeleton": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "monster",
+      "biomes": {}
+    },
+    "minecraft:wolf": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "creature",
+      "biomes": {
+        "minecraft:forest": {
+          "weight": 5,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:grove": {
+          "weight": 8,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:old_growth_pine_taiga": {
+          "weight": 8,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:old_growth_spruce_taiga": {
+          "weight": 8,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:snowy_taiga": {
+          "weight": 8,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:taiga": {
+          "weight": 8,
+          "min": 4,
+          "max": 4
+        }
+      }
+    },
+    "minecraft:zoglin": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "monster",
+      "biomes": {}
+    },
+    "minecraft:zombie": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "monster",
+      "biomes": {
+        "minecraft:badlands": {
+          "weight": 95,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:bamboo_jungle": {
+          "weight": 95,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:beach": {
+          "weight": 95,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:birch_forest": {
+          "weight": 95,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:cherry_grove": {
+          "weight": 95,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:cold_ocean": {
+          "weight": 95,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:dark_forest": {
+          "weight": 95,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:deep_cold_ocean": {
+          "weight": 95,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:deep_frozen_ocean": {
+          "weight": 95,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:deep_lukewarm_ocean": {
+          "weight": 95,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:deep_ocean": {
+          "weight": 95,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:desert": {
+          "weight": 19,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:dripstone_caves": {
+          "weight": 95,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:eroded_badlands": {
+          "weight": 95,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:flower_forest": {
+          "weight": 95,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:forest": {
+          "weight": 95,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:frozen_ocean": {
+          "weight": 95,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:frozen_peaks": {
+          "weight": 95,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:frozen_river": {
+          "weight": 95,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:grove": {
+          "weight": 95,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:ice_spikes": {
+          "weight": 95,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:jagged_peaks": {
+          "weight": 95,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:jungle": {
+          "weight": 95,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:lukewarm_ocean": {
+          "weight": 95,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:lush_caves": {
+          "weight": 95,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:mangrove_swamp": {
+          "weight": 95,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:meadow": {
+          "weight": 95,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:ocean": {
+          "weight": 95,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:old_growth_birch_forest": {
+          "weight": 95,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:old_growth_pine_taiga": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:old_growth_spruce_taiga": {
+          "weight": 95,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:plains": {
+          "weight": 95,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:river": {
+          "weight": 95,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:savanna": {
+          "weight": 95,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:savanna_plateau": {
+          "weight": 95,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:snowy_beach": {
+          "weight": 95,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:snowy_plains": {
+          "weight": 95,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:snowy_slopes": {
+          "weight": 95,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:snowy_taiga": {
+          "weight": 95,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:sparse_jungle": {
+          "weight": 95,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:stony_peaks": {
+          "weight": 95,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:stony_shore": {
+          "weight": 95,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:sunflower_plains": {
+          "weight": 95,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:swamp": {
+          "weight": 95,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:taiga": {
+          "weight": 95,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:warm_ocean": {
+          "weight": 95,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:windswept_forest": {
+          "weight": 95,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:windswept_gravelly_hills": {
+          "weight": 95,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:windswept_hills": {
+          "weight": 95,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:windswept_savanna": {
+          "weight": 95,
+          "min": 4,
+          "max": 4
+        },
+        "minecraft:wooded_badlands": {
+          "weight": 95,
+          "min": 4,
+          "max": 4
+        }
+      }
+    },
+    "minecraft:zombie_horse": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "creature",
+      "biomes": {}
+    },
+    "minecraft:zombie_villager": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "monster",
+      "biomes": {
+        "minecraft:badlands": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:bamboo_jungle": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:beach": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:birch_forest": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:cherry_grove": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:cold_ocean": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:dark_forest": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:deep_cold_ocean": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:deep_frozen_ocean": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:deep_lukewarm_ocean": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:deep_ocean": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:desert": {
+          "weight": 1,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:dripstone_caves": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:eroded_badlands": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:flower_forest": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:forest": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:frozen_ocean": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:frozen_peaks": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:frozen_river": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:grove": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:ice_spikes": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:jagged_peaks": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:jungle": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:lukewarm_ocean": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:lush_caves": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:mangrove_swamp": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:meadow": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:ocean": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:old_growth_birch_forest": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:old_growth_pine_taiga": {
+          "weight": 25,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:old_growth_spruce_taiga": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:plains": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:river": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:savanna": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:savanna_plateau": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:snowy_beach": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:snowy_plains": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:snowy_slopes": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:snowy_taiga": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:sparse_jungle": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:stony_peaks": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:stony_shore": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:sunflower_plains": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:swamp": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:taiga": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:warm_ocean": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:windswept_forest": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:windswept_gravelly_hills": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:windswept_hills": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:windswept_savanna": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        },
+        "minecraft:wooded_badlands": {
+          "weight": 5,
+          "min": 1,
+          "max": 1
+        }
+      }
+    },
+    "minecraft:zombified_piglin": {
+      "enable_control": false,
+      "block_all": false,
+      "invert_rules": false,
+      "rules": "ABCDEFG",
+      "dim_whitelist": [],
+      "dim_blacklist": [],
+      "global_cap": -1,
+      "category": "monster",
+      "biomes": {
+        "minecraft:crimson_forest": {
+          "weight": 1,
+          "min": 2,
+          "max": 4
+        },
+        "minecraft:nether_wastes": {
+          "weight": 100,
+          "min": 4,
+          "max": 4
+        }
+      }
+    }
+  }
+}

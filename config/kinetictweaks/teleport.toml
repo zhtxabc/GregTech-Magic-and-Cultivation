@@ -1,0 +1,31 @@
+
+#传送功能增强设置 (影响 /tp 和 /teleport 指令)。
+#Teleport Command Enhancement (affects /tp and /teleport commands).
+#提供了基于权限和授权的传送逻辑控制。
+#Provides permission-based and authorized teleport logic control.
+[teleport]
+	# 是否修改并增强原版的 /tp 指令功能。
+	#Whether to modify and enhance the vanilla /tp command functionality.
+	#若设为 false，则下方所有传送限制将失效。
+	#If set to false, all teleport restrictions below will be disabled.
+	enableModify = true
+	# 管理员 (权限等级 2) 是否豁免传送授权限制。
+	#Whether admins (Permission Level 2) bypass teleport authorization restrictions.
+	#True: 管理员无需购买次数即可传送。
+	#True: Admins can teleport without purchasing counts.
+	#False: 管理员也需要像普通玩家一样购买授权 (权限等级 3/4 的超级管理员始终豁免)。
+	#False: Admins also need to purchase authorization like normal players (Level 3/4 super admins always bypass).
+	adminBypass = true
+	# 传送限制模式。
+	#Teleport Restriction Mode.
+	#FREE: 自由模式，任何人都可以相互传送。
+	#FREE: Everyone can teleport to anyone freely.
+	#AUTHORIZED: 授权模式，仅管理员 (OP) 或获得授权的玩家可执行传送。
+	#AUTHORIZED: Only Ops or authorized players can perform teleportation.
+	mode = "AUTHORIZED"
+	# 当玩家被拒绝传送时显示的自定义提示消息。
+	#Custom message displayed when a player is denied teleporting.
+	#若留空则系统会发送默认的拒绝提示。
+	#If left empty, a default system denial message will be used.
+	denyCustomMessage = ""
+

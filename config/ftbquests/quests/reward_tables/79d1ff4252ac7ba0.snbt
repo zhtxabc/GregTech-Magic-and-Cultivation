@@ -1,0 +1,13 @@
+{
+	id: "79D1FF4252AC7BA0"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{ item: "botania:creative_pool" }
+		{ item: "embers:creative_ember_source" }
+		{ item: "draconicevolution:creative_op_capacitor" }
+		{ item: "ae2:creative_energy_cell" }
+		{ item: "ars_nouveau:creative_source_jar" }
+	]
+	title: "创造"
+}

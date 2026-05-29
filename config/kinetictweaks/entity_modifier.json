@@ -1,0 +1,13 @@
+{
+  "__global__": {
+    "attributes": {},
+    "buffs": {}
+  },
+  "tofucraft:tofu_gandlem": {
+    "attributes": {
+      "minecraft:generic.max_health": 100.0,
+      "minecraft:generic.armor": 2.0
+    },
+    "buffs": {}
+  }
+}

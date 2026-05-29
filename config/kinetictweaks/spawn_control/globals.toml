@@ -1,0 +1,16 @@
+#[全局] 是否启用生成规则限制 (如黑白名单、维度限制、生成类型限制、刷怪范围限制)
+#[Global] Enable spawn restriction rules (e.g., black/whitelists, dimension limits, spawn types, distances)
+enable_rule_override = false
+#[全局] 是否启用属性深度修改 (如群系生成列表、大类生成上限、权重、生成倍率)
+#[Global] Enable biome properties modification (e.g., biomes, category caps, weights, rates)
+enable_biome_override = false
+#[全局] 是否自动扫描原版及模组的生物注册表，并自动补全到当前的配置文件中
+#[Global] Automatically scan vanilla and modded entity registries and append them to the config profile
+auto_scan = true
+#[全局] 配置文件方案的总数量 (用于 /kt spawn load <index> 命令切换多套方案)
+#[Global] Total number of configuration profiles (used for switching profiles via command)
+config_amount = 4
+#[全局] 当前正在生效的配置文件编号 (如设置为 1 则读取并应用 profile_1.json)
+#[Global] Currently active configuration profile index (e.g., 1 reads profile_1.json)
+current_index = 1
+

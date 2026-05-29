@@ -1,0 +1,57 @@
+
+#Beacon Settings
+#信标功能设置 (区块加载与防刷怪)
+[beacon]
+	# 是否允许信标加载周围的区块 (保持机器运行)
+	#Whether to allow Beacons to load surrounding chunks.
+	enableChunkLoading = true
+	# 信标各等级 (1-4级) 对应的强加载半径 (单位: 区块)。
+	#0=1x1, 1=3x3, 2=5x5, 3=7x7
+	#Chunk load radius per beacon level (Level 1-4).
+	radii = [0, 1, 2, 3]
+
+	#Beacon Spawn Prevention
+	#信标区域防刷怪设置 (在强加载范围内禁止怪物生成)
+	[beacon.spawnPrevention]
+		# 是否开启信标防刷怪功能
+		#Whether to prevent hostile mob natural spawning.
+		enable = true
+		# 允许生成的生物白名单 (即使在信标范围内也允许生成)。
+		#Entity spawn whitelist.
+		whitelist = ["minecraft:villager"]
+		# 严禁生成的生物黑名单 (无论是否在信标范围内均拦截生成)。
+		#Entity spawn blacklist.
+		blacklist = []
+		# 高级生成规则。格式: '实体ID;拦截代码'
+		#Advanced Spawn Rules List. Format: 'EntityID;Codes'.
+		rules = ["minecraft:zombie;A", "minecraft:skeleton;AE"]
+
+	#Beacon Load Limits
+	#信标强加载容量上限设置
+	[beacon.limits]
+		# 全局强加载区块上限 (所有维度总和)
+		#Global chunk load limit (sum of all dimensions).
+		globalLimit = 500
+		# 是否启用按玩家独立计算上限
+		#Whether to enable per-player load limit.
+		perPlayerEnable = true
+		# 每个玩家可支配的强加载区块上限(不得超过全局上限)
+		#Per-player load limit.
+		perPlayerLimit = 100
+
+	#Beacon Offline Timeout
+	#玩家下线超时设置
+	[beacon.offline]
+		# 玩家离线多少分钟后功能失效 (默认3天，0为立刻，-1为永不失效)
+		#Minutes after logout to deactivate (0=instant, -1=never).
+		timeout = 4320
+		# 离线失效后，是否连同信标发光状态一起关闭(如同未激活)
+		#Deactivate the beacon light/buffs entirely when timeout.
+		deactivate = true
+		# 离线失效后，是否关闭区块强加载
+		#Disable chunk loading when timeout.
+		disableChunkLoad = true
+		# 离线失效后，是否关闭防刷怪
+		#Disable spawn prevention when timeout.
+		disableSpawnPrevent = true
+

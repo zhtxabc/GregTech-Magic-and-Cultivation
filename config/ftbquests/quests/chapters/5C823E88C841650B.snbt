@@ -1,0 +1,57 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "5C823E88C841650B"
+	group: "64426895FE9D2AAA"
+	icon: "gtceu:uev_electric_motor"
+	id: "5C823E88C841650B"
+	order_index: 10
+	quest_links: [ ]
+	quests: [
+		{
+			id: "1A0979AF6D3DDB1F"
+			tasks: [{
+				id: "3566F1F55C4991BA"
+				item: "gtceu:uiv_machine_hull"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["432C0DA3FC464E8D"]
+			id: "117B90E0943BC931"
+			tasks: [
+				{
+					id: "43C20F8578C71848"
+					item: "gtceu:uev_electric_motor"
+					type: "item"
+				}
+				{
+					id: "7813BADD6167BB79"
+					item: "gtceu:uev_electric_pump"
+					type: "item"
+				}
+				{
+					id: "7F947D3B0CB467ED"
+					item: "gtceu:uev_conveyor_module"
+					type: "item"
+				}
+				{
+					id: "72E36E859117DFAD"
+					item: "gtceu:uev_electric_piston"
+					type: "item"
+				}
+				{
+					id: "28E817697AF4987A"
+					item: "gtceu:uev_robot_arm"
+					type: "item"
+				}
+			]
+			title: "空涅阶段"
+			x: -0.5d
+			y: 0.5d
+		}
+	]
+	title: "空涅"
+}

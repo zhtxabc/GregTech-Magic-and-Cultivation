@@ -1,0 +1,420 @@
+#Mushroom Monstrosity damage cap as a percentage of max health (default: 0.05 = 5%)
+#Range: 0.0 ~ 1.0
+mushroomMonstrosityDamageCap = 0.05
+#Vanguard Champion limit per player (default: 7)
+#Range: > 1
+vanguardChampionLimit = 4
+#Enable thunder storm weather when Apostle Servant enters second phase (default: true)
+apostleSecondPhaseThunderStorm = true
+#Agony Focus soul cost (default: 16)
+#Range: > 0
+agonyFocusSoulCost = 16
+#Enable boss music for Parched Necromancer. Default: true
+parchedNecromancerBossMusic = true
+#Infestation Focus soul cost (default: 8)
+#Range: > 0
+infestationFocusSoulCost = 8
+#Access Focus cooldown in ticks (default: 0)
+#Range: > 0
+accessFocusCooldown = 0
+#Angry Mooshroom limit per player (default: 16)
+#Range: > 1
+angryMooshroomLimit = 16
+#MooShroom Mace attack speed (default: 0.5)
+#Range: 4.9E-324 ~ 1.7976931348623157E308
+mooShroomMaceAttackSpeed = 0.5
+#Allow the multi shot for projectile. Use the full name (eg: minecraft:arrow)
+allowMultiShotProjectiles = ["minecraft:arrow", "minecraft:tipped_arrow", "minecraft:spectral_arrow", "minecraft:snowball", "minecraft:firework_rocket", "minecraft:fireball", "minecraft:llama_spit", "minecraft:small_fireball", "minecraft:shulker_bullet", "minecraft:dragon_fireball", "goety:soul_bolt", "goety:death_arrow", "goety:fireball", "goety:lavaball", "goety:hell_bolt", "goety:hell_chant", "goety:sword", "goety:hell_blast", "goety:ice_spike", "goety:ice_spear", "goety:ice_storm", "goety:ghost_arrow", "goety:death_arrow", "goety:harpoon", "goety:poison_quill", "goety:bone_shard", "goety:scythe", "goety:dragon_fireball", "goety:haunted_skull_shot", "goety:wither_skull", "goety:soul_bullet", "goety:soul_bolt", "goety:poison_bolt", "goety:steam_missile", "goety:wither_bolt", "goety:necro_bolt", "goety:magic_bolt", "goety:void_shock_bomb", "goety:ill_bomb", "goety:electro_orb", "goety:surging_orb", "goety:bouncy_bubble", "goety:scatter_bomb", "goety:snap_fungus", "goety:blast_fungus", "goety:berserk_fungus", "goety:magma_bomb", "goety:blossom_ball", "goety:web_shot", "goety:snareling_shot", "goety:ender_goo", "goety:tidal_surge", "goety:razor_wind", "goety:void_slash", "goetyawaken:silverfish_egg", "goetyawaken:endermite_egg", "goetyawaken:ghost_fire_bolt", "goetyawaken:mushroom_missile", "goetyawaken:mushroom_scatter_bomb", "goetyawaken:frost_scythe_slash", "goetyawaken:explosive_arrow", "goetyawaken:mod_sword_projectile", "goetyawaken:nameless_bolt", "goetyawaken:corrupted_soul_bolt"]
+#Shulker Missile Focus cooldown in ticks (default: 100)
+#Range: > 0
+shulkerMissileFocusCooldown = 100
+#Enable Watchling Enhancement(default: true)
+enableWatchlingEnhancement = true
+#Blood Rain Spell damage increase per potency level (default: 1.0)
+#Range: 0.0 ~ 1.7976931348623157E308
+bloodRainPotencyDamage = 1.0
+#Enable Snareling Enhancement(default: true)
+enableSnarelingEnhancement = true
+#Claymore attack speed (default: 0.6)
+#Range: 4.9E-324 ~ 1.7976931348623157E308
+claymoreAttackSpeed = 0.6
+#Desert Plagues Focus soul cost (default: 64)
+#Range: > 0
+desertPlaguesFocusSoulCost = 64
+#Champion Focus soul cost (default: 1000)
+#Range: > 0
+championFocusSoulCost = 1000
+#Torment Focus cast duration in ticks (default: 80)
+#Range: > 0
+tormentFocusCastDuration = 80
+#Death Cap Mushroom BERSERK effect level/amplifier (default: 4, which is level IV)
+#Range: 1 ~ 255
+deathCapMushroomEffectLevel = 4
+#Death Ray Spell cast duration in ticks (default: 0)
+#Range: > 0
+deathRaySpellCastDuration = 0
+#Grave Bane attack speed (default: 1.2)
+#Range: 4.9E-324 ~ 1.7976931348623157E308
+graveBaneAttackSpeed = 1.2
+#Enable Avada Spell for Nameless One. Default: true
+enableNamelessOneAvada = true
+#Heaven Rift Focus cooldown in ticks (default: 1200)
+#Range: > 0
+heavenRiftFocusCooldown = 1200
+#Obsidian Claymore base damage (default: 13.0)
+#Range: 0.0 ~ 1.7976931348623157E308
+obsidianClaymoreDamage = 13.0
+#Should Mooshroom Monstrosity be allowed to plant poisonous mushrooms? Default: true
+allowMushroomMonstrosityPlantPoisonousMushroom = true
+#Stare Focus cooldown in ticks (default: 600)
+#Range: > 0
+stareFocusCooldown = 600
+#Blood Rain Focus cast duration in ticks (default: 80 - 4 seconds)
+#Range: > 0
+bloodRainFocusCastDuration = 80
+#Enable Easy mode for Nameless One (which is more like Minecraft Dungeons). Default: false
+namelessOneEasyMode = false
+#Enable Leapleaf Enhancement(default: true)
+enableLeapleafEnhancement = true
+#Heaven Rift Spell base damage per Pure Light (default: 9.0)
+#Range: 0.0 ~ 1.7976931348623157E308
+heavenRiftBaseDamage = 9.0
+#Sun Grace base damage (default: 11.0)
+#Range: 0.0 ~ 1.7976931348623157E308
+sunGraceDamage = 11.0
+#Enable Blastling Enhancement(default: true)
+enableBlastlingEnhancement = true
+#Mace attack speed (default: 0.5)
+#Range: 4.9E-324 ~ 1.7976931348623157E308
+maceAttackSpeed = 0.5
+#Enable Enchantment Spell (variant) for Nameless One. Default: true
+enableNamelessOneEnchantment = true
+#Default time limit for Mushroom Monstrosity dynamic shield in ticks (default: 10)
+#Range: > 0
+mushroomDynamicShieldDefaultLimitTime = 10
+#Enable Brood Mother Enhancement(default: true)
+enableBroodMotherEnhancement = true
+#Callback Apostle feature - enables pre-nerf apostle abilities (default: true)
+callbackApostle = true
+#Wight Servant limit per player (default: 4)
+#Range: > 1
+wightServantLimit = 4
+#Nameless One limit per player (default: 1)
+#Range: > 1
+namelessOneLimit = 1
+#Sun Grace attack speed (default: 0.5)
+#Range: 4.9E-324 ~ 1.7976931348623157E308
+sunGraceAttackSpeed = 0.5
+#Whether Obsidian Monolith should glow (default: true)
+obsidianMonolithGlow = true
+#Enable Squall Golem Enhancement(default: true)
+enableSquallGolemEnhancement = true
+#Fairy Focus cooldown in ticks (default: 80 - 4 seconds)
+#Range: > 0
+fairyFocusCooldown = 80
+#Enable legacy music for Wraith Necromancer. Default: false
+wraithNecromancerLegacyMusic = false
+#Shulker Missile Focus cast duration in ticks (default: 0)
+#Range: > 0
+shulkerMissileFocusCastDuration = 0
+#Creeper Servant limit per player (default: 32)
+#Range: > 1
+creeperServantLimit = 32
+#Shulker Missile Spell base damage (default: 4.0)
+#Range: 0.0 ~ 1.7976931348623157E308
+shulkerMissileBaseDamage = 4.0
+#Enable Wildfire Enhancement(default: true)
+enableWildfireEnhancement = true
+#Claymore base damage (default: 10.0)
+#Range: 0.0 ~ 1.7976931348623157E308
+claymoreDamage = 10.0
+#Mushroom Missile Focus soul cost (default: 32)
+#Range: > 0
+mushroomMissileFocusSoulCost = 32
+#Shulker Servant limit per player (default: 8)
+#Range: > 1
+shulkerServantLimit = 8
+#MooShroom Mace base damage (default: 15.0)
+#Range: 0.0 ~ 1.7976931348623157E308
+mooShroomMaceDamage = 15.0
+#Shulker Missile Focus maximum potion effect amplifier from crafting (default: 1, which is level II)
+#Range: 0 ~ 255
+shulkerMissileMaxPotionAmplifier = 1
+#Shulker Missile Focus soul cost (default: 16)
+#Range: > 0
+shulkerMissileFocusSoulCost = 16
+#Moonlight Cut attack speed (default: 1.2)
+#Range: 4.9E-324 ~ 1.7976931348623157E308
+moonlightCutAttackSpeed = 1.2
+#Shulker Missile Focus maximum potion effect duration from crafting in ticks (default: 200 = 10 seconds)
+#Range: > 20
+shulkerMissileMaxPotionDuration = 200
+#Infestation Spell damage increase per potency level (default: 1.0)
+#Range: 0.0 ~ 1.7976931348623157E308
+infestationPotencyDamage = 1.0
+#Mushroom Missile Spell damage increase per potency level (default: 1.0)
+#Range: 0.0 ~ 1.7976931348623157E308
+mushroomMissilePotencyDamage = 1.0
+#Death Cap Mushroom cooldown in ticks after eating (default: 1200 - 60 seconds)
+#Range: > 0
+deathCapMushroomCooldown = 1200
+#Ender Keeper Servant limit per player (default: 1)
+#Range: > 1
+enderKeeperServantLimit = 2
+#How many blocks below the structure base to scan for cavities. Increase this if you see hollow spaces under structures.
+#Range: 10 ~ 200
+foundationScanBelow = 50
+#Mushroom Missile Spell base explosion damage (default: 12.0)
+#Range: 0.0 ~ 1.7976931348623157E308
+mushroomMissileBaseDamage = 12.0
+#Blood Rain Spell base damage (default: 1.0)
+#Range: 0.0 ~ 1.7976931348623157E308
+bloodRainBaseDamage = 1.0
+#Champion Focus cast duration in ticks (default: 180 - 9 seconds)
+#Range: > 0
+championFocusCastDuration = 180
+#Champion Focus cooldown in ticks (default: 1200 - 60 seconds)
+#Range: > 0
+championFocusCooldown = 1200
+#Starless Night attack speed (default: 0.6)
+#Range: 4.9E-324 ~ 1.7976931348623157E308
+starlessNightAttackSpeed = 0.6
+#Frost Scythe base damage (default: 8.5)
+#Range: 0.0 ~ 1.7976931348623157E308
+frostScytheDamage = 8.5
+#Access Focus cast duration in ticks (default: 0)
+#Range: > 0
+accessFocusCastDuration = 0
+#Enable new texture for Ally Nameless One. Default: true
+enableNamelessOneNewTexture = true
+#Desert Plagues Focus cast duration in ticks (default: 200 - 10 seconds)
+#Range: > 0
+desertPlaguesFocusCastDuration = 200
+#Wraith Necromancer limit per player (default: 2)
+#Range: > 1
+wraithNecromancerLimit = 2
+#Enable boss music for Mushroom Monstrosity. Default: true
+mushroomMonstrosityBossMusic = true
+#Fairy Focus soul cost (default: 4)
+#Range: > 0
+fairyFocusSoulCost = 4
+#Creeper Focus cooldown in ticks (default: 100)
+#Range: > 0
+creeperFocusCooldown = 100
+#Enable boss music for Wraith Necromancer. Default: true
+wraithNecromancerBossMusic = true
+#Wololo Focus cast duration in ticks (default: 60)
+#Range: > 0
+wololoFocusCastDuration = 60
+#Wither Servant limit per player (default: 2)
+#Range: > 1
+witherServantLimit = 2
+#Should Poisonous Mooshroom Block heal special owners (Mushroom Monstrosity, Angry Mooshroom, Mushroom Monstrosity Hostile)? Default: true
+allowPoisonousMushroomHealSpecialOwners = true
+#Glaive attack speed (default: 1.2)
+#Range: 4.9E-324 ~ 1.7976931348623157E308
+glaiveAttackSpeed = 1.2
+#Desert Plagues Spell damage increase per potency level (default: 1.0)
+#Range: 0.0 ~ 1.7976931348623157E308
+desertPlaguesPotencyDamage = 1.0
+#Enable new texture for Hostile Nameless One. Default: false
+enableHostileNamelessOneNewTexture = false
+#Torment Focus cooldown in ticks (default: 600)
+#Range: > 0
+tormentFocusCooldown = 600
+#Enderman Servant blacklisted blocks that cannot be picked up. Default: Minecraft's unbreakable blocks, chests, barrels, and shulker boxes
+endermanServantBlacklist = ["minecraft:bedrock", "minecraft:command_block", "minecraft:chain_command_block", "minecraft:repeating_command_block", "minecraft:barrier", "minecraft:structure_block", "minecraft:structure_void", "minecraft:crafting_table"]
+#Heaven Rift Focus soul cost (default: 256)
+#Range: > 0
+heavenRiftFocusSoulCost = 256
+#Mushroom Missile Focus cooldown in ticks (default: 100)
+#Range: > 0
+mushroomMissileFocusCooldown = 100
+#Wololo Focus soul cost (default: 1)
+#Range: > 0
+wololoFocusSoulCost = 1
+#Tormentor Servant limit per player (default: 8)
+#Range: > 1
+tormentorServantLimit = 8
+#Enable Easy mode for Mushroom Monstrosity (which is more like Minecraft Dungeons). Default: false
+mushroomMonstrosityEasyMode = false
+#Obsidian Claymore attack speed (default: 0.6)
+#Range: 4.9E-324 ~ 1.7976931348623157E308
+obsidianClaymoreAttackSpeed = 0.6
+#Pale Golem Servant limit per player
+#Range: > 1
+paleGolemLimit = 4
+#Enable Support and Buff Spells for Nameless One. Default: true
+enableNamelessOneSupportSpells = true
+#Enable Apostle Servant Armor Renderer(default: true)
+enableApostleServantArmorRenderer = true
+#Caerbannog Rabbit Servant limit per player (default: 16)
+#Range: > 1
+caerbannogRabbitServantLimit = 16
+#Warden Servant limit per player
+#Range: > 2
+wardenServantLimit = 2
+#Death Ray Spell damage increase per potency level (default: 3.0)
+#Range: 0.0 ~ 1.7976931348623157E308
+deathRayPotencyDamage = 3.0
+#Truth Seeker attack speed (default: 0.8)
+#Range: 4.9E-324 ~ 1.7976931348623157E308
+truthSeekerAttackSpeed = 0.8
+#Mushroom Missile area effect cloud duration in ticks, affected by lasting enchantment (default: 100 = 5 seconds)
+#Range: > 20
+mushroomMissileAreaCloudDuration = 100
+#Blood Rain Focus soul cost (default: 16)
+#Range: > 0
+bloodRainFocusSoulCost = 16
+#Ruins Necromancer limit per player (default: 2)
+#Range: > 1
+ruinsNecromancerLimit = 2
+#Enderman Servant limit per player (default: 16)
+#Range: > 1
+endermanServantLimit = 16
+#Agony Focus Spell damage increase per potency level (default: 2.0)
+#Range: 0.0 ~ 1.7976931348623157E308
+agonyFocusPotencyDamage = 2.0
+#Mushroom Missile Focus cast duration in ticks (default: 20)
+#Range: > 0
+mushroomMissileFocusCastDuration = 20
+#Enable Desert Plagues Spell for Nameless One. Default: true
+enableNamelessOneDesertPlagues = true
+#How many blocks above the structure base to scan for cavities
+#Range: 1 ~ 50
+foundationScanAbove = 7
+#Mace base damage (default: 9.0)
+#Range: 0.0 ~ 1.7976931348623157E308
+maceDamage = 9.0
+#Killer Spell soul cost (default: 8)
+#Range: > 0
+killerSpellSoulCost = 8
+#Death Ray Spell cooldown in ticks (default: 20)
+#Range: > 0
+deathRaySpellCooldown = 20
+#Mushroom Missile Focus maximum potion effect amplifier from crafting (default: 1, which is level II)
+#Range: 0 ~ 255
+mushroomMissileMaxPotionAmplifier = 1
+#Truth Seeker base damage (default: 12.0)
+#Range: 0.0 ~ 1.7976931348623157E308
+truthSeekerDamage = 12.0
+#Death Cap Mushroom maximum usages before being consumed (default: 10)
+#Range: > 1
+deathCapMushroomMaxUsages = 10
+#Shulker Missile Spell damage increase per potency level (default: 1.0)
+#Range: 0.0 ~ 1.7976931348623157E308
+shulkerMissilePotencyDamage = 1.0
+#Killer Spell cooldown in ticks (default: 160)
+#Range: > 0
+killerSpellCooldown = 160
+#Access Focus soul cost (default: 10)
+#Range: > 0
+accessFocusSoulCost = 10
+#Glaive base damage (default: 8.0)
+#Range: 0.0 ~ 1.7976931348623157E308
+glaiveDamage = 8.0
+#Enable Thunderstorm Spell for Nameless One. Default: true
+enableNamelessOneThunderstorm = true
+#Allow Apostles to summon armored Zombie Piglin Brutes (default: false)
+apostleSummonArmoredZombiePiglin = false
+#Agony Focus cooldown in ticks (default: 200)
+#Range: > 0
+agonyFocusCooldown = 200
+#Creeper Focus cast duration in ticks (default: 40)
+#Range: > 0
+creeperFocusCastDuration = 40
+#Death Ray Spell base damage (default: 5.0)
+#Range: 0.0 ~ 1.7976931348623157E308
+deathRayBaseDamage = 5.0
+#List of structures that will receive foundation generation. Format: modid:structure_name
+foundationWhitelist = ["goetyawaken:mirage", "goetyawaken:ominous_castle", "goetyawaken:arch_illusioner_keep"]
+#Killer Spell cast duration in ticks (default: 40)
+#Range: > 0
+killerSpellCastDuration = 40
+#Infestation Focus cooldown in ticks (default: 60)
+#Range: > 0
+infestationFocusCooldown = 60
+#Torment Focus soul cost (default: 48)
+#Range: > 0
+tormentFocusSoulCost = 48
+#Mushroom Missile Focus maximum potion effect duration from crafting in ticks (default: 200 = 10 seconds)
+#Range: > 20
+mushroomMissileMaxPotionDuration = 200
+#Starless Night base damage (default: 16.0)
+#Range: 0.0 ~ 1.7976931348623157E308
+starlessNightDamage = 16.0
+#Mushroom Monstrosity limit per player (default: 1)
+#Range: > 1
+mushroomMonstrosityLimit = 1
+#Creeper Focus soul cost (default: 32)
+#Range: > 0
+creeperFocusSoulCost = 32
+#Killer Spell summon down duration in ticks (default: 160)
+#Range: > 0
+killerSpellSummonDownDuration = 160
+#Heaven Rift Spell damage increase per potency level (default: 2.0)
+#Range: 0.0 ~ 1.7976931348623157E308
+heavenRiftPotencyDamage = 2.0
+#Moonlight Cut base damage (default: 10.0)
+#Range: 0.0 ~ 1.7976931348623157E308
+moonlightCutDamage = 10.0
+#Death Cap Mushroom BERSERK effect duration in ticks (default: 600 - 30 seconds)
+#Range: > 0
+deathCapMushroomEffectDuration = 600
+#Stare Focus soul cost (default: 48)
+#Range: > 0
+stareFocusSoulCost = 48
+#Infestation Focus cast duration in ticks (default: 0)
+#Range: > 0
+infestationFocusCastDuration = 0
+#Wololo Focus cooldown in ticks (default: 140)
+#Range: > 0
+wololoFocusCooldown = 140
+#Apostle Servant limit per player (default: 2)
+#Range: > 1
+apostleServantLimit = 2
+#Infestation Spell base damage per egg (default: 6.0)
+#Range: 0.0 ~ 1.7976931348623157E308
+infestationBaseDamage = 6.0
+#Heaven Rift Focus cast duration in ticks (default: 0)
+#Range: > 0
+heavenRiftFocusCastDuration = 0
+#Fairy Focus cast duration in ticks (default: 40 - 2 seconds)
+#Range: > 0
+fairyFocusCastDuration = 40
+#Enable Piker Enhancement(default: true)
+enablePikerEnhancement = true
+#Maid Fairy Servant limit per player (default: 64)
+#Range: > 1
+maidFairyServantLimit = 64
+#Stare Focus cast duration in ticks (default: 80)
+#Range: > 0
+stareFocusCastDuration = 80
+#Agony Focus cast up duration in ticks (default: 0)
+#Range: > 0
+agonyFocusCastUp = 0
+#The maximum number of times a single item can be enhanced on an anvil using a Gilded Ingot to improve its enchantments. (default: 3)
+#Range: > 1
+gildedIngotMaxEnhancements = 3
+#Allow Crone Servant to throw Gas Brew (default: false)
+croneServantAllowGasBrew = false
+#Blood Rain Focus cooldown in ticks (default: 240 - 12 seconds)
+#Range: > 0
+bloodRainFocusCooldown = 240
+#Enable Heaven Rift Spell for Nameless One. Default: true
+enableNamelessOneHeavenRift = true
+#Frost Scythe attack speed (default: 0.6)
+#Range: 0.0 ~ 1.7976931348623157E308
+frostScytheAttackSpeed = 0.6
+#Desert Plagues Focus cooldown in ticks (default: 1200 - 60 seconds)
+#Range: > 0
+desertPlaguesFocusCooldown = 1200
+#Death Ray Spell soul cost (default: 16)
+#Range: > 0
+deathRaySpellSoulCost = 16
+#Enable boss music for Nameless One. Default: true
+namelessOneBossMusic = true
+#Grave Bane base damage (default: 9.0)
+#Range: 0.0 ~ 1.7976931348623157E308
+graveBaneDamage = 9.0
+

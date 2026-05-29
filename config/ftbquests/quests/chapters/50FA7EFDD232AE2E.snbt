@@ -1,0 +1,37 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "50FA7EFDD232AE2E"
+	group: "64426895FE9D2AAA"
+	icon: "gtceu:lp_steam_alloy_smelter"
+	id: "50FA7EFDD232AE2E"
+	order_index: 0
+	progression_mode: "flexible"
+	quest_links: [ ]
+	quests: [
+		{
+			id: "6F06A353583D5A9F"
+			subtitle: "恭喜进入第一阶段"
+			tasks: [{
+				id: "6573C26E6EBD3781"
+				title: "一切的开始"
+				type: "checkmark"
+			}]
+			title: "开始"
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			id: "50A67E523CA2C4B5"
+			subtitle: "恭喜你进入电气时代"
+			tasks: [{
+				id: "16ABAB78749BA45F"
+				item: "gtceu:lv_machine_hull"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+	]
+	title: "凡胎/凝气"
+}

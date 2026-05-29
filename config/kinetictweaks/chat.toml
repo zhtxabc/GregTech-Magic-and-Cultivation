@@ -1,0 +1,36 @@
+#聊天输入框与指令的最大字符限制。
+#Maximum character limit for chat messages and commands.
+#提示：原版硬编码限制为 256。增大此值可发送超长文本或复杂指令。
+#Note: Vanilla is hardcoded to 256. Increasing this allows for long texts or complex commands.
+max_chat_length = 16384
+#客户端聊天历史记录的最大保留行数。
+#Maximum number of lines to keep in client chat history.
+#提示：原版限制为 100。增加此值有助于在不翻看日志文件的情况下查阅长篇对话。
+#Note: Vanilla limit is 100. Increasing this helps with reviewing long conversations without checking logs.
+max_chat_history_lines = 1000
+#是否在聊天界面右侧显示可鼠标拖拽的视觉滚动条。
+#Whether to display a draggable visual scrollbar on the right side of the chat screen.
+#提示：方便在使用鼠标时快速翻阅长达数千行的历史记录。
+#Note: Useful for quickly scrolling through thousands of history lines using a mouse.
+enable_draggable_scrollbar = true
+#是否在每条消息前显示高精度时间戳 [HH:mm:ss.SSS]。
+#Whether to display a high-precision timestamp [HH:mm:ss.SSS] before each message.
+#提示：有助于在回溯历史记录时精确追踪事件发生的时间。
+#Note: Helps accurately track event timing when reviewing chat history.
+enable_timestamp = true
+#是否开启消息合并（叠楼）。连续相同的消息将合并显示并增加计数 [x5]。
+#Whether to enable Message Compaction. Identical consecutive messages will be merged with a counter.
+#提示：大幅减少系统消息、模组报错或玩家复读导致的刷屏。
+#Note: Significantly reduces spam from system messages, mod errors, or player repetition.
+enable_compact_chat = true
+#是否启用“末端签名剥离”技术（反举报功能）。
+#Whether to enable "Late Signature Stripping" (No Chat Reports functionality).
+#提示：在消息广播给其他玩家的前一刻抹除签名，既能废除微软举报系统，又能保全服务端聊天事件流的完整性。
+#Note: Strips signatures before broadcasting, disabling the reporting system while preserving server-side chat events.
+strip_chat_signatures = true
+#是否在玩家消息前显示 8x8 像素的皮肤头像。
+#Whether to display 8x8 pixel skin avatars before player messages.
+#提示：支持正版皮肤实时获取与持久化恢复。即便重新进入游戏，历史记录中的头像依然会根据 UUID 显示。
+#Note: Supports real-time premium skin retrieval and persistence. Avatars in history will still show correctly via UUID after reconnection.
+enable_chat_heads = true
+

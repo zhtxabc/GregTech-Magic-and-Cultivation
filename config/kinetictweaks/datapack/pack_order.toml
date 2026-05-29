@@ -1,0 +1,34 @@
+# KineticTweaks 全局资源管理与自动化排序系统
+# KineticTweaks Global Resource Management & Auto-Ordering System
+
+# [加载顺序与优先级说明 (Priority & Loading Rules)]
+# 1. 列表顶部的包具有最高优先级 (TOP Priority)。
+#    1. Packs at the top of the list have the absolute highest priority.
+# 2. 覆盖逻辑：如果两个包修改了同一个文件，排在上面的包会完全覆盖(Overwrite)下方的包。
+#    2. Overwrite Logic: Upper packs in the list will completely override the lower ones.
+# 3. 后来者居上：系统会自动扫描文件夹，新加入的文件会强制插入到列表第一行。
+#    3. Latest First: Newly discovered files are automatically prepended to the first line.
+# 4. 修改后需重启游戏生效。
+#    4. A game restart is required for changes to take effect.
+
+#[支持的文件层级结构 (Supported File Structures)]
+# 系统支持以下三种存放方式：
+# The system supports three distinct pack structures:
+# A. 标准压缩包 (ZIP): 例如 'MyPack.zip'，内部包含标准的 data 文件夹和 pack.mcmeta。
+# A. Standard ZIP: e.g., 'MyPack.zip', containing data folder and pack.mcmeta.
+# B. 标准文件夹 (Folder): 例如 'CustomPack/' 文件夹，内部包含 data 和 pack.mcmeta。
+# B. Standard Folder: e.g., 'CustomPack/' folder, containing data and pack.mcmeta.
+# C. 散装模式 (Loose Folder): 直接放入命名空间文件夹（如 'alexsmobs/'），无需 pack.mcmeta。
+# C. Loose Folder: Drop namespace folders directly (e.g., 'alexsmobs/'), no pack.mcmeta required.
+#    系统会自动为散装文件夹伪造元数据并将文件夹名映射为对应的命名空间。
+#    The system will auto-virtualize metadata and map the folder name as the namespace.
+
+#[数据包配置列表 - /datapack/data/ 目录]
+#[Datapack Order List - Located in /datapack/data/ folder]
+datapacks =[
+]
+
+# [资源包配置列表 - /datapack/resources/ 目录]
+# [Resourcepack Order List - Located in /datapack/resources/ folder]
+resourcepacks =[
+]

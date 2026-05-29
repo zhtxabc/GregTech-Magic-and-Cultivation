@@ -1,0 +1,26 @@
+
+#日志与崩溃报告自动清理系统
+#Log & Crash Report Auto-Cleaner
+[log_cleaner]
+	# 是否在游戏关闭时自动在后台清理旧的日志和崩溃报告。
+	#Whether to auto-clean old logs and crash reports asynchronously on game shutdown.
+	enable = true
+	# 最大保留的崩溃报告数量 (设定的值不可低于 1)。
+	#Max amount of crash reports to keep (minimum value is 1).
+	max_crash_reports = 3
+	# 最大保留的旧普通日志数量 (如 2024-xx-xx.log.gz，不包括 latest.log)。
+	#Max amount of old regular logs to keep (excluding latest.log).
+	max_logs = 3
+	# 最大保留的旧调试日志数量 (如 debug-x.log.gz，不包括 debug.log)。
+	#Max amount of old debug logs to keep (excluding debug.log).
+	max_debug_logs = 3
+	# 是否开启控制台与文件日志的自动去重功能。连续重复的日志将在末尾加上 *2, *3 等。
+	#Whether to enable log deduplication. Repeated consecutive logs will be appended with *2, *3, etc.
+	deduplication = true
+	# 包含以下关键词的日志将被彻底屏蔽（不在控制台输出，也不写入日志文件）。
+	#支持配置多个关键词，请务必使用英文逗号 [,] 进行分隔！
+	#示例 (多个过滤词): "Tried to load a block entity,Connection reset,Another boring log"
+	#Logs containing these keywords will be completely hidden.
+	#You can configure multiple keywords, please use English commas [,] to separate them!
+	filtered_keywords = "Tried to load a block entity for block"
+

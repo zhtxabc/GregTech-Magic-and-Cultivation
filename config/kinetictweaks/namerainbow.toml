@@ -1,0 +1,498 @@
+
+#炫彩字体特效配置系统 / Rainbow Font Effect Configuration System
+#[ 核心参数详解 / Core Parameters Guide ]
+#speed: 颜色流动的整体循环速度 (越高越快) / Color flow speed.
+#wave: 颜色渐变的波长密度 / Wavelength density.
+#isBreath: 是否启用呼吸式颜色变换 / Enable breath color transition.
+#isEcg: 心电图波浪效果，逐字跳动 / ECG Wave effect, jumping character by character.
+#alphaFlicker: 透明度闪烁(信号丢失效果) / Opacity flicker (Signal loss glitch).
+#alphaFlickerSpeed: 闪烁频率 / Flicker speed.
+#
+#[ 指令扩展标志 / Command Style Flags ]
+#除了基础配置，你还可以使用标志位 (Flags) 组合出无限可能！
+#A = 彩虹 (Rainbow), B = 粗体 (Bold), C = 删除线 (Strike),
+#D = 抖动 (Jitter), E = 故障错位 (Glitch), F = 颠倒 (Upside Down)
+#
+#你可以使用 /kt name effect <ID> 应用下面的任一特效！
+#Apply effect to self: /kt name effect <ID>
+#即时重载 / Reload instantly: /kt reload.
+[[effects]]
+	isEcg = false
+	jitterSpeed = 1.0
+	alphaFlickerSpeed = 1.0
+	reverseDirection = false
+	scaleAmplitude = 0.0
+	speed = 5.0E-4
+	wave = 0.015
+	saturation = 0.8
+	brightness = 1.0
+	jitterAmplitude = 0.5
+	isBreath = false
+	isJitter = true
+	scaleSpeed = 1.0
+	alphaFlicker = false
+
+[[effects]]
+	isEcg = false
+	jitterSpeed = 0.8
+	alphaFlickerSpeed = 1.0
+	reverseDirection = false
+	scaleAmplitude = 0.0
+	speed = 2.0E-4
+	wave = 0.01
+	saturation = 0.7
+	brightness = 0.8
+	jitterAmplitude = 0.3
+	isBreath = true
+	isJitter = true
+	scaleSpeed = 1.0
+	alphaFlicker = false
+
+[[effects]]
+	isEcg = false
+	jitterSpeed = 1.5
+	alphaFlickerSpeed = 1.0
+	reverseDirection = false
+	scaleAmplitude = 0.0
+	speed = 0.002
+	wave = 0.03
+	saturation = 1.0
+	brightness = 1.0
+	jitterAmplitude = 0.15
+	isBreath = false
+	isJitter = true
+	scaleSpeed = 1.0
+	alphaFlicker = false
+
+[[effects]]
+	isEcg = false
+	jitterSpeed = 1.0
+	alphaFlickerSpeed = 1.0
+	reverseDirection = false
+	scaleAmplitude = 0.0
+	speed = 0.003
+	wave = 0.005
+	saturation = 0.9
+	brightness = 0.9
+	jitterAmplitude = 0.15
+	isBreath = false
+	isJitter = true
+	scaleSpeed = 1.0
+	alphaFlicker = false
+
+[[effects]]
+	isEcg = false
+	jitterSpeed = 0.5
+	alphaFlickerSpeed = 1.0
+	reverseDirection = false
+	scaleAmplitude = 0.0
+	speed = 5.0E-4
+	wave = 0.02
+	saturation = 0.3
+	brightness = 0.95
+	jitterAmplitude = 0.15
+	isBreath = false
+	isJitter = true
+	scaleSpeed = 1.0
+	alphaFlicker = false
+
+[[effects]]
+	isEcg = false
+	jitterSpeed = 1.0
+	alphaFlickerSpeed = 1.0
+	reverseDirection = false
+	scaleAmplitude = 0.0
+	speed = 8.0E-4
+	wave = 0.01
+	saturation = 1.0
+	brightness = 0.7
+	jitterAmplitude = 0.15
+	isBreath = false
+	isJitter = true
+	scaleSpeed = 1.0
+	alphaFlicker = false
+
+[[effects]]
+	isEcg = false
+	jitterSpeed = 0.2
+	alphaFlickerSpeed = 1.0
+	reverseDirection = false
+	scaleAmplitude = 0.0
+	speed = 2.0E-4
+	wave = 0.05
+	saturation = 0.9
+	brightness = 1.0
+	jitterAmplitude = 0.15
+	isBreath = false
+	isJitter = true
+	scaleSpeed = 1.0
+	alphaFlicker = false
+
+[[effects]]
+	isEcg = false
+	jitterSpeed = 1.0
+	alphaFlickerSpeed = 1.0
+	reverseDirection = false
+	scaleAmplitude = 0.0
+	speed = 0.0018
+	wave = 0.015
+	saturation = 0.8
+	brightness = 0.6
+	jitterAmplitude = 0.15
+	isBreath = true
+	isJitter = true
+	scaleSpeed = 1.0
+	alphaFlicker = false
+
+[[effects]]
+	isEcg = false
+	jitterSpeed = 1.0
+	alphaFlickerSpeed = 1.0
+	reverseDirection = false
+	scaleAmplitude = 0.0
+	speed = 4.0E-4
+	wave = 0.02
+	saturation = 0.1
+	brightness = 0.9
+	jitterAmplitude = 0.15
+	isBreath = false
+	isJitter = true
+	scaleSpeed = 1.0
+	alphaFlicker = false
+
+[[effects]]
+	isEcg = false
+	jitterSpeed = 2.0
+	alphaFlickerSpeed = 1.0
+	reverseDirection = false
+	scaleAmplitude = 0.0
+	speed = 0.005
+	wave = 0.05
+	saturation = 1.0
+	brightness = 1.0
+	jitterAmplitude = 0.15
+	isBreath = false
+	isJitter = true
+	scaleSpeed = 1.0
+	alphaFlicker = false
+
+[[effects]]
+	isEcg = false
+	jitterSpeed = 1.2
+	alphaFlickerSpeed = 1.0
+	reverseDirection = false
+	scaleAmplitude = 0.0
+	speed = 8.0E-4
+	wave = 0.008
+	saturation = 1.0
+	brightness = 1.0
+	jitterAmplitude = 0.8
+	isBreath = false
+	isJitter = true
+	scaleSpeed = 1.0
+	alphaFlicker = false
+
+[[effects]]
+	isEcg = false
+	jitterSpeed = 3.0
+	alphaFlickerSpeed = 1.0
+	reverseDirection = false
+	scaleAmplitude = 0.0
+	speed = 0.002
+	wave = 0.015
+	saturation = 1.0
+	brightness = 1.0
+	jitterAmplitude = 0.3
+	isBreath = false
+	isJitter = true
+	scaleSpeed = 1.0
+	alphaFlicker = false
+
+[[effects]]
+	isEcg = false
+	jitterSpeed = 0.5
+	alphaFlickerSpeed = 1.0
+	reverseDirection = false
+	scaleAmplitude = 0.0
+	speed = 8.0E-4
+	wave = 0.01
+	saturation = 0.8
+	brightness = 1.0
+	jitterAmplitude = 0.8
+	isBreath = false
+	isJitter = true
+	scaleSpeed = 1.0
+	alphaFlicker = false
+
+[[effects]]
+	isEcg = false
+	jitterSpeed = 0.2
+	alphaFlickerSpeed = 1.0
+	reverseDirection = false
+	scaleAmplitude = 0.0
+	speed = 0.0
+	wave = 0.0
+	saturation = 1.0
+	brightness = 1.0
+	jitterAmplitude = 0.2
+	isBreath = true
+	isJitter = true
+	scaleSpeed = 1.0
+	alphaFlicker = false
+
+[[effects]]
+	isEcg = false
+	jitterSpeed = 1.0
+	alphaFlickerSpeed = 1.0
+	reverseDirection = false
+	scaleAmplitude = 0.0
+	speed = 4.0E-4
+	wave = 0.03
+	saturation = 0.9
+	brightness = 1.0
+	jitterAmplitude = 0.0
+	isBreath = true
+	isJitter = false
+	scaleSpeed = 1.0
+	alphaFlicker = false
+
+[[effects]]
+	isEcg = false
+	jitterSpeed = 2.5
+	alphaFlickerSpeed = 1.0
+	reverseDirection = true
+	scaleAmplitude = 0.0
+	speed = 0.007
+	wave = 0.05
+	saturation = 1.0
+	brightness = 1.0
+	jitterAmplitude = 1.0
+	isBreath = false
+	isJitter = true
+	scaleSpeed = 1.0
+	alphaFlicker = false
+
+[[effects]]
+	isEcg = false
+	jitterSpeed = 1.0
+	alphaFlickerSpeed = 1.0
+	reverseDirection = false
+	scaleAmplitude = 0.0
+	speed = 2.0E-4
+	wave = 0.02
+	saturation = 0.2
+	brightness = 0.9
+	jitterAmplitude = 0.0
+	isBreath = true
+	isJitter = false
+	scaleSpeed = 1.0
+	alphaFlicker = false
+
+[[effects]]
+	isEcg = false
+	jitterSpeed = 1.0
+	alphaFlickerSpeed = 1.0
+	reverseDirection = false
+	scaleAmplitude = 0.0
+	speed = 2.0E-4
+	wave = 0.0
+	saturation = 0.8
+	brightness = 1.0
+	jitterAmplitude = 2.0
+	isBreath = true
+	isJitter = true
+	scaleSpeed = 1.0
+	alphaFlicker = false
+
+[[effects]]
+	isEcg = false
+	jitterSpeed = 1.0
+	alphaFlickerSpeed = 1.0
+	reverseDirection = false
+	scaleAmplitude = 0.0
+	speed = 0.009
+	wave = 0.0
+	saturation = 1.0
+	brightness = 1.0
+	jitterAmplitude = 0.0
+	isBreath = false
+	isJitter = false
+	scaleSpeed = 1.0
+	alphaFlicker = false
+
+[[effects]]
+	isEcg = false
+	jitterSpeed = 1.0
+	alphaFlickerSpeed = 1.0
+	reverseDirection = false
+	scaleAmplitude = 0.2
+	speed = 0.004
+	wave = 0.015
+	saturation = 0.8
+	brightness = 1.0
+	jitterAmplitude = 0.2
+	isBreath = false
+	isJitter = true
+	scaleSpeed = 1.5
+	alphaFlicker = false
+
+[[effects]]
+	isEcg = true
+	jitterSpeed = 1.0
+	alphaFlickerSpeed = 1.0
+	reverseDirection = false
+	scaleAmplitude = 0.0
+	speed = 0.001
+	wave = 0.0
+	saturation = 1.0
+	brightness = 1.0
+	jitterAmplitude = 1.5
+	isBreath = true
+	isJitter = true
+	scaleSpeed = 1.0
+	alphaFlicker = false
+
+[[effects]]
+	isEcg = false
+	jitterSpeed = 1.0
+	alphaFlickerSpeed = 1.0
+	reverseDirection = false
+	scaleAmplitude = 0.1
+	speed = 0.002
+	wave = 0.0
+	saturation = 1.0
+	brightness = 1.0
+	jitterAmplitude = 0.0
+	isBreath = true
+	isJitter = false
+	scaleSpeed = 1.2
+	alphaFlicker = false
+
+[[effects]]
+	isEcg = false
+	jitterSpeed = 3.0
+	alphaFlickerSpeed = 4.0
+	reverseDirection = false
+	scaleAmplitude = 0.0
+	speed = 0.005
+	wave = 0.05
+	saturation = 1.0
+	brightness = 1.0
+	jitterAmplitude = 1.5
+	isBreath = false
+	isJitter = false
+	scaleSpeed = 1.0
+	alphaFlicker = true
+
+[[effects]]
+	isEcg = false
+	jitterSpeed = 1.0
+	alphaFlickerSpeed = 1.0
+	reverseDirection = true
+	scaleAmplitude = 0.0
+	speed = 3.0E-4
+	wave = 0.1
+	saturation = 1.0
+	brightness = 0.8
+	jitterAmplitude = 0.0
+	isBreath = false
+	isJitter = false
+	scaleSpeed = 1.0
+	alphaFlicker = false
+
+[[effects]]
+	isEcg = false
+	jitterSpeed = 5.0
+	alphaFlickerSpeed = 6.0
+	reverseDirection = false
+	scaleAmplitude = 0.0
+	speed = 8.0E-4
+	wave = 0.0
+	saturation = 0.0
+	brightness = 1.0
+	jitterAmplitude = 0.5
+	isBreath = false
+	isJitter = false
+	scaleSpeed = 1.0
+	alphaFlicker = true
+
+[[effects]]
+	isEcg = true
+	jitterSpeed = 1.5
+	alphaFlickerSpeed = 1.0
+	reverseDirection = false
+	scaleAmplitude = 0.2
+	speed = 5.0E-4
+	wave = 0.02
+	saturation = 0.3
+	brightness = 1.0
+	jitterAmplitude = 0.8
+	isBreath = false
+	isJitter = true
+	scaleSpeed = 1.5
+	alphaFlicker = false
+
+[[effects]]
+	isEcg = false
+	jitterSpeed = 1.0
+	alphaFlickerSpeed = 1.0
+	reverseDirection = false
+	scaleAmplitude = 0.0
+	speed = 0.008
+	wave = 0.5
+	saturation = 1.0
+	brightness = 1.0
+	jitterAmplitude = 0.0
+	isBreath = false
+	isJitter = false
+	scaleSpeed = 1.0
+	alphaFlicker = false
+
+[[effects]]
+	isEcg = false
+	jitterSpeed = 0.5
+	alphaFlickerSpeed = 2.0
+	reverseDirection = false
+	scaleAmplitude = 0.15
+	speed = 0.001
+	wave = 0.01
+	saturation = 1.0
+	brightness = 1.0
+	jitterAmplitude = 0.2
+	isBreath = false
+	isJitter = true
+	scaleSpeed = 8.0
+	alphaFlicker = true
+
+[[effects]]
+	isEcg = true
+	jitterSpeed = 1.5
+	alphaFlickerSpeed = 1.5
+	reverseDirection = false
+	scaleAmplitude = 0.0
+	speed = 0.002
+	wave = 0.015
+	saturation = 0.9
+	brightness = 1.0
+	jitterAmplitude = 0.5
+	isBreath = false
+	isJitter = true
+	scaleSpeed = 1.0
+	alphaFlicker = true
+
+[[effects]]
+	isEcg = true
+	jitterSpeed = 8.0
+	alphaFlickerSpeed = 8.0
+	reverseDirection = true
+	scaleAmplitude = 0.3
+	speed = 0.01
+	wave = 0.1
+	saturation = 1.0
+	brightness = 1.0
+	jitterAmplitude = 2.0
+	isBreath = false
+	isJitter = true
+	scaleSpeed = 5.0
+	alphaFlicker = true
+

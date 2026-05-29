@@ -1,0 +1,64 @@
+
+#游戏机制设置
+#Game Mechanics Settings
+[mechanics]
+	# 是否开启增强型 PVP 保护 (受保护玩家及其仆从免受他人伤害，且自动消除相关仇恨)
+	#Enable enhanced PVP protection, preventing damage and aggro between protected players, others, and their minions.
+	enablePvpProtection = true
+	# 是否开启实体属性修复 (自动清除或修复血量为 NaN 的幽灵实体)
+	#Enable entity attribute fixer (fixes NaN health entities).
+	enableEntityAttributeFixer = true
+	# 是否开启“暴食模式” (满腹度也可进食，即不饥饿时也能吃东西)
+	#Enable 'Gluttony Mode' (Always edible), allows eating food even when not hungry.
+	enableAlwaysEdible = true
+	# 是否开启耕地保护 (穿着带有“保护”附魔的靴子踩踏不破坏耕地)
+	#Enable Farmland Protection. Players wearing boots enchanted with 'Protection' will not destroy Farmland by stepping on it.
+	enableFarmlandProtection = true
+	# 允许斧头等工具像剑/剪刀一样快速破坏蜘蛛网
+	#Allows tools like Axes to break Cobwebs as fast as Swords or Shears.
+	fastCobWebBreaking = true
+	# 删除世界存档时将其移至系统回收站而非直接销毁 (仅支持桌面环境)
+	#Move deleted worlds to the system recycle bin instead of permanent deletion (Desktop only).
+	recycleBinWorlds = true
+
+#创造模式增强
+#Creative Mode Enhancements
+[creative]
+	# 是否为创造模式玩家开启虚空与Kill指令免疫保护
+	#Enable Void and Kill Immunity for Creative Mode players.
+	enableVoidImmunity = true
+
+#配方书设置
+#Recipe Book Settings
+[recipe_book]
+	# 彻底移除配方书功能以显著提升加载速度并降低内存占用
+	#Completely remove the Recipe Book function to improve loading speed and reduce memory usage.
+	removeRecipeBook = true
+
+#死亡惩罚设置
+#Death Penalty Settings
+[death]
+	# 开启死亡不掉落时的经验掉落比例 (0-100)
+	#Percentage of XP to drop when the 'keepInventory' gamerule is enabled (0-100).
+	keep_inventory_drop_xp_percentage = 50
+
+#生物消失优化
+#Mob Despawn Tweaks
+[mobs]
+	# 是否开启“捡取物品后仍可消失”功能
+	#Enable 'Let Me Despawn' feature.
+	enableLetMeDespawn = true
+	# 强制保持永久存在的生物名单，支持使用 @modid 排除整个模组
+	#Whitelist of entities, support @modid to exclude entire mod.
+	despawnWhiteList = []
+
+#虚空伤害设置
+#Void Damage Settings
+[void_damage]
+	# 保持原版虚空伤害的生物白名单，支持使用 @modid 排除模组，#标签 排除实体标签，或直接填写实体ID
+	#Whitelist of entities to keep vanilla void damage. Supports @modid, #tag, or entity ID.
+	whiteList = []
+	# 虚空伤害每次扣除最大生命值的百分比 (0-100)
+	#Percentage of max health deducted per void damage tick (0-100).
+	percentage = 10
+

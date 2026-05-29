@@ -1,0 +1,5 @@
+{
+  "order": 250,
+  "icon": "curios:slot/empty_amulet_slot",
+  "validators": ["curios:tag"]
+}

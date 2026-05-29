@@ -1,0 +1,59 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "249C6DA79ACDCE15"
+	group: "64426895FE9D2AAA"
+	icon: "gtceu:lv_electric_motor"
+	id: "249C6DA79ACDCE15"
+	order_index: 1
+	progression_mode: "flexible"
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["50A67E523CA2C4B5"]
+			id: "2C29E0AD5D464DD4"
+			subtitle: "后续的所有阶段都要做哦"
+			tasks: [
+				{
+					id: "5E8B3D1A7CA91ADE"
+					item: "gtceu:lv_electric_motor"
+					type: "item"
+				}
+				{
+					id: "74E1C00F0E6FA9B3"
+					item: "gtceu:lv_electric_pump"
+					type: "item"
+				}
+				{
+					id: "19F46365DD647D4F"
+					item: "gtceu:lv_conveyor_module"
+					type: "item"
+				}
+				{
+					id: "41C22C67B4386C3F"
+					item: "gtceu:lv_electric_piston"
+					type: "item"
+				}
+				{
+					id: "7E9D791CC669DF58"
+					item: "gtceu:lv_robot_arm"
+					type: "item"
+				}
+			]
+			title: "筑基阶段五件套"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "58D09EB7120294BA"
+			tasks: [{
+				id: "372EB80CAD741170"
+				item: "gtceu:mv_machine_hull"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+	]
+	title: "筑基"
+}

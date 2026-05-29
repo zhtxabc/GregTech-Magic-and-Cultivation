@@ -299,8 +299,8 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 .aisle("AAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "BCD                       ECF", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "HHH                       HHH", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ")
 .where('A',Predicates.blocks('minecraft:smooth_quartz')
 .or(Predicates.autoAbilities(definition.getRecipeTypes())))
-.where('O', Predicates.fluids(Fluid.of('minecraft:water')))
-.where('P', Predicates.fluids(Fluid.of('minecraft:water')))
+.where('O', Predicates.fluids('minecraft:water'))
+.where('P', Predicates.fluids('minecraft:water'))
 .where('1',Predicates.blocks('minecraft:diorite_wall'))
 .where('W',Predicates.blocks('minecraft:diorite_wall'))
 .where('K',Predicates.blocks('minecraft:cherry_leaves'))
@@ -818,7 +818,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 GTCEuStartupEvents.registry('gtceu:machine', event => {
     event.create('bagualu', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        .recipeType('the_bagua_of_heaven_and_earth')
+        .recipeType('blast_furnace')
         .recipeModifiers(GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.NON_PERFECT_OVERCLOCK))
         .pattern(definition => FactoryBlockPattern.start()
 .aisle("                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                BBB                                ", "                                BBB                                ", "                                BBB                                ", "                                BBB                                ", "                                C C                                ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ", "                                                                   ")
@@ -911,10 +911,10 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 .where('I', Predicates.blocks('minecraft:stone_slab'))
 .where('R', Predicates.blocks('minecraft:dark_oak_planks'))
 .where('N', Predicates.blocks('minecraft:black_concrete'))
-.where('D', Predicates.blocks('minecraft:glass'))
-.where('B', Predicates.blocks('minecraft:black_stained_glass'))
-.where('K', Predicates.blocks('minecraft:red_stained_glass'))
-.where('M', Predicates.blocks('minecraft:light_gray_stained_glass'))
+.where('D', Predicates.blocks('connectedglass:borderless_glass'))
+.where('B', Predicates.blocks('connectedglass:borderless_glass_black'))
+.where('K', Predicates.blocks('connectedglass:borderless_glass_red'))
+.where('M', Predicates.blocks('connectedglass:borderless_glass_light_gray'))
 .where('P', Predicates.blocks('minecraft:oak_slab'))
 .where('v', Predicates.blocks('minecraft:mud_brick_wall'))
 .where('_', Predicates.blocks('minecraft:dark_oak_fence'))
@@ -952,5 +952,271 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 .workableCasingModel(
          "minecraft:block/stone_bricks",
          "minecraft:block/stone_bricks"           
+        )
+})
+
+GTCEuStartupEvents.registry('gtceu:machine', event => {
+    event.create('soulforge', 'multiblock')
+        .rotationState(RotationState.NON_Y_AXIS)
+        .recipeType('the_bagua_of_heaven_and_earth')
+        .recipeModifiers(GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.NON_PERFECT_OVERCLOCK))
+        .pattern(definition => FactoryBlockPattern.start()
+.aisle('AAA','AAA','AAA')
+.aisle('AAA','CBA','AAA')
+.aisle('AAA','AAA','AAA')
+.where('C', Predicates.controller(Predicates.blocks(definition.get())))
+.where('A', Predicates.blocks("bloodmagic:blankrune")
+.or(Predicates.autoAbilities(definition.getRecipeTypes())))
+.where('B', Predicates.blocks("bloodmagic:soulforge"))
+.build()
+                    )
+.workableCasingModel(
+         "bloodmagic:block/blankrune",
+         "bloodmagic:block/blankrune"           
+        )
+})
+
+// startup_scripts/Gtci Multiblocks.js
+// 修复：tooltips 参数改为数组，blockssy 改为 blocks
+
+GTCEuStartupEvents.registry('gtceu:machine', event => {
+    event.create('altar', 'multiblock')
+        .rotationState(RotationState.NON_Y_AXIS)
+        .recipeType('the_bagua_of_heaven_and_earth')
+        .recipeModifiers(GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.NON_PERFECT_OVERCLOCK))
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle('AAA','AAA','AAA')
+            .aisle('AAA','CBA','AAA')
+            .aisle('AAA','AAA','AAA')
+            .where('C', Predicates.controller(Predicates.blocks(definition.get())))
+            .where('A', Predicates.blocks("bloodmagic:sacrificerune")
+                .or(Predicates.autoAbilities(definition.getRecipeTypes())))
+            .where('B', Predicates.blocks("bloodmagic:altar"))
+            .build()
+        )
+        .workableCasingModel(
+            "bloodmagic:block/sacrificerune",
+            "bloodmagic:block/sacrificerune"
+        )
+});
+
+GTCEuStartupEvents.registry('gtceu:machine', event => {
+    event.create('terra_plate', 'multiblock')
+        .rotationState(RotationState.NON_Y_AXIS)
+        .recipeType('the_bagua_of_heaven_and_earth')
+        .recipeModifiers(GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.NON_PERFECT_OVERCLOCK))
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle('ABA','BAB','ABA')
+            .aisle('BAB','DCA','BAB')
+            .aisle('ABA','BAB','ABA')
+            .where('D', Predicates.controller(Predicates.blocks(definition.get())))
+            .where('A', Predicates.blocks("botania:livingrock")
+                .or(Predicates.autoAbilities(definition.getRecipeTypes())))
+            .where('B', Predicates.blocks("minecraft:lapis_block"))
+            .where('C', Predicates.blocks("botania:terra_plate"))
+            .build()
+        )
+        .workableCasingModel(
+            "botania:block/livingrock",
+            "botania:block/livingrock"
+        )
+});
+
+GTCEuStartupEvents.registry('gtceu:machine', event => {
+    event.create('charger', 'multiblock')
+        .rotationState(RotationState.NON_Y_AXIS)
+        .recipeType('the_bagua_of_heaven_and_earth')
+        .recipeModifiers(GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.NON_PERFECT_OVERCLOCK))
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle('AAA','AAA','AAA')
+            .aisle('AAA','CBA','AAA')
+            .aisle('AAA','AAA','AAA')
+            .where('C', Predicates.controller(Predicates.blocks(definition.get())))
+            .where('A', Predicates.blocks("kubejs:charged_certus_block")
+                .or(Predicates.autoAbilities(definition.getRecipeTypes())))
+            .where('B', Predicates.blocks("ae2:charger"))
+            .build()
+        )
+        .workableCasingModel(
+            "kubejs:block/charged_certus_block",
+            "kubejs:block/charged_certus_block"
+        )
+});
+
+GTCEuStartupEvents.registry('gtceu:machine', event => {
+    event.create('alfheim_portal', 'multiblock')
+        .rotationState(RotationState.NON_Y_AXIS)
+        .recipeType('the_bagua_of_heaven_and_earth')
+        .recipeModifiers(GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.NON_PERFECT_OVERCLOCK))
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle('AAA','AAA','BCB')
+            .aisle('AAA','BEB','B.B')
+            .aisle('AAA','D.D','...')
+        .where('.', Predicates.any())
+        .where('A', Predicates.blocks("botania:livingwood")
+        .or(Predicates.autoAbilities(definition.getRecipeTypes())))
+        .where('B', Predicates.blocks("botania:glimmering_livingwood"))
+        .where('C', Predicates.blocks("botania:alfheim_portal"))
+        .where('D', Predicates.blocks("botania:mana_pool"))
+        .where('E', Predicates.controller(Predicates.blocks(definition.get())))
+         .build()
+        )
+        .workableCasingModel(
+            "botania:block/livingwood",
+            "botania:block/livingwood"
+        )
+});
+
+GTCEuStartupEvents.registry('gtceu:machine', event => {
+    event.create('mana_infuser', 'multiblock')
+        .rotationState(RotationState.NON_Y_AXIS)
+        .recipeType('the_bagua_of_heaven_and_earth')
+        .recipeModifiers(GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.NON_PERFECT_OVERCLOCK))
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle('ABA','BAB','ABA')
+            .aisle('BAB','DCA','BAB')
+            .aisle('ABA','BAB','ABA')
+            .where('D', Predicates.controller(Predicates.blocks(definition.get())))
+            .where('A', Predicates.blocks("botania:shimmerrock")
+                .or(Predicates.autoAbilities(definition.getRecipeTypes())))
+            .where('B', Predicates.blocks("minecraft:gold_block"))
+            .where('C', Predicates.blocks("mythicbotany:mana_infuser"))
+            .build()
+        )
+        .workableCasingModel(
+            "botania:block/shimmerrock",
+            "botania:block/shimmerrock"
+        )
+})
+
+GTCEuStartupEvents.registry('gtceu:machine', event => {
+     event.create('infusion_pedestal', 'multiblock')
+        .rotationState(RotationState.NON_Y_AXIS)
+        .recipeType('natures_offering')
+        .recipeModifiers(GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.NON_PERFECT_OVERCLOCK))
+        .pattern(definition => FactoryBlockPattern.start()
+.aisle("AAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "TUi                       XUi", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "HHH                       HHH", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ")
+.aisle("AAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "IAJ     KKKKHHHHHKKKK     IAJ", " A                         A ", " A                         A ", " A                         A ", " A                         A ", " A                         A ", " A                         A ", " A                         A ", " A                         A ", "HHH                       HHH", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ")
+.aisle("AAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAA1PPPPP1AAAAAAAAAAA", "AAAAAAAAAAA1PPPPP1AAAAAAAAAAA", "ECD    KHHHWHHHHHWHHHK    BCD", "           W     W           ", "           H     H           ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "HHH                       HHH", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ")
+.aisle("AAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAPPPPPPPPPPOOPAAAAAAAA", "AAAAAAAAPPPPPPPPPPPPPAAAAAAAA", "     KKH    ZZZZZ    HKK     ", "                             ", "           A     A           ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ")
+.aisle("AAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAPPPP1PPPPP1OOPPAAAAAAA", "AAAAAAAPPPP1PPPPP1PPPPAAAAAAA", "    KHH    W[[[[[W    HHK    ", "           WHHHHHW           ", "           W     W           ", "           H     H           ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ")
+.aisle("AAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAPPPPPPPPPPPPPOOOOOOAAAAA", "AAAAAPPPPPPPPPPPPPPPPPPPAAAAA", "   KH                   HK   ", "            ZZZZZ            ", "                             ", "           A     A           ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ")
+.aisle("AAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAPPPPPP1PPPPP1OOOOPPAAAAA", "AAAAAPPPPPP1PPPPP1PPPPPPAAAAA", "   KH      W     W      HK   ", "           W[[[[[W           ", "           WHHHHHW           ", "           W     W           ", "           H     H           ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ")
+.aisle("AAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAOPPPPPPPPPPPPPOOOOPPPAAAA", "AAAAPPPPPPPPPPPPPPPPPPPPPAAAA", "  KH                     HK  ", "                             ", "            ZZZZZ            ", "           A     A           ", "                             ", "                             ", "                             ", "                             ", "              ]              ", "              ^              ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ")
+.aisle("AAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAOOPPPPPPPAAAAAOOOOOPPPAAAA", "AAAPPPPPPPP1AAAAA1PPPPPPPPAAA", " KH        1AAAAA1        HK ", "            AAAAA            ", "            AAAAA            ", "           H     H           ", "                             ", "                             ", "            HHHHH            ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ")
+.aisle("AAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAOOOOOOOAAAAAAAAAOOOPPPPAAA", "AAAPPPPPPPAAAAAAAAAPPPPPPPAAA", " KH       AAAAAAAAA       HK ", "          AAAAAAAAA          ", "          AAAAAAAAA          ", "           W     W           ", "           W     W           ", "          cW     Wc          ", "          HH     HH          ", "                             ", "         ]         ]         ", "         ^         ^         ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ")
+.aisle("AAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAOOOOOOAAAAAAAAAAAOOPPPPAAA", "AAAPPPPPPAAAAAAAAAAAPPPPPPAAA", " KH      AAAAAAAAAAA      HK ", "         AAAAAAAAAAA         ", "         AAAAAAAAAAA         ", "              H              ", "                             ", "         c         c         ", "         H         H         ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ")
+.aisle("AAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "AA1P1P1OOAAAAAAAAAAAOO1P1P1AA", "AA1P1P1P1AAAAAAAAAAA1P1P1P1AA", " KW W W 1AAAAAAAAAAA1 W W WK ", "  W W W  AAAAAAAAAAA  W W W  ", "  HAW W  AAAAAAAAAAA  W WAH  ", "    HAWAHW  HH2HH  WHAWAH    ", "      H  W         W  H      ", "         W         W         ", "         H         H         ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ")
+.aisle("AAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "AAPPPPPOAAAAAAAAAAAAAOOOOOOAA", "AAPPPPPPAAAAAAAAAAAAAPPPPPPAA", " HHZ[   AAAAAAAAAAAAA   [ZHH ", "    HZ[ AAAAAAAAAAAAA [ZH    ", "      HZAAAAAAAAAAAAAZH      ", "           H2   2H           ", "                             ", "                             ", "        H           H        ", "                             ", "                             ", "                             ", "              d              ", "              d              ", "                             ", "                             ", "                             ", "                             ", "                             ")
+.aisle("AAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "AAPPPPPOAAAAAAAAAAAAAOOOOOOAA", "AAPPPPPPAAAAAAAAAAAAAPPPPPPAA", " HHZ[   AAAAAAAAAAAAA   [ZHH ", "    HZ[ AAAAAeeeAAAAA [ZH    ", "      HZAAAAAAAAAAAAAZH      ", "           H     H           ", "                             ", "                             ", "        H           H        ", "                             ", "              d              ", "             ddd             ", "             ddd             ", "             ddd             ", "             ddd             ", "              d              ", "                             ", "                             ", "                             ")
+.aisle("AAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "AAPPPPPOAAAAAAAAAAAAAOOOOOOAA", "AAPPPPPPAAAAAAAAAAAAAPPPPPPAA", " HHZ[   AAAAAAAAAAAAA   [ZHH ", "    HZ[ AAAAAeeeAAAAA [ZH    ", "      HZAAAAAAgAAAAAAZH      ", "          H2  h  2H          ", "                             ", "                             ", "        H     d     H        ", "              d              ", "       ]     ddd     ]       ", "       ^     ddd     ^       ", "            ddddd            ", "            ddddd            ", "             ddd             ", "             ddd             ", "              d              ", "              d              ", "                             ")
+.aisle("AAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "AAPPPPPOAAAAAAAAAAAAAOOOOOOAA", "AAPPPPPPAAAAAAAAAAAAAPPPPPPAA", " HHZ[   AAAAAAAAAAAAA   [ZHH ", "    HZ[ AAAAAeeeAAAAA [ZH    ", "      HZAAAAAAAAAAAAAZH      ", "           H      H          ", "                             ", "                             ", "        H           H        ", "                             ", "              d              ", "             ddd             ", "             ddd             ", "             ddd             ", "             ddd             ", "              d              ", "                             ", "                             ", "                             ")
+.aisle("AAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "AAPPPPPOAAAAAAAAAAAAAOOOOOOAA", "AAPPPPPPAAAAAAAAAAAAAPPPPPPAA", " HHZ[   AAAAAAAAAAAAA   [ZHH ", "    HZ[ AAAAAAAAAAAAA [ZH    ", "      HZAAAAAAAAAAAAAZH      ", "           H2   2H           ", "                             ", "                             ", "        H           H        ", "                             ", "                             ", "                             ", "              d              ", "              d              ", "                             ", "                             ", "                             ", "                             ", "                             ")
+.aisle("AAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "AA1P1P1OOAAAAAAAAAAAOO1P1P1AA", "AA1P1P1P1AAAAAAAAAAA1P1P1P1AA", " KW W W 1AAAAAAAAAAA1 W W WK ", "  W W W  AAAAAAAAAAA  W W W  ", "  HAW W  AAAAAAAAAAA  W WAH  ", "    HAWAHW  HH2HH   WHAWAH   ", "      H  W         W  H      ", "         W         W         ", "         H         H         ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ")
+.aisle("AAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAPPPPOOAAAAAAAAAAAOOOOOOAAA", "AAAPPPPPPAAAAAAAAAAAPPPPPPAAA", " KH      AAAAAAAAAAA      HK ", "         AAAAAAAAAAA         ", "         AAAAAAAAAAA         ", "              H              ", "                             ", "         c         c         ", "         H         H         ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ")
+.aisle("AAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAOOOOOOOAAAAAAAAAOOOOOOOAAA", "AAAPPPPPPPAAAAAAAAAPPPPPPPAAA", " KH       AAAAAAAAA       HK ", "          AAAAAAAAA          ", "          AAAAfAAAA          ", "           W     W           ", "           W     W           ", "          cW     Wc          ", "          HH     HH          ", "                             ", "         ]         ]         ", "         ^         ^         ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ")
+.aisle("AAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAOOOOOOOOOAAAAAOOOOOOOOOAAA", "AAAPPPPPPPP1AAAAA1PPPPPPPPAAA", " KH        1AAAAA1        HK ", "            AAAAA            ", "            AAAAA            ", "           H     H           ", "                             ", "                             ", "            HHHHH            ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ")
+.aisle("AAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAOOOOOOOPOOOPPPPPOOOOOAAAA", "AAAAPPPPPPPPPPPPPPPPPPPPPAAAA", "  KH                     HK  ", "                             ", "            ZZZZZ            ", "           A     A           ", "                             ", "                             ", "                             ", "                             ", "              ]              ", "              ^              ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ")
+.aisle("AAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAOOOOOO1OOOPP1PPOOOOAAAAA", "AAAAAPPPPPP1PPPPP1PPPPPPAAAAA", "   KH      W     W      HK   ", "           W[[[[[W           ", "           WHHHHHW           ", "           W     W           ", "           H     H           ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ")
+.aisle("AAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAOOOOOOPOOOPPPPPOOOOAAAAA", "AAAAAPPPPPPPPPPPPPPPPPPPAAAAA", "   KH                   HK   ", "            ZZZZZ            ", "                             ", "           A     A           ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ")
+.aisle("AAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAOOOO1OOOPP1PPOOAAAAAAA", "AAAAAAAPPPP1PPPPP1PPPPAAAAAAA", "    KHH    W[[[[[W    HHK    ", "           WHHHHHW           ", "           W     W           ", "           H     H           ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ")
+.aisle("AAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAOOOPOOOPPPPPOAAAAAAAA", "AAAAAAAAPPPPPPPPPPPPPAAAAAAAA", "     KKH    ZZZZZ    HKK     ", "                             ", "           A     A           ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ")
+.aisle("AAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAA1OOOPP1AAAAAAAAAAA", "AAAAAAAAAAA1PPPPP1AAAAAAAAAAA", "TUV    KHHHWHHHHHWHHHK    XUV", "           W     W           ", "           H     H           ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "HHH                       HHH", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ")
+.aisle("AAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "IAJ     KKKKHHHHHKKKK     IAJ", " A                         A ", " A                         A ", " A                         A ", " A                         A ", " A                         A ", " A                         A ", " A                         A ", " A                         A ", "HHH                       HHH", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ")
+.aisle("AAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "BCD                       ECF", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "HHH                       HHH", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ", "                             ")
+.where('A',Predicates.blocks('minecraft:polished_blackstone')
+.or(Predicates.autoAbilities(definition.getRecipeTypes())))
+.where('O', Predicates.fluids('minecraft:lava'))
+.where('P', Predicates.fluids('minecraft:lava'))
+.where('1',Predicates.blocks('minecraft:cobbled_deepslate_wall'))
+.where('2',Predicates.blocks('mysticalagriculture:infusion_pedestal'))
+.where('W',Predicates.blocks('minecraft:cobbled_deepslate_wall'))
+.where('K',Predicates.blocks('malum:azure_runewood_leaves'))
+.where('d',Predicates.blocks('connectedglass:clear_glass_black'))
+.where('e',Predicates.blocks('minecraft:diamond_block'))
+.where('c',Predicates.blocks('minecraft:soul_lantern'))
+.where('g',Predicates.blocks('minecraft:beacon'))
+.where('H', Predicates.blocks('minecraft:polished_blackstone_slab'))
+.where('[', Predicates.blocks('minecraft:polished_blackstone_slab'))
+.where('Z', Predicates.blocks('minecraft:polished_blackstone_slab'))
+.where('C', Predicates.blocks('minecraft:polished_blackstone_stairs'))
+.where('B', Predicates.blocks('minecraft:polished_blackstone_stairs'))
+.where('D', Predicates.blocks('minecraft:polished_blackstone_stairs'))
+.where('E', Predicates.blocks('minecraft:polished_blackstone_stairs'))
+.where('F', Predicates.blocks('minecraft:polished_blackstone_stairs'))
+.where('U', Predicates.blocks('minecraft:polished_blackstone_stairs'))
+.where('X', Predicates.blocks('minecraft:polished_blackstone_stairs'))
+.where('i', Predicates.blocks('minecraft:polished_blackstone_stairs'))
+.where('T', Predicates.blocks('minecraft:polished_blackstone_stairs'))
+.where('V', Predicates.blocks('minecraft:polished_blackstone_stairs'))
+.where('I', Predicates.blocks('minecraft:polished_blackstone_stairs'))
+.where('J', Predicates.blocks('minecraft:polished_blackstone_stairs'))
+.where('f', Predicates.controller(Predicates.blocks(definition.get())))
+.where('h',Predicates.blocks('mysticalagriculture:infusion_altar'))
+.where(' ', Predicates.any())
+.where(']', Predicates.any())
+.where('^', Predicates.any())
+.build()
+        )
+.workableCasingModel(
+            "minecraft:block/polished_blackstone",
+            "minecraft:block/polished_blackstone"
+        )
+})
+
+GTCEuStartupEvents.registry('gtceu:machine', event => {
+    event.create('moyuan1', 'multiblock')
+        .rotationState(RotationState.NON_Y_AXIS)
+        .recipeType('the_bagua_of_heaven_and_earth')
+        .recipeModifiers(GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.NON_PERFECT_OVERCLOCK))
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle('BB','BB')
+            .aisle('BB','BA')
+            .where('A', Predicates.controller(Predicates.blocks(definition.get())))
+            .where('B', Predicates.blocks("ars_nouveau:archwood_planks")
+                .or(Predicates.autoAbilities(definition.getRecipeTypes())))
+            .build()
+        )
+        .workableCasingModel(
+            "ars_nouveau:block/archwood_planks",
+            "ars_nouveau:block/archwood_planks"
+        )
+})
+
+GTCEuStartupEvents.registry('gtceu:machine', event => {
+    event.create('moyuan2', 'multiblock')
+        .rotationState(RotationState.NON_Y_AXIS)
+        .recipeType('the_bagua_of_heaven_and_earth')
+        .recipeModifiers(GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.NON_PERFECT_OVERCLOCK))
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle('BB','BB')
+            .aisle('BB','BA')
+            .where('A', Predicates.controller(Predicates.blocks(definition.get())))
+            .where('B', Predicates.blocks("ars_nouveau:archwood_planks")
+                .or(Predicates.autoAbilities(definition.getRecipeTypes())))
+            .build()
+        )
+        .workableCasingModel(
+            "ars_nouveau:block/archwood_planks",
+            "ars_nouveau:block/archwood_planks"
+        )
+})
+
+GTCEuStartupEvents.registry('gtceu:machine', event => {
+    event.create('moyuan3', 'multiblock')
+        .rotationState(RotationState.NON_Y_AXIS)
+        .recipeType('the_bagua_of_heaven_and_earth')
+        .recipeModifiers(GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.NON_PERFECT_OVERCLOCK))
+        .pattern(definition => FactoryBlockPattern.start()
+            .aisle('BB','BB')
+            .aisle('BB','BA')
+            .where('A', Predicates.controller(Predicates.blocks(definition.get())))
+            .where('B', Predicates.blocks("ars_nouveau:archwood_planks")
+                .or(Predicates.autoAbilities(definition.getRecipeTypes())))
+            .build()
+        )
+        .workableCasingModel(
+            "ars_nouveau:block/archwood_planks",
+            "ars_nouveau:block/archwood_planks"
         )
 })

@@ -1,0 +1,33 @@
+
+#套装系统全局设置。
+#Armor Sets Global Settings.
+[armorsets]
+	# 是否启用自定义套装系统。
+	#Whether to enable the custom armor set system.
+	enableSets = true
+	# 药水效果刷新间隔 (Tick)。
+	#Potion effect refresh interval (Ticks).
+	#默认 20 (每秒发放一次药水Buff)。
+	#Default 20 (Grants potion buffs once per second).
+	potionRefreshInterval = 20
+	# 默认使用的按键提示。
+	#Default shortcut key hint.
+	#如果 JSON 中未指定 tipKey，默认使用的按键：shift, ctrl, alt, none。
+	#Default keys used if tipKey is not specified in JSON: shift, ctrl, alt, none.
+	defaultTipKey = "shift"
+	# 重载时是否同步。
+	#Whether to sync during reload.
+	#当管理员执行 /kt reload 时，是否强制同步套装配置给所有在线玩家。
+	#Whether to force synchronization of armor set configs to all online players when /kt reload is executed.
+	syncOnReload = true
+	# 允许激活套装加成的实体列表。玩家默认允许，无需添加。
+	#List of entities allowed to activate armor set bonuses. Players are allowed by default and do not need to be added.
+	#使用 ALL 表示所有生物都可以激活套装，使用 @ 表示指定模组，# 表示实体标签，单个 id 则是指定某个实体。
+	#Use ALL to allow all entities, @ for a specific mod, # for an entity tag, or a single id for a specific entity.
+	#示例演示 / Example Demonstrations:
+	#["ALL"] -> 所有实体均可激活 / All entities can activate
+	#["@alexsmobs"] -> Alex的生物模组下的所有实体 / All entities from Alex's Mobs
+	#["#minecraft:raider"] -> 所有带有袭击者标签的实体 / All entities with the raider tag
+	#["minecraft:zombie", "minecraft:skeleton"] -> 仅限僵尸和骷髅 / Only Zombies and Skeletons
+	allowedEntities = ["kinetictweaks:dummy", "touhoulittlemaid:maid"]
+

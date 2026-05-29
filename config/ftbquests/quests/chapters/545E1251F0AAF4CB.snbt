@@ -1,0 +1,57 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "545E1251F0AAF4CB"
+	group: "64426895FE9D2AAA"
+	icon: "gtceu:uiv_electric_motor"
+	id: "545E1251F0AAF4CB"
+	order_index: 11
+	quest_links: [ ]
+	quests: [
+		{
+			id: "55BC4C375D5337B7"
+			tasks: [{
+				id: "0726ACA5195B9727"
+				item: "gtceu:uxv_machine_hull"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1A0979AF6D3DDB1F"]
+			id: "544328321C9CCBE5"
+			tasks: [
+				{
+					id: "4A2621DD46CAB371"
+					item: "gtceu:uiv_electric_motor"
+					type: "item"
+				}
+				{
+					id: "1F2026A099C4C6AF"
+					item: "gtceu:uiv_electric_pump"
+					type: "item"
+				}
+				{
+					id: "4CD4B4DE7DD90FE1"
+					item: "gtceu:uiv_conveyor_module"
+					type: "item"
+				}
+				{
+					id: "0C42EC01278F3728"
+					item: "gtceu:uiv_electric_piston"
+					type: "item"
+				}
+				{
+					id: "48FF9D6C871B6A04"
+					item: "gtceu:uiv_robot_arm"
+					type: "item"
+				}
+			]
+			title: "空灵阶段"
+			x: -1.0d
+			y: 0.0d
+		}
+	]
+	title: "空灵"
+}

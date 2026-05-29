@@ -58,4 +58,43 @@ StartupEvents.registry('block', event => {
         .requiresTool(true)                        // 空手不掉落
         // 如果你希望它像原版白色混凝土一样可以徒手采集，可设置 requiresTool(false) 并调整 hardness
         .material('stone');                        // 可选，旧版写法，推荐用 soundType+mapColor 代替
+
+        event.create('transdimensional_teleporter')  
+        .displayName('跨维度传送装置')        
+        .material('iron')                   
+        .hardness(2.0)                      
+        .resistance(3.0)                              
+        .tagBlock('forge:mineable/wrench')  
 })
+
+// startup_scripts/certus_blocks.js
+StartupEvents.registry('block', event => {
+    event.create('charged_certus_block')
+        .displayName('充能赛特斯石英块')
+        .hardness(3.0)
+        .resistance(6.0)
+        .requiresTool(true)
+        .lightLevel(0.75)
+        .tagBlock('minecraft:mineable/pickaxe')
+        .textureAll('gtceu:block/certus_quartz_block');  // 加上引号
+});
+
+
+StartupEvents.registry('block', event => {
+    event.create('tofu_crafting_table')
+        .displayName('豆腐工作台')
+        .hardness(2.5)
+        .resistance(2.5)
+        .requiresTool(true)
+        .tagBlock('minecraft:mineable/axe')
+});
+
+StartupEvents.registry('block', event => {
+    event.create('tofu_smithing_table')
+        .displayName('豆腐锻造台')
+        .hardness(2.5)
+        .resistance(2.5)
+        .requiresTool(true)
+        .tagBlock('minecraft:mineable/axe')
+});
+

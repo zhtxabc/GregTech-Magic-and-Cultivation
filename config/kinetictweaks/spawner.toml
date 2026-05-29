@@ -1,0 +1,43 @@
+
+# 刷怪笼限制设置
+# Spawner Mechanics
+[spawner]
+	# 是否启用刷怪笼限制功能
+	#Enable spawner breaker.
+	enable = true
+	# 全局默认行为模式。
+	#BREAK = 彻底破坏刷怪笼方块 (变成空气)。
+	#COOLDOWN = 刷怪笼进入冷却状态，暂停生成一段时间。
+	#Global default action mode.
+	#BREAK = Destroy the spawner block.
+	#COOLDOWN = Enter cooldown (pause spawning).
+	mode = "COOLDOWN"
+	# 全局默认冷却时间 (单位: 秒)。仅在 mode = COOLDOWN 时有效。
+	#Global default cooldown duration in seconds.
+	cooldown = 3600
+	# 全局默认触发阈值 (刷怪波次)。即生成多少波怪后触发限制。
+	#Global default spawn waves before limit is triggered.
+	default_threshold = 20
+	# 触发限制时是否通知附近的玩家
+	#Whether to notify nearby players.
+	notification = true
+	# 自定义生物独立规则。格式: "实体ID;波次阈值;冷却时间(秒);行为模式"
+	#若未填写模式，则默认应用上方设定的全局模式 (spawner.mode)。
+	#若未填写冷却时间，则默认应用全局冷却时长 (spawner.cooldown)。
+	#配置示例:
+	#1. "minecraft:zombie;5;0;BREAK" -> 僵尸刷怪笼每 5 波后直接破坏方块，不计冷却。
+	#2. "minecraft:skeleton;10;120;COOLDOWN" -> 骷髅刷怪笼每 10 波后冷却 120 秒。
+	#3. "minecraft:spider;10" -> 使用独立波次(10)，但冷却时间和模式均继承全局设定。
+	#Custom rules per entity. Format: "EntityID;Threshold;Cooldown(sec);Mode"
+	#If Mode is omitted, the global setting (spawner.mode) will be applied.
+	#If Cooldown is omitted, the global setting (spawner.cooldown) will be used.
+	#Examples:
+	#1. "minecraft:zombie;5;0;BREAK" -> Zombie spawner breaks after 5 waves with no cooldown.
+	#2. "minecraft:skeleton;10;120;COOLDOWN" -> Skeleton spawner enters 120s cooldown after 10 waves.
+	#3. "minecraft:spider;10" -> Uses custom threshold (10), but inherits global cooldown and mode.
+	rules = ["minecraft:zombie;5;0;BREAK", "minecraft:skeleton;10"]
+	# 刷怪笼限制黑名单。
+	#在此列表中的生物 ID 将完全不受波次限制、冷却或破坏功能的影响。
+	#Entities in this list will ignore all spawner limits and overheating.
+	blacklist = ["minecraft:pig", "minecraft:cow"]
+

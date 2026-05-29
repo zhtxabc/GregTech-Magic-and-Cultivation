@@ -1,0 +1,35 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "054286E0C46FBE35"
+	group: "1AB5BF2ECFC015EF"
+	icon: "farmersdelight:stove"
+	id: "054286E0C46FBE35"
+	order_index: 2
+	quest_links: [ ]
+	quests: [{
+		id: "2C24AFD0994F7ED4"
+		tasks: [
+			{
+				id: "16F0F49405BC149A"
+				item: "farmersdelight:stove"
+				type: "item"
+			}
+			{
+				id: "06D1841401C4497C"
+				item: {
+					Count: 1
+					id: "farmersdelight:skillet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}
+		]
+		title: "农夫乐事"
+		x: -0.5d
+		y: -0.5d
+	}]
+	title: "农夫乐事"
+}

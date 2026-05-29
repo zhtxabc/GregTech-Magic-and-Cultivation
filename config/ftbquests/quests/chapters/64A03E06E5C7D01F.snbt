@@ -1,0 +1,57 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "64A03E06E5C7D01F"
+	group: "64426895FE9D2AAA"
+	icon: "gtceu:zpm_electric_motor"
+	id: "64A03E06E5C7D01F"
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			id: "1EB93C364D4EBB8B"
+			tasks: [{
+				id: "1381CDB202E58B13"
+				item: "gtceu:uv_machine_hull"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3B08189074B54265"]
+			id: "4C0B3B70AC13C372"
+			tasks: [
+				{
+					id: "474EC731B1875BC4"
+					item: "gtceu:zpm_electric_motor"
+					type: "item"
+				}
+				{
+					id: "252A66079284BCEC"
+					item: "gtceu:zpm_electric_pump"
+					type: "item"
+				}
+				{
+					id: "290F47530C7DFDF9"
+					item: "gtceu:zpm_conveyor_module"
+					type: "item"
+				}
+				{
+					id: "7B965BAAEFF18010"
+					item: "gtceu:zpm_electric_piston"
+					type: "item"
+				}
+				{
+					id: "5755B2255804CEC5"
+					item: "gtceu:zpm_robot_arm"
+					type: "item"
+				}
+			]
+			title: "窥涅阶段"
+			x: -0.5d
+			y: 0.0d
+		}
+	]
+	title: "窥涅"
+}

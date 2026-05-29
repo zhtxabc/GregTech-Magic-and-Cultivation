@@ -1,0 +1,58 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "39ECF6035F89D364"
+	group: "64426895FE9D2AAA"
+	icon: "gtceu:mv_electric_motor"
+	id: "39ECF6035F89D364"
+	order_index: 2
+	progression_mode: "flexible"
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["58D09EB7120294BA"]
+			id: "4BE174F28829AA81"
+			tasks: [
+				{
+					id: "598F359CC9850C5C"
+					item: "gtceu:mv_electric_motor"
+					type: "item"
+				}
+				{
+					id: "59E47BE2F4CC84F2"
+					item: "gtceu:mv_electric_pump"
+					type: "item"
+				}
+				{
+					id: "7ED79B4A1D4A8A34"
+					item: "gtceu:mv_conveyor_module"
+					type: "item"
+				}
+				{
+					id: "4E7AFBF3AE6F9B55"
+					item: "gtceu:mv_electric_piston"
+					type: "item"
+				}
+				{
+					id: "39FACD0909E4B0F6"
+					item: "gtceu:mv_robot_arm"
+					type: "item"
+				}
+			]
+			title: "结丹阶段"
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			id: "78F25AFA3BBDB050"
+			tasks: [{
+				id: "0F07D459665098E5"
+				item: "gtceu:hv_machine_hull"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.0d
+		}
+	]
+	title: "结丹"
+}

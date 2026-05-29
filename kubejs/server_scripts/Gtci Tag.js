@@ -20,3 +20,15 @@ ServerEvents.tags('item', event => {
         event.add(`gtceu:circuits/${tier}`, item)
     }
 })
+
+// 监听物品标签事件
+ServerEvents.tags('item', event => {
+    // 将 tofucraft:tofuslate 添加到原版的 stone_tool_materials 物品标签中
+    event.add('minecraft:stone_tool_materials', 'tofucraft:tofuslate')
+})
+
+// 监听方块标签事件
+ServerEvents.tags('block', event => {
+    // 将 tofucraft:tofuslate 添加到原版的 stone_tool_materials 方块标签中
+    event.add('minecraft:stone_tool_materials', 'tofucraft:tofuslate')
+})

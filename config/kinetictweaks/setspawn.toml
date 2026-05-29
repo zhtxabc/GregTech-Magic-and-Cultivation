@@ -1,0 +1,51 @@
+
+#世界出生点优化核心设置
+#Core Settings for World SetSpawn Optimization
+[setspawn]
+	#是否启用自定义出生点搜索逻辑。(通过完全原生注入实现，不会影响玩家睡床设置出生点)
+	#Whether to enable custom spawn point search logic. (Implemented via pure native injection, respects player beds)
+	enable = true
+	#生物群系搜索的最大半径限制 (单位: 方块)。
+	#Maximum search radius limit for biome mode (Unit: Blocks).
+	radius = 10000
+	#【危险注意事项】
+	#结构模式的最大搜索半径 (单位: 区块)。1 区块 = 16 方块。
+	#由于搜索算法开销极大，设置过大 (如 > 512) 极易导致创建世界时严重卡顿甚至崩溃！
+	#特别注意：末地 (The End) 存在 1000 格 (约 64 区块) 的虚空环，若将末地作为出生地且指定了外岛结构，必须将此值设置大于 64！
+	#
+	#[IMPORTANT WARNING]
+	#Maximum search radius for structure mode (Unit: Chunks). 1 chunk = 16 blocks.
+	#Because the search algorithm is highly expensive, setting this too high (e.g. > 512) can easily cause severe lag or crashes during world creation!
+	#Special Note: The End has a 1000-block (approx. 64 chunks) void ring. If spawning in The End outer islands, this MUST be set > 64!
+	structure_radius = 256
+	#生物群系搜索时的采样步长。(建议值: 32-64)
+	#值越小，搜索越精确 (能找到微小或细长的群系)，但耗时更长；值越大，搜索速度越快，但可能会漏掉目标群系。
+	#
+	#Sampling step size for biome search. (Suggested value: 32-64)
+	#Smaller values are more accurate (can find tiny or narrow biomes) but take longer; larger values are faster but might skip the target biome.
+	biome_step = 48
+
+	[setspawn.rule_dimension]
+		#优先级 1: 是否启用维度限制。若启用，玩家只会出生在列表允许的维度中。
+		#Priority 1: Enable dimension limit. If enabled, players will only spawn in the allowed dimensions.
+		enable = true
+		#允许作为出生点的维度列表。留空表示在默认主世界生成。(注: 会自动无视并过滤 "minecraft:overworld")
+		#List of allowed spawn dimensions. Leave empty to spawn in Overworld defaultly. (Note: "minecraft:overworld" will be ignored and filtered automatically)
+		list = ["tofucraft:tofu_world"]
+
+	[setspawn.rule_biome]
+		#优先级 2: 是否启用生物群系搜索。若启用，将在指定维度内寻找列表中的群系作为出生点。
+		#Priority 2: Enable biome search. If enabled, it will search for biomes in the list within the specified dimension.
+		enable = false
+		#允许作为出生点的生物群系列表。默认: 平原、沙漠、热带草原。
+		#List of allowed spawn biomes. Default: Plains, Desert, Savanna.
+		list = ["minecraft:plains", "minecraft:desert", "minecraft:savanna"]
+
+	[setspawn.rule_structure]
+		#优先级 3: 是否启用结构搜索。若启用，将在匹配的维度和群系中寻找列表中的结构作为出生点。
+		#Priority 3: Enable structure search. If enabled, it will search for structures in the list within matching dimensions and biomes.
+		enable = false
+		#允许作为出生点的结构列表。默认: 原版所有村庄类型。
+		#List of allowed spawn structures. Default: All vanilla village types.
+		list = ["minecraft:village_plains", "minecraft:village_desert", "minecraft:village_savanna", "minecraft:village_snowy", "minecraft:village_taiga"]
+
