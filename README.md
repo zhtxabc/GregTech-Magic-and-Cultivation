@@ -1,4 +1,4 @@
-# Greg_Tech_Cultivate_Immortality | GTCI
+# GregTech Magic and Cultivation | GTMC
 
 GTCI 是一款融合魔法与科技的高版本 GTM 类型的格雷科技整合包.
 
